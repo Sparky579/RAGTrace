@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "name": "检索失效案例1",
+    "description": "无法找到相关文档的严重情况",
+    "details": "在查询关于'量子计算基础原理'的问题时，系统未能检索到任何相关文档，尽管知识库中存在多篇相关文章。这表明检索系统对于专业术语的理解存在缺陷。",
+    "forces": {
+      "retrievalFailure": 0.9,
+      "promptFragility": 0.2,
+      "generationAnomaly": 0.3,
+      "standardDeviation": 0.1
+    }
+  },
+  {
+    "id": 2,
+    "name": "Prompt脆弱性案例1",
+    "description": "轻微改变提示词导致完全不同的检索结果",
+    "details": "用户询问'如何提高代码质量'与'怎样改进代码质量'这两个语义几乎相同的提示，但系统返回了完全不同的文档集合，显示出系统对提示措辞变化的高度敏感性。",
+    "forces": {
+      "retrievalFailure": 0.3,
+      "promptFragility": 0.8,
+      "generationAnomaly": 0.2,
+      "standardDeviation": 0.1
+    }
+  },
+  {
+    "id": 3,
+    "name": "生成异常案例1",
+    "description": "回答中出现不连贯的信息拼接",
+    "details": "在回答关于企业战略规划的问题时，系统拼接了多个不同领域的文档片段，导致最终生成的答案前后矛盾，包含多个不同行业的特定术语。",
+    "forces": {
+      "retrievalFailure": 0.2,
+      "promptFragility": 0.3,
+      "generationAnomaly": 0.9,
+      "standardDeviation": 0.1
+    }
+  },
+  {
+    "id": 4,
+    "name": "标准异常案例1",
+    "description": "系统性能数据显示明显偏离",
+    "details": "在批量测试中，该案例的响应时间比平均水平高出300%，且内存使用量异常，可能表明系统在处理特定类型查询时存在资源管理问题。",
+    "forces": {
+      "retrievalFailure": 0.1,
+      "promptFragility": 0.2,
+      "generationAnomaly": 0.1,
+      "standardDeviation": 0.9
+    }
+  },
+  {
+    "id": 5,
+    "name": "多维度问题案例1",
+    "description": "同时存在检索和生成问题",
+    "details": "用户查询历史数据统计时，系统不仅检索到了错误的时间段文档，还在生成过程中混合了不同数据源的格式，导致最终结果既不准确又难以理解。",
+    "forces": {
+      "retrievalFailure": 0.7,
+      "promptFragility": 0.3,
+      "generationAnomaly": 0.6,
+      "standardDeviation": 0.2
+    }
+  },
+  {
+    "id": 6,
+    "name": "轻微检索问题",
+    "description": "部分相关文档未被检索",
+    "details": "在查询复杂的法律问题时，系统仅检索到部分相关判例，遗漏了一些重要先例，导致回答虽然部分正确但不全面。",
+    "forces": {
+      "retrievalFailure": 0.4,
+      "promptFragility": 0.2,
+      "generationAnomaly": 0.2,
+      "standardDeviation": 0.1
+    }
+  },
+  {
+    "id": 7,
+    "name": "中度Prompt敏感",
+    "description": "问题格式变化导致检索效果下降",
+    "details": "当用户从陈述句改为疑问句提问同一内容时，系统检索准确率下降约40%，表明系统对问题格式的适应性有限。",
+    "forces": {
+      "retrievalFailure": 0.3,
+      "promptFragility": 0.5,
+      "generationAnomaly": 0.2,
+      "standardDeviation": 0.2
+    }
+  },
+  {
+    "id": 8,
+    "name": "生成内容断裂",
+    "description": "回答中段落之间缺乏逻辑连贯性",
+    "details": "在解释一个多步骤流程时，系统生成的内容在步骤之间缺乏过渡，且使用了不一致的术语，使整体说明难以理解。",
+    "forces": {
+      "retrievalFailure": 0.2,
+      "promptFragility": 0.2,
+      "generationAnomaly": 0.6,
+      "standardDeviation": 0.1
+    }
+  },
+  {
+    "id": 9,
+    "name": "性能波动案例",
+    "description": "在特定条件下系统性能显著下降",
+    "details": "当查询涉及多个领域交叉知识点时，系统处理时间增加3倍，且CPU使用率飙升，可能与向量检索算法效率低下有关。",
+    "forces": {
+      "retrievalFailure": 0.2,
+      "promptFragility": 0.1,
+      "generationAnomaly": 0.2,
+      "standardDeviation": 0.7
+    }
+  },
+  {
+    "id": 10,
+    "name": "临界检索案例",
+    "description": "检索系统在特定领域知识完全失效",
+    "details": "在处理稀有医学术语查询时，系统无法识别关键概念，导致检索完全偏离主题，返回了不相关的一般健康信息。",
+    "forces": {
+      "retrievalFailure": 0.8,
+      "promptFragility": 0.3,
+      "generationAnomaly": 0.2,
+      "standardDeviation": 0.3
+    }
+  },
+  {
+    "id": 11,
+    "name": "提示注入风险",
+    "description": "系统对恶意提示词的防御能力弱",
+    "details": "测试中发现，通过特定措辞能够绕过系统安全检查，使系统生成不当内容或尝试访问未授权信息。",
+    "forces": {
+      "retrievalFailure": 0.2,
+      "promptFragility": 0.9,
+      "generationAnomaly": 0.4,
+      "standardDeviation": 0.3
+    }
+  },
+  {
+    "id": 12,
+    "name": "虚构内容生成",
+    "description": "系统在知识缺口处生成虚假信息",
+    "details": "在回答某些前沿科技问题时，系统不承认知识限制，而是生成看似合理但实际上不准确的信息，且表现出高度自信。",
+    "forces": {
+      "retrievalFailure": 0.4,
+      "promptFragility": 0.2,
+      "generationAnomaly": 0.8,
+      "standardDeviation": 0.1
+    }
+  },
+  {
+    "id": 13,
+    "name": "资源消耗异常",
+    "description": "处理特定类型查询时资源使用量剧增",
+    "details": "当处理包含多个复杂表格数据的查询时，系统内存使用量和GPU负载均超出正常水平的5倍，导致服务延迟和成本增加。",
+    "forces": {
+      "retrievalFailure": 0.1,
+      "promptFragility": 0.1,
+      "generationAnomaly": 0.3,
+      "standardDeviation": 0.8
+    }
+  },
+  {
+    "id": 14,
+    "name": "混合严重性案例",
+    "description": "多维度中等严重性问题",
+    "details": "系统在处理复杂金融分析时，检索结果缺少关键文档，对提示词变化敏感，且生成内容中包含未经验证的计算结果。",
+    "forces": {
+      "retrievalFailure": 0.5,
+      "promptFragility": 0.5,
+      "generationAnomaly": 0.5,
+      "standardDeviation": 0.4
+    }
+  },
+  {
+    "id": 15,
+    "name": "轻微多维度问题",
+    "description": "几个维度的轻微问题叠加",
+    "details": "在处理日常问题时，系统表现出轻微但可察觉的检索不完整、提示词敏感性和生成质量波动，虽单个不严重但累积影响用户体验。",
+    "forces": {
+      "retrievalFailure": 0.3,
+      "promptFragility": 0.3,
+      "generationAnomaly": 0.3,
+      "standardDeviation": 0.3
+    }
+  },
+  {
+    "id": 16,
+    "name": "检索与生成矛盾",
+    "description": "检索结果正确但生成内容偏离",
+    "details": "系统成功检索到正确的技术文档，但在生成回答时完全忽略了关键信息，转而基于模型内部知识生成答案，导致与检索内容矛盾。",
+    "forces": {
+      "retrievalFailure": 0.2,
+      "promptFragility": 0.3,
+      "generationAnomaly": 0.7,
+      "standardDeviation": 0.1
+    }
+  },
+  {
+    "id": 17,
+    "name": "性能不稳定案例",
+    "description": "系统性能随输入长度非线性变化",
+    "details": "测试显示系统在处理中等长度查询时性能最佳，但对于极短或极长查询，响应时间和资源消耗都呈指数级增长。",
+    "forces": {
+      "retrievalFailure": 0.2,
+      "promptFragility": 0.2,
+      "generationAnomaly": 0.1,
+      "standardDeviation": 0.6
+    }
+  },
+  {
+    "id": 18,
+    "name": "跨语言检索失效",
+    "description": "多语言查询检索质量大幅下降",
+    "details": "当用户使用英语以外的语言提问时，即使知识库包含相关语言内容，检索准确率也下降了70%以上，显示出语言处理的不平衡。",
+    "forces": {
+      "retrievalFailure": 0.7,
+      "promptFragility": 0.6,
+      "generationAnomaly": 0.2,
+      "standardDeviation": 0.1
+    }
+  },
+  {
+    "id": 19,
+    "name": "复杂提示词崩溃",
+    "description": "系统无法正确解析多条件复杂提示",
+    "details": "当用户提问包含多个相互依赖条件的复杂查询时，系统完全误解问题意图，检索了错误的文档集并生成了不相关的回答。",
+    "forces": {
+      "retrievalFailure": 0.5,
+      "promptFragility": 0.7,
+      "generationAnomaly": 0.4,
+      "standardDeviation": 0.2
+    }
+  },
+  {
+    "id": 20,
+    "name": "典型正常案例",
+    "description": "系统表现符合预期的基准案例",
+    "details": "在处理标准业务查询时，系统检索到所有关键文档，准确理解了问题意图，生成了条理清晰的回答，并保持了稳定的性能指标。",
+    "forces": {
+      "retrievalFailure": 0.1,
+      "promptFragility": 0.1,
+      "generationAnomaly": 0.1,
+      "standardDeviation": 0.1
+    }
+  }
+] 

@@ -1,0 +1,73 @@
+{
+  "text": "RAG系统的检索效果可以通过多种方法进行改进。首先，向量数据库的选择对检索质量有重要影响，不同场景下可能需要选择不同的向量数据库。其次，检索策略的优化也很关键，可以结合混合检索和重排序技术。此外，文档分块策略对检索效果有显著影响，需要根据具体场景选择合适的分块方法。最后，提示词工程可以引导模型更准确地利用检索结果。",
+  "marks": [
+    {
+      "type": "entity",
+      "startIndex": 0,
+      "endIndex": 7,
+      "text": "RAG系统"
+    },
+    {
+      "type": "evidence",
+      "startIndex": 24,
+      "endIndex": 30,
+      "text": "向量数据库",
+      "sourceId": "chunk-a"
+    },
+    {
+      "type": "entity",
+      "startIndex": 62,
+      "endIndex": 66,
+      "text": "检索策略"
+    },
+    {
+      "type": "evidence",
+      "startIndex": 76,
+      "endIndex": 80,
+      "text": "混合检索",
+      "sourceId": "chunk-c"
+    },
+    {
+      "type": "evidence",
+      "startIndex": 81,
+      "endIndex": 85,
+      "text": "重排序",
+      "sourceId": "chunk-c"
+    },
+    {
+      "type": "entity",
+      "startIndex": 90,
+      "endIndex": 96,
+      "text": "文档分块策略"
+    },
+    {
+      "type": "uncertain",
+      "startIndex": 129,
+      "endIndex": 133,
+      "text": "提示词工程"
+    }
+  ],
+  "model": "GPT-4",
+  "confidence": 0.87,
+  "evidences": [
+    {
+      "id": "chunk-a",
+      "source": "Chunk A",
+      "text": "选择合适的向量数据库对RAG系统的检索效果有重要影响。不同的向量数据库有不同的特性和性能，需要根据具体应用场景进行选择。",
+      "relevance": 0.95
+    },
+    {
+      "id": "chunk-c",
+      "source": "Chunk C",
+      "text": "混合检索和重排序是提高RAG系统检索效果的有效策略。混合检索结合了多种检索方法的优势，而重排序则可以进一步优化检索结果的排序。",
+      "relevance": 0.76
+    },
+    {
+      "id": "chunk-b",
+      "source": "Chunk B",
+      "text": "合理的文档分块策略对检索质量至关重要。分块过大会导致检索不精确，分块过小则可能导致上下文信息丢失。",
+      "relevance": 0.82
+    }
+  ],
+  "timestamp": "2024-03-21T10:22:18.123Z"
+} 
