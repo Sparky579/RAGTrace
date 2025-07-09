@@ -1,21 +1,5 @@
 <template>
-  <div class="heatmap-chart">
-    <div class="slider-controls" v-if="!isLoading">
-      <div class="slider-label">文档块</div>
-      <input 
-        type="range" 
-        class="density-slider" 
-        v-model="embeddingDensity" 
-        min="0" 
-        max="100" 
-        step="5"
-        title="调整文档块显示比例"
-      >
-      <div class="slider-value">{{ embeddingDensity }}%</div>
-    </div>
-    
-    <div ref="chartContainer" class="chart-container"></div>
-    
+  <div class="heatmap-chart" ref="chartContainer">
     <div v-if="isLoading" class="loading-overlay">
       <div class="loading-spinner"></div>
       <div class="loading-text">加载中...</div>
@@ -24,468 +8,547 @@
 </template>
 
 <script setup>
-import { ref, onMounted, watch, onUnmounted } from 'vue';
+import { ref, onMounted, watch, onUnmounted, nextTick } from 'vue';
 import * as d3 from 'd3';
 import { useQuestionStore } from '../../store/questionStore';
+import { useChunkStore } from '../../store/chunkStore';
+import { generateDefaultDensity, drawChunkPoints, filterValidChunks } from './utils/ChunkHandler';
+import { createTooltip, updateHighlightBorder, updateSelectedPoint, cleanupUiResources, safeDomUpdate } from './utils/UiHandler';
+import { drawHeatmap, drawPoints, createSvgElements, calculateDataExtent } from './utils/ChartRenderer';
+import eventBus from '../../utils/eventBus';
 
 const chartContainer = ref(null);
 const questionStore = useQuestionStore();
+const chunkStore = useChunkStore();
 const isLoading = ref(true);
-const embeddingDensity = ref(100); // 默认显示100%的文档块
 
-// 数据和状态
-const width = 380;
-const height = 380;
+// 基础配置
+const relativeWidth = 600;
+const relativeHeight = 600;
+let width = 600;
+let height = 400;
 const margin = { top: 10, right: 10, bottom: 10, left: 10 };
+
+// 状态变量
 let svg = null;
 let zoomG = null;
 let data = [];
 let embeddingsData = [];
-let displayedEmbeddings = [];
 let kdeData = {};
 let xScale, yScale;
-let zoom = null;
 let currentTransform = d3.zoomIdentity;
+let cachedChunks = null;
 
-// 组件挂载后绘制图表
+// 事件监听器相关函数
+function setupEventListeners() {
+  eventBus.on('questionSelected', handleExternalQuestionSelected);
+  eventBus.on('pointSelected', handleExternalPointSelected);
+  eventBus.on('showSearchInHeatmap', handleShowSearchInHeatmap);
+}
+
+function cleanupEventListeners() {
+  eventBus.off('questionSelected');
+  eventBus.off('pointSelected');
+  eventBus.off('showSearchInHeatmap');
+}
+
+// 清除所有高亮标记
+function clearAllHighlights() {
+  // 清除chunkStore中的状态
+  chunkStore.setCurrentGridCell(null);
+  
+  // 移除高亮边框和选中点组内的内容
+  if (svg) {
+    svg.select('.top-highlight-group').selectAll('.highlight-border').remove();
+    clearSelectedPoint();
+    
+    // 清除搜索点和标签
+    zoomG.selectAll('.search-point, .search-label').remove();
+  }
+}
+
+// 专门清除黄色高亮点
+function clearSelectedPoint() {
+  if (svg) {
+    // 确保彻底清除所有选中点
+    svg.select('.selected-point-group').selectAll('*').remove();
+  }
+}
+
+// 处理外部点选择事件
+function handleExternalPointSelected(eventData) {
+  if (!eventData || !eventData.id) return;
+  
+  console.log('热力图收到外部点选择事件:', eventData);
+  
+  // 清除黄色高亮点 - 确保彻底清除
+  clearSelectedPoint();
+  
+  // 更新选中的点
+  if (svg && zoomG) {
+    // 确保高亮被清除后再更新
+    setTimeout(() => {
+      updateSelectedPoint(eventData.id, zoomG, svg, xScale, yScale);
+    }, 0);
+  }
+  
+  let embedding = null;
+  const numericId = parseInt(eventData.id);
+  
+  // 如果是来自力引导图的事件，直接在热力图数据中查找对应ID的点
+  if (eventData.isFromForceChart) {
+    console.log('事件来自力引导图，在热力图数据中查找点:', numericId);
+    
+    // 从热力图的数据中查找对应ID的点
+    // 过滤有效数据
+    const validData = data.filter(d => 
+      d.embedding && 
+      Array.isArray(d.embedding) && 
+      d.embedding.length >= 2 && 
+      !isNaN(d.embedding[0]) && 
+      !isNaN(d.embedding[1])
+    );
+    
+    // 在有效数据中查找匹配ID的点
+    const foundPoint = validData.find(d => d.id === numericId);
+    if (foundPoint?.embedding) {
+      console.log('在热力图数据中找到对应点:', foundPoint);
+      embedding = foundPoint.embedding;
+      
+      // 直接使用找到的点更新questionStore
+      questionStore.setQuestion(foundPoint, numericId);
+    }
+  }
+  
+  // 如果未找到embedding，尝试从事件数据或questionStore中获取
+  if (!embedding) {
+    // 1. 检查事件数据本身
+    if (eventData.embedding && Array.isArray(eventData.embedding) && eventData.embedding.length >= 2) {
+      console.log('使用事件中的 embedding 数据:', eventData.embedding);
+      embedding = eventData.embedding;
+    } 
+    // 2. 从 questionStore 获取
+    else {
+      const question = questionStore.allQuestions.find(q => q.id === numericId);
+      if (question?.embedding && Array.isArray(question.embedding) && question.embedding.length >= 2) {
+        console.log('从 questionStore 找到 embedding:', question.embedding);
+        embedding = question.embedding;
+      }
+    }
+  }
+  
+  // 如果找到 embedding 数据，高亮对应的网格单元格
+  if (embedding) {
+    console.log('用于高亮的最终 embedding 数据:', embedding);
+    highlightGridCellForPoint(embedding);
+  } else {
+    console.warn('无法高亮网格，缺少有效的坐标数据');
+  }
+}
+
+// 处理外部问题选择事件
+function handleExternalQuestionSelected(data) {
+  handleExternalPointSelected(data);
+}
+
+// 处理显示搜索问题在热力图中的事件
+function handleShowSearchInHeatmap(eventData) {
+  if (!eventData || !eventData.query) return;
+  
+  console.log('热力图收到显示搜索问题事件:', eventData);
+  
+  // 清除之前的高亮
+  clearAllHighlights();
+  
+  // 确保数据已加载
+  if (!xScale || !yScale || !svg || !zoomG) {
+    console.warn('热力图组件尚未初始化，无法显示搜索问题');
+    return;
+  }
+  
+  // 计算热力图中心位置
+  const centerX = (xScale.domain()[0] + xScale.domain()[1]) / 2;
+  const centerY = (yScale.domain()[0] + yScale.domain()[1]) / 2;
+  
+  // 创建一个临时问题对象
+  const searchQuestion = {
+    id: 'search-' + Date.now(), // 生成临时ID
+    text: eventData.query,
+    question: eventData.query,
+    embedding: [centerX, centerY], // 放在中心位置
+    isSearchQuestion: true // 标记为搜索问题
+  };
+  
+  // 显示蓝点
+  zoomG.append('circle')
+    .attr('class', 'search-point')
+    .attr('cx', xScale(centerX))
+    .attr('cy', yScale(centerY))
+    .attr('r', 8)
+    .attr('fill', '#1E88E5') // 使用蓝色
+    .attr('stroke', '#FFFFFF')
+    .attr('stroke-width', 2)
+    .attr('opacity', 0.8);
+  
+  // 高亮中心网格单元格
+  highlightGridCellForPoint([centerX, centerY]);
+}
+
+// 生命周期钩子
 onMounted(async () => {
   try {
     isLoading.value = true;
+    await loadData();
+    await nextTick();
     
-    // 导入问题数据
-    const dataModule = await import('../../statics/result8.json');
-    data = dataModule.default || [];
-    
-    // 尝试加载KDE数据
-    try {
-      const kdeModule = await import('../../statics/kde_result3.json');
-      kdeData = kdeModule.default || { density: [] };
-    } catch (error) {
-      console.warn('KDE数据加载失败，使用默认热力图:', error);
-      // 创建默认密度数据
-      kdeData = { density: generateDefaultDensity() };
-    }
-    
-    // 加载嵌入向量数据 - 使用chunk_res.json文件替代embeddings_2d.json
-    try {
-      const chunksModule = await import('../../statics/chunk_res.json');
-      embeddingsData = chunksModule.default || [];
-      console.log(`加载了 ${embeddingsData.length} 个文档块`);
-    } catch (error) {
-      console.warn('文档块数据加载失败:', error);
-      embeddingsData = [];
-    }
-    
-    drawChart();
+    adjustChartSize();
+    initChart();
+    setupEventListeners();
     isLoading.value = false;
+    
+    window.addEventListener('resize', handleResize);
   } catch (error) {
-    console.error('数据加载失败:', error);
+    console.error('热力图初始化失败:', error);
     isLoading.value = false;
   }
 });
 
-// 在组件卸载时清理
 onUnmounted(() => {
-  if (svg) {
-    svg.on('.zoom', null);
-  }
+  if (svg) svg.on('.zoom', null);
+  if (window.resizeTimer) clearTimeout(window.resizeTimer);
+  cleanupUiResources();
+  cleanupEventListeners();
+  window.removeEventListener('resize', handleResize);
 });
 
-// 监听选中的问题变化
-watch(() => questionStore.currentQuestionId, (newId) => {
-  if (newId !== null && svg) {
-    updateSelectedPoint(newId);
-  }
-});
-
-// 监听文档块显示密度变化
-watch(() => embeddingDensity.value, (newDensity) => {
-  if (svg && zoomG) {
-    updateEmbeddingPoints(newDensity);
-  }
-});
-
-// 更新显示的文档块数量
-function updateEmbeddingPoints(density) {
-  // 移除现有的文档块点
-  zoomG.select('.embedding-points-group').remove();
+// 数据加载
+async function loadData() {
+  await questionStore.loadRankedIds();
   
-  if (density > 0) {
-    // 根据密度值计算要显示的文档块数量
-    const displayCount = Math.ceil(embeddingsData.length * (density / 100));
-    // 抽样显示
-    displayedEmbeddings = embeddingsData
-      .filter(d => 
-        d.vector && 
-        Array.isArray(d.vector) && 
-        d.vector.length >= 2 &&
-        !isNaN(d.vector[0]) && 
-        !isNaN(d.vector[1])
-      )
-      .slice(0, displayCount);
-    
-    // 重新绘制文档块点
-    drawEmbeddingPoints(displayedEmbeddings);
-  }
-}
-
-function generateDefaultDensity() {
-  const size = 20;
-  const density = [];
-  for (let i = 0; i < size; i++) {
-    const row = [];
-    for (let j = 0; j < size; j++) {
-      // 创建一个简单的高斯分布
-      const x = i / size - 0.5;
-      const y = j / size - 0.5;
-      const value = Math.exp(-(x*x + y*y) / 0.1);
-      row.push(value);
-    }
-    density.push(row);
-  }
-  return density;
-}
-
-function drawChart() {
-  if (!chartContainer.value) return;
-  
-  // 清除之前的图表
-  d3.select(chartContainer.value).selectAll('*').remove();
-  
-  // 创建SVG
-  svg = d3.select(chartContainer.value)
-    .append('svg')
-    .attr('width', width)
-    .attr('height', height);
-  
-  // 添加缩放和平移功能
-  zoom = d3.zoom()
-    .scaleExtent([0.5, 8])
-    .on('zoom', handleZoom);
-  
-  svg.call(zoom);
-  
-  // 创建可缩放的组
-  zoomG = svg.append('g');
-  
-  // 单独计算问题点和嵌入向量点的范围
-  let questionExtentX = d3.extent(data, d => d.embedding && d.embedding[0]);
-  let questionExtentY = d3.extent(data, d => d.embedding && d.embedding[1]);
-  
-  // 计算chunks的范围 - 注意这里使用vector字段而非embedding
-  let chunksExtentX, chunksExtentY;
-  if (embeddingsData.length > 0) {
-    chunksExtentX = d3.extent(embeddingsData, d => d.vector && d.vector[0]);
-    chunksExtentY = d3.extent(embeddingsData, d => d.vector && d.vector[1]);
-  }
-  
-  // 合并两个范围以确定最终的坐标范围
-  let xExtent = [-1, 1];
-  let yExtent = [-1, 1];
-  
-  if (data.length > 0 && embeddingsData.length > 0) {
-    // 同时包含问题数据和文档块数据时
-    xExtent = [
-      Math.min(questionExtentX[0], chunksExtentX[0]),
-      Math.max(questionExtentX[1], chunksExtentX[1])
-    ];
-    
-    yExtent = [
-      Math.min(questionExtentY[0], chunksExtentY[0]),
-      Math.max(questionExtentY[1], chunksExtentY[1])
-    ];
-    
-    console.log('数据范围:', { 
-      问题X: questionExtentX, 
-      问题Y: questionExtentY,
-      文档块X: chunksExtentX, 
-      文档块Y: chunksExtentY,
-      合并X: xExtent,
-      合并Y: yExtent
-    });
-  } else if (data.length > 0) {
-    // 只有问题数据
-    xExtent = questionExtentX;
-    yExtent = questionExtentY;
-  } else if (embeddingsData.length > 0) {
-    // 只有文档块数据
-    xExtent = chunksExtentX;
-    yExtent = chunksExtentY;
-  }
-  
-  // 进一步减小边距以确保元素贴边
-  const xPadding = (xExtent[1] - xExtent[0]) * 0.01; // 从0.02减小到0.01
-  const yPadding = (yExtent[1] - yExtent[0]) * 0.01; // 从0.02减小到0.01
-  
-  // 将margin值更进一步减小
-  const effectiveMargin = {
-    top: 10,     // 从15减小到10
-    right: 3,    // 从5减小到3
-    bottom: 3,   // 从5减小到3
-    left: 10     // 从15减小到10
-  };
-  
-  xScale = d3.scaleLinear()
-    .domain([xExtent[0] - xPadding, xExtent[1] + xPadding])
-    .range([effectiveMargin.left, width - effectiveMargin.right]);
-  
-  yScale = d3.scaleLinear()
-    .domain([yExtent[0] - yPadding, yExtent[1] + yPadding])
-    .range([height - effectiveMargin.bottom, effectiveMargin.top]);
-  
-  // 绘制热力图
-  drawHeatmap();
-  
-  // 根据滑动条值显示文档块点
-  updateEmbeddingPoints(embeddingDensity.value);
-  
-  // 绘制问题点
-  drawPoints();
-}
-
-function handleZoom(event) {
-  currentTransform = event.transform;
-  zoomG.attr('transform', currentTransform);
-}
-
-function zoomIn() {
-  svg.transition().duration(300).call(zoom.scaleBy, 1.5);
-}
-
-function zoomOut() {
-  svg.transition().duration(300).call(zoom.scaleBy, 0.75);
-}
-
-function resetZoom() {
-  svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
-}
-
-function drawEmbeddingPoints(pointsData) {
-  if (!pointsData || pointsData.length === 0) return;
-  
-  console.log(`绘制 ${pointsData.length} 个文档块点`);
-  
-  // 绘制文档块点
-  zoomG.append('g')
-    .attr('class', 'embedding-points-group')
-    .selectAll('circle.embedding-point')
-    .data(pointsData)
-    .enter()
-    .append('circle')
-    .attr('class', 'embedding-point')
-    .attr('cx', d => xScale(d.vector[0]))
-    .attr('cy', d => yScale(d.vector[1]))
-    .attr('r', 0.8) // 小的点
-    .attr('fill', '#c0d6e4') // 文档块使用蓝色
-    .attr('opacity', 0.6)
-    .on('mouseover', function(event, d) {
-      d3.select(this)
-        .attr('r', 4)
-        .attr('opacity', 0.9);
+  try {
+    const dataModule = await import('../../statics/result8.json');
+    // 保留原始数据的所有字段，并确保数据结构一致性
+    data = (dataModule.default || []).map((item, index) => {
+      // 为每个条目分配一个唯一的数字ID
+      const numericId = index + 1;
       
-      // 显示提示框
-      const tooltip = d3.select(chartContainer.value)
-        .append('div')
-        .attr('class', 'point-tooltip')
-        .style('position', 'absolute')
-        .style('background', 'rgba(255, 255, 255, 0.9)')
-        .style('border', '1px solid #ddd')
-        .style('border-radius', '4px')
-        .style('padding', '4px 8px')
-        .style('font-size', '10px')
-        .style('max-width', '250px')
-        .style('pointer-events', 'none')
-        .style('z-index', '100')
-        .style('overflow', 'hidden')
-        .style('text-overflow', 'ellipsis')
-        .style('box-shadow', '0 2px 4px rgba(0,0,0,0.1)')
-        .style('left', `${event.pageX + 5}px`)
-        .style('top', `${event.pageY - 5}px`)
-        .html(`
-          <div style="font-size:11px;font-weight:bold">文档块</div>
-          <div style="font-size:10px;max-height:60px;overflow:hidden;text-overflow:ellipsis;">${d.text.substring(0, 150)}${d.text.length > 150 ? '...' : ''}</div>
-        `);
-    })
-    .on('mouseout', function() {
-      d3.select(this)
-        .attr('r', 0.8)
-        .attr('opacity', 0.6);
-      
-      // 移除提示框
-      d3.select('.point-tooltip').remove();
+      return {
+        ...item,
+        id: numericId, // 使用数字ID
+        text: item.text || item.question,
+        // 其他默认字段
+        question: item.text // 确保question字段与text一致
+      };
     });
-}
-
-function drawHeatmap() {
-  if (!kdeData.density || !kdeData.density.length) return;
-  
-  const density = kdeData.density;
-  const n = density.length;
-  
-  // 找出密度的最小值和最大值
-  let min = Infinity;
-  let max = -Infinity;
-  
-  for (let i = 0; i < n; i++) {
-    for (let j = 0; j < density[i].length; j++) {
-      min = Math.min(min, density[i][j]);
-      max = Math.max(max, density[i][j]);
-    }
+    
+    console.log('加载的问题数据示例:', data[0]); // 添加调试日志
+    questionStore.setAllQuestions(data);
+  } catch (error) {
+    console.error('加载问题数据失败:', error);
+    data = questionStore.allQuestions;
   }
   
-  // 创建颜色比例尺
-  const colorScale = d3.scaleSequential(d3.interpolateBlues)
-    .domain([min, max]);
+  try {
+    const kdeModule = await import('../../statics/kde_result3.json');
+    kdeData = kdeModule.default || { density: [] };
+  } catch (error) {
+    kdeData = { density: generateDefaultDensity() };
+  }
   
-  // 使用当前坐标轴范围作为热力图范围，而不是仅使用问题数据的范围
-  const xRange = [xScale.domain()[0], xScale.domain()[1]];
-  const yRange = [yScale.domain()[0], yScale.domain()[1]];
-  
-  // 创建轮廓生成器
-  const contours = d3.contours()
-    .size([n, n])
-    .thresholds(d3.range(min, max, (max - min) / 15));
-  
-  // 创建坐标转换比例尺
-  const contourScaleX = d3.scaleLinear()
-    .domain([0, n - 1])
-    .range([xScale(xRange[0]), xScale(xRange[1])]);
-  
-  const contourScaleY = d3.scaleLinear()
-    .domain([0, n - 1])
-    .range([yScale(yRange[0]), yScale(yRange[1])]);
-  
-  // 创建地理投影转换
-  const transform = d3.geoTransform({
-    point: function(y, x) {
-      this.stream.point(contourScaleX(x), contourScaleY(y));
+  try {
+    const chunksModule = await import('../../statics/chunk_res.json');
+    embeddingsData = chunksModule.default || [];
+  } catch (error) {
+    embeddingsData = [];
+  }
+}
+
+// 图表初始化
+function initChart() {
+  safeDomUpdate(() => {
+    try {
+      // 过滤有效数据
+      const validData = data.filter(d => 
+        d.embedding && 
+        Array.isArray(d.embedding) && 
+        d.embedding.length >= 2 && 
+        !isNaN(d.embedding[0]) && 
+        !isNaN(d.embedding[1])
+      );
+      
+      if (validData.length === 0) return;
+      
+      // 过滤有效文档块
+      const validChunks = filterValidChunks(embeddingsData);
+      
+      // 计算数据范围
+      const { xExtent, yExtent } = calculateDataExtent(validData, validChunks);
+      
+      // 计算边距
+      const xPadding = (xExtent[1] - xExtent[0]) * 0.01; 
+      const yPadding = (yExtent[1] - yExtent[0]) * 0.01;
+      
+      // 创建比例尺
+      xScale = d3.scaleLinear()
+        .domain([xExtent[0] - xPadding, xExtent[1] + xPadding])
+        .range([margin.left, relativeWidth - margin.right]);
+      
+      yScale = d3.scaleLinear()
+        .domain([yExtent[0] - yPadding, yExtent[1] + yPadding])
+        .range([relativeHeight - margin.bottom, margin.top]);
+      
+      // 创建SVG元素
+      const svgElements = createSvgElements(
+        chartContainer.value, 
+        width, 
+        height, 
+        relativeWidth, 
+        relativeHeight, 
+        handleZoom
+      );
+      
+      svg = svgElements.svg;
+      zoomG = svgElements.zoomG;
+      
+      // 绘制图表各层
+      drawHeatmap({
+        zoomG, 
+        kdeData, 
+        xScale, 
+        yScale, 
+        width, 
+        height,
+        chunkStore,
+        questionStore,
+        embeddingsData,
+        currentTransform,
+        handlePointClick
+      });
+      
+      // 绘制文档块点
+      cachedChunks = drawChunkPoints(zoomG, validChunks, xScale, yScale, cachedChunks, createTooltip);
+      
+      // 绘制问题点
+      drawPoints({
+        zoomG,
+        data: validData,
+        xScale,
+        yScale,
+        questionStore,
+        createTooltip,
+        handlePointClick,
+        handlePointMouseover
+      });
+      
+      // 如果有当前选中的问题，确保高亮正确显示
+      if (questionStore.currentQuestionId) {
+        const currentQuestion = questionStore.allQuestions.find(q => q.id === questionStore.currentQuestionId);
+        if (currentQuestion?.embedding) {
+          nextTick(() => {
+            updateSelectedPoint(questionStore.currentQuestionId, zoomG, svg, xScale, yScale);
+            highlightGridCellForPoint(currentQuestion.embedding);
+          });
+        }
+      }
+    } catch (error) {
+      console.error('绘制图表失败:', error);
     }
   });
-  
-  // 绘制等高线
-  zoomG.append("g")
-    .attr('class', 'heatmap-group')
-    .selectAll("path")
-    .data(contours(density.flat()))
-    .enter()
-    .append("path")
-    .attr("d", d3.geoPath().projection(transform))
-    .attr("fill", d => colorScale(d.value))
-    .attr("opacity", 0.3)  // 降低热力图不透明度，使小点更清晰
-    .attr("stroke", "none");
 }
 
-function drawPoints() {
-  // 为不同问题类型创建颜色映射
-  const typeColors = {
-    'factual': '#3498db',
-    'reasoning': '#2ecc71',
-    'generation': '#e67e22',
-    'complex': '#9b59b6',
-    'none': '#e67e22'  // 默认颜色
+// 事件处理函数
+function handleZoom(event) {
+  if (!zoomG) return;
+  
+  currentTransform = event.transform;
+  zoomG.attr('transform', currentTransform);
+  
+  // 更新高亮边框和选中点
+  if (chunkStore.currentGridCell) {
+    updateHighlightBorder(svg, chunkStore.currentGridCell, currentTransform, xScale, yScale, width, height);
+  }
+  if (svg) {
+    svg.select('.selected-point-group').attr('transform', currentTransform);
+  }
+}
+
+function handlePointClick(event, d) {
+  event.stopPropagation();
+  
+  // 先清除黄色高亮点 - 确保完全清除所有选中点
+  clearSelectedPoint();
+  
+  // 设置选中的问题，传递完整的问题数据
+  const questionData = {
+    ...d, // 直接展开所有原始字段
+    id: d.id,
+    text: d.text || d.question
   };
   
-  // 绘制数据点
-  const points = zoomG.append('g')
-    .selectAll('circle.data-point')
-    .data(data)
-    .enter()
-    .append('circle')
-    .attr('class', d => `data-point point-${d.id || data.indexOf(d) + 1}`)
-    .attr('cx', d => xScale(d.embedding[0]))
-    .attr('cy', d => yScale(d.embedding[1]))
-    .attr('r', d => d.type === 'none' ? 4 : 6) // 缩小灰点的大小
-    .attr('fill', d => typeColors[d.type] || typeColors.none)
-    .attr('stroke', '#fff')
-    .attr('stroke-width', 1)
-    .attr('opacity', d => d.type === 'none' ? 0.5 : 0.7) // 降低灰点的不透明度
-    .on('mouseover', function(event, d) {
-      d3.select(this)
-        .attr('r', d.type === 'none' ? 5 : 8)
-        .attr('stroke-width', 2)
-        .attr('opacity', d.type === 'none' ? 0.7 : 0.8);
-        
-      // 显示问题内容的提示框
-      const tooltip = d3.select(chartContainer.value)
-        .append('div')
-        .attr('class', 'point-tooltip')
-        .style('position', 'absolute')
-        .style('background', 'rgba(255, 255, 255, 0.9)')
-        .style('border', '1px solid #ddd')
-        .style('border-radius', '4px')
-        .style('padding', '8px 12px')
-        .style('font-size', '12px')
-        .style('box-shadow', '0 2px 8px rgba(0,0,0,0.15)')
-        .style('max-width', '250px')
-        .style('left', `${event.pageX + 10}px`)
-        .style('top', `${event.pageY - 10}px`)
-        .html(`
-          <div style="font-weight:bold">${d.type ? `【${translateType(d.type)}】` : ''}</div>
-          <div>${d.text || '问题内容'}</div>
-        `);
-    })
-    .on('mouseout', function(event, d) {
-      d3.select(this)
-        .attr('r', d.type === 'none' ? 4 : 6)
-        .attr('stroke-width', 1)
-        .attr('opacity', d.type === 'none' ? 0.5 : 0.7);
-        
-      // 移除提示框
-      d3.select('.point-tooltip').remove();
-    })
-    .on('click', function(event, d) {
-      // 获取问题ID
-      const id = d.id || data.indexOf(d) + 1;
-      
-      // 使用Pinia存储更新当前选中的问题
-      questionStore.setQuestion(d.text, id);
-      
-      // 如果有相关联的文档块，也可以更新
-      if (d.related_chunks) {
-        questionStore.setRelatedChunks(d.related_chunks);
-      }
-      
-      // 如果有相似度信息，也可以更新
-      if (d.distances) {
-        questionStore.setDistances(d.distances);
-      }
-      
-      // 高亮选中的点
-      updateSelectedPoint(id);
+  console.log('点击问题数据:', questionData);
+  
+  questionStore.setQuestion(questionData, d.id);
+  
+  // 确保有embedding数据
+  if (!d.embedding || !Array.isArray(d.embedding) || d.embedding.length < 2) {
+    console.warn('点击的点没有有效的embedding数据');
+    return;
+  }
+  
+  // 高亮选中的点
+  if (svg && zoomG) {
+    updateSelectedPoint(d.id, zoomG, svg, xScale, yScale);
+  }
+  
+  // 高亮对应的网格单元格
+  nextTick(() => {
+    highlightGridCellForPoint(d.embedding);
+  });
+}
+
+function handlePointMouseover(event, d, opacity) {
+  if (questionStore.currentQuestionId !== d.id) {
+    d3.select(event.currentTarget).attr('opacity', opacity);
+  }
+  
+  createTooltip(event, `
+    <div style="font-weight:bold">Question ${d.id}</div>
+    <div>${d.text || d.question || 'Question Content'}</div>
+  `);
+}
+
+// 更新问题点 - 当过滤条件变化时调用
+function updateQuestionPoints() {
+  if (!zoomG) return;
+  
+  safeDomUpdate(() => {
+    zoomG.selectAll('circle.background-point, circle.foreground-point').remove();
+    drawPoints({
+      zoomG,
+      data,
+      xScale,
+      yScale,
+      questionStore,
+      createTooltip,
+      handlePointClick,
+      handlePointMouseover
     });
-    
-    // 确保点在最上层
-    points.raise();
+  });
 }
 
-// 辅助函数：翻译问题类型
-function translateType(type) {
-  const typeNames = {
-    'factual': '事实型',
-    'reasoning': '推理型',
-    'generation': '生成型',
-    'complex': '复杂型',
-    'none': '其他'
-  };
-  return typeNames[type] || type;
-}
-
-function updateSelectedPoint(id) {
-  // 重置所有点的样式
-  zoomG.selectAll('circle.data-point')
-    .attr('r', d => d.type === 'none' ? 4 : 6)
-    .attr('stroke', '#fff')
-    .attr('stroke-width', 1)
-    .attr('opacity', d => d.type === 'none' ? 0.5 : 0.7);
+// 窗口大小相关
+function handleResize() {
+  if (!chartContainer.value) return;
+  if (window.resizeTimer) clearTimeout(window.resizeTimer);
   
-  // 突出显示选中的点
-  zoomG.select(`.point-${id}`)
-    .attr('r', 8)
-    .attr('stroke', '#ffcc00')
-    .attr('stroke-width', 2)
-    .attr('opacity', 1)
-    .raise(); // 将点移到最上层
+  window.resizeTimer = setTimeout(() => {
+    adjustChartSize();
+    cachedChunks = null;
+    initChart();
+  }, 250);
 }
+
+function adjustChartSize() {
+  if (!chartContainer.value) return;
+  
+  const containerRect = chartContainer.value.getBoundingClientRect();
+  if (containerRect.width > 0 && containerRect.height > 0) {
+    width = containerRect.width;
+    height = containerRect.height;
+  }
+}
+
+// 监听 store 变化
+watch(() => questionStore.currentQuestionId, (newId) => {
+  if (!newId) return;
+  
+  // 清除黄色高亮点 - 确保完全清除旧的选中点
+  clearSelectedPoint();
+  
+  // 更新选中的点 - 使用setTimeout确保清除操作完成后再添加新高亮
+  if (svg && zoomG) {
+    setTimeout(() => {
+      updateSelectedPoint(newId, zoomG, svg, xScale, yScale);
+    }, 0);
+  }
+  
+  // 高亮对应的网格单元格
+  const question = questionStore.currentQuestion;
+  if (question?.embedding) {
+    highlightGridCellForPoint(question.embedding);
+  }
+});
+
+// 高亮网格单元格
+function highlightGridCellForPoint(embedding) {
+  if (!embedding || !xScale || !yScale || !svg) {
+    console.error('无法高亮网格：缺少必要参数');
+    return;
+  }
+  
+  let pointX, pointY;
+  
+  // 处理不同格式的embedding
+  if (Array.isArray(embedding)) {
+    [pointX, pointY] = embedding;
+  } else if (embedding.x !== undefined && embedding.y !== undefined) {
+    pointX = embedding.x;
+    pointY = embedding.y;
+  } else {
+    console.error('无效的embedding格式');
+    return;
+  }
+  
+  // 检查坐标有效性
+  if (isNaN(pointX) || isNaN(pointY)) {
+    console.error('embedding坐标不是有效数字');
+    return;
+  }
+  
+  // 计算网格配置 - 修改为固定正方形网格
+  const gridSize = 13;
+  // 修改：使用与ChartRenderer.js相同的网格大小，不再基于宽高比调整
+  const gridSizeY = gridSize;
+  
+  // 确保使用当前的坐标轴范围
+  const xRange = xScale.domain();
+  const yRange = yScale.domain();
+  
+  // 计算网格索引 - 修正计算方式
+  const xStep = (xRange[1] - xRange[0]) / gridSize;
+  const yStep = (yRange[1] - yRange[0]) / gridSizeY;
+  
+  const gridX = Math.floor((pointX - xRange[0]) / xStep);
+  // 注意Y轴在SVG中是从上到下增加的，而我们的数据是从下到上，所以需要反转
+  const gridY = Math.floor((yRange[1] - pointY) / yStep);
+  
+  // 限制在有效范围内
+  const validGridX = Math.max(0, Math.min(gridSize - 1, gridX));
+  const validGridY = Math.max(0, Math.min(gridSizeY - 1, gridY));
+  
+  const cellId = `cell-${validGridX}-${validGridY}`;
+  
+  // 更新高亮
+  chunkStore.setCurrentGridCell(cellId);
+  
+  // 延迟一帧再更新高亮边框，确保DOM已经准备好
+  setTimeout(() => {
+    updateHighlightBorder(svg, cellId, currentTransform, xScale, yScale, width, height);
+  }, 0);
+}
+
+// 监听过滤器变化
+watch(() => questionStore.topQuestionCount, () => {
+  if (svg && zoomG) setTimeout(updateQuestionPoints, 0);
+});
+
+watch(() => questionStore.filterConditions, () => {
+  if (svg && zoomG) setTimeout(updateQuestionPoints, 0);
+}, { deep: true });
+
+watch(() => questionStore.filteredQuestions, () => {
+  if (svg && zoomG) setTimeout(updateQuestionPoints, 0);
+});
 </script>
 
 <style scoped>
@@ -493,103 +556,30 @@ function updateSelectedPoint(id) {
   width: 100%;
   height: 100%;
   position: relative;
-}
-
-.chart-container {
-  width: 100%;
-  height: 100%;
-}
-
-.chart-controls {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
-  z-index: 10;
-}
-
-.slider-controls {
-  position: absolute;
-  top: 10px;
-  left: 50px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 4px;
-  padding: 4px 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.slider-label {
-  font-size: 11px;
-  color: #555;
-  white-space: nowrap;
-}
-
-.slider-value {
-  font-size: 11px;
-  color: #555;
-  min-width: 36px;
-  text-align: right;
-}
-
-.density-slider {
-  width: 80px;
-  height: 6px;
-  -webkit-appearance: none;
-  appearance: none;
-  background: #e0e0e0;
-  outline: none;
-  border-radius: 3px;
-  margin: 0 5px;
-}
-
-.density-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #4285F4;
-  cursor: pointer;
-}
-
-.density-slider::-moz-range-thumb {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #4285F4;
-  cursor: pointer;
-  border: none;
-}
-
-.zoom-controls {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.control-btn {
-  width: 28px;
-  height: 28px;
-  border-radius: 4px;
-  border: 1px solid #ddd;
-  background-color: rgba(255, 255, 255, 0.8);
-  display: flex;
-  align-items: center;
   justify-content: center;
-  cursor: pointer;
-  font-size: 14px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  min-height: 200px;
+  /* 确保热力图容器保持正方形 */
+  aspect-ratio: 1/1;
 }
 
-.control-btn:hover {
-  background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+.heatmap-chart :deep(svg) {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  pointer-events: auto !important;
+}
+
+.heatmap-chart :deep(g),
+.heatmap-chart :deep(circle),
+.heatmap-chart :deep(path) {
+  pointer-events: auto !important;
 }
 
 .loading-overlay {
@@ -624,5 +614,67 @@ function updateSelectedPoint(id) {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.heatmap-chart :deep(.search-point) {
+  filter: drop-shadow(0 0 8px rgba(30, 136, 229, 0.6));
+}
+
+.heatmap-chart :deep(.search-label) {
+  text-shadow: 0 0 3px white, 0 0 3px white, 0 0 3px white, 0 0 3px white;
+}
+</style>
+
+<style>
+.point-tooltip {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  max-width: 250px;
+  font-size: 12px;
+  z-index: 9999 !important;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+circle.foreground-point,
+circle.background-point,
+circle.chunk-point,
+rect.grid-cell {
+  transition: stroke 0.2s ease, stroke-width 0.2s ease, rx 0.2s ease, ry 0.2s ease;
+}
+
+/* Z-index层级关系 */
+.heatmap-group { z-index: 5; position: relative; }
+.contours-group { z-index: 1; }
+.cells-group { z-index: 2; }
+.chunk-points-group { z-index: 10; }
+.background-points-group, .foreground-points-group { z-index: 20; }
+.highlight-group { z-index: 50 !important; position: relative; }
+.top-highlight-group { z-index: 1000 !important; pointer-events: none; }
+.selected-point-group { z-index: 2000 !important; pointer-events: none; }
+
+/* 选中点和高亮边框样式 */
+.selected-point {
+  filter: drop-shadow(0 0 6px rgba(255, 255, 0, 0.8));
+  transition: all 0.2s ease-in-out;
+}
+
+.highlight-border {
+  stroke: var(--highlight-color, #4285F4);
+  stroke-opacity: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: drop-shadow(0 0 5px rgba(66, 133, 244, 0.9));
+  transition: all 0.2s ease-in-out;
+}
+
+/* 变量定义 */
+:root {
+  --highlight-color: #4285F4;
+  --highlight-shadow: rgba(66, 133, 244, 0.8);
 }
 </style> 

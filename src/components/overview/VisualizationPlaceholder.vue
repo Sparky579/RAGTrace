@@ -2,7 +2,7 @@
   <div class="visualization-placeholder">
     <div class="placeholder-content">
       <div class="viz-icon">📊</div>
-      <div class="viz-text">{{ typeText }}可视化</div>
+      <div class="viz-text">{{ typeText }} Visualization</div>
     </div>
   </div>
 </template>
@@ -19,11 +19,11 @@ const props = defineProps({
 
 const typeText = computed(() => {
   const types = {
-    'heatmap': '热力图',
-    'force': '力导向图',
+    'heatmap': 'Heatmap',
+    'force': 'Force Diagram',
     'pca': 'PCA',
-    'distribution': '分布图',
-    'radar': '雷达图'
+    'distribution': 'Distribution Chart',
+    'radar': 'Radar Chart'
   };
   
   return types[props.type] || props.type;

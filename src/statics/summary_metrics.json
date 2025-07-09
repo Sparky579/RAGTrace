@@ -1,0 +1,5416 @@
+{
+  "per_item_metrics": [
+    {
+      "id": 1,
+      "question": "when was the last time anyone was on the moon",
+      "metrics": {
+        "retrieval_effectiveness": 0.38866751256107834,
+        "generation_reliability": 0.6746662471815845,
+        "retrieval_stability": 0.24966848503033545,
+        "knowledge_reliability": 0.30214569015109727
+      },
+      "raw_values": {
+        "keypoint_hit": 0.30091816963108386,
+        "retrieval_diversity": 0.9217468052467596,
+        "rougeL": 0.3253337528184155,
+        "consistency": 0.7503315149696645,
+        "knowledge_cover": 0.4457086196978056,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 2,
+      "question": "who wrote he ain't heavy he's my brother lyrics",
+      "metrics": {
+        "retrieval_effectiveness": 0.4942644861671035,
+        "generation_reliability": 0.7282962253386207,
+        "retrieval_stability": 0.10762563259045599,
+        "knowledge_reliability": 0.34407781397770165
+      },
+      "raw_values": {
+        "keypoint_hit": 0.41261263076156707,
+        "retrieval_diversity": 0.598858396904226,
+        "rougeL": 0.27170377466137924,
+        "consistency": 0.892374367409544,
+        "knowledge_cover": 0.4118443720445967,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 3,
+      "question": "how many seasons of the bastard executioner are there",
+      "metrics": {
+        "retrieval_effectiveness": 0.6446266735037702,
+        "generation_reliability": 0.8797538211927504,
+        "retrieval_stability": 0.4524247308492848,
+        "knowledge_reliability": 0.35534079636087246
+      },
+      "raw_values": {
+        "keypoint_hit": 0.26692657206903625,
+        "retrieval_diversity": 0.4438200809234232,
+        "rougeL": 0.12024617880724967,
+        "consistency": 0.5475752691507152,
+        "knowledge_cover": 0.2893184072782551,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 4,
+      "question": "when did the eagles win last super bowl",
+      "metrics": {
+        "retrieval_effectiveness": 0.3197919917076951,
+        "generation_reliability": 0.8006476440413295,
+        "retrieval_stability": 0.08239449436203994,
+        "knowledge_reliability": 0.3709079644926716
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4188588764028482,
+        "retrieval_diversity": 0.9415571401817615,
+        "rougeL": 0.1993523559586705,
+        "consistency": 0.9176055056379601,
+        "knowledge_cover": 0.3581840710146569,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 5,
+      "question": "who won last year's ncaa women's basketball",
+      "metrics": {
+        "retrieval_effectiveness": 0.3948215292661881,
+        "generation_reliability": 0.7614340669555393,
+        "retrieval_stability": 0.1123005055638846,
+        "knowledge_reliability": 0.35313499780957924
+      },
+      "raw_values": {
+        "keypoint_hit": 0.41027183388519356,
+        "retrieval_diversity": 0.8000851075824303,
+        "rougeL": 0.2385659330444607,
+        "consistency": 0.8876994944361154,
+        "knowledge_cover": 0.3437300043808416,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 6,
+      "question": "when did the isle of wight become an island",
+      "metrics": {
+        "retrieval_effectiveness": 0.3132600499142555,
+        "generation_reliability": 0.6583562922322904,
+        "retrieval_stability": 0.18086264913672268,
+        "knowledge_reliability": 0.2458845546279873
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5480619267735224,
+        "retrieval_diversity": 0.8254179733979667,
+        "rougeL": 0.3416437077677096,
+        "consistency": 0.8191373508632773,
+        "knowledge_cover": 0.6082308907440254,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 7,
+      "question": "love yourself by justin bieber is about who",
+      "metrics": {
+        "retrieval_effectiveness": 0.3516411712039291,
+        "generation_reliability": 0.8063139737351711,
+        "retrieval_stability": 0.6544648948267648,
+        "knowledge_reliability": 0.7330907704022938
+      },
+      "raw_values": {
+        "keypoint_hit": 0.37045557769508014,
+        "retrieval_diversity": 0.9262620798970617,
+        "rougeL": 0.1936860262648289,
+        "consistency": 0.34553510517323516,
+        "knowledge_cover": 0.5338184591954125,
+        "reliability": 0.0
+      }
+    },
+    {
+      "id": 8,
+      "question": "who was the ruler of england in 1616",
+      "metrics": {
+        "retrieval_effectiveness": 0.011471041683882799,
+        "generation_reliability": 0.7603994745099039,
+        "retrieval_stability": 0.2201432649115762,
+        "knowledge_reliability": 0.11913626350391193
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999994505816509,
+        "retrieval_diversity": 0.9770584660505836,
+        "rougeL": 0.2396005254900961,
+        "consistency": 0.7798567350884238,
+        "knowledge_cover": 0.7617274729921761,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 9,
+      "question": "what is the hot coffee mod in san andreas",
+      "metrics": {
+        "retrieval_effectiveness": 0.33568907038232576,
+        "generation_reliability": 0.5913708136377349,
+        "retrieval_stability": 0.34965078689849627,
+        "knowledge_reliability": 0.6127059434596815
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3967281221613385,
+        "retrieval_diversity": 0.93189373707401,
+        "rougeL": 0.40862918636226503,
+        "consistency": 0.6503492131015037,
+        "knowledge_cover": 0.4745881130806368,
+        "reliability": 0.3
+      }
+    },
+    {
+      "id": 10,
+      "question": "what is the maximum data rate for the 802.11a standard select one",
+      "metrics": {
+        "retrieval_effectiveness": 0.27794026913432557,
+        "generation_reliability": 0.6940398407433748,
+        "retrieval_stability": 0.09979135895429037,
+        "knowledge_reliability": 0.22254481051769714
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4929030716148504,
+        "retrieval_diversity": 0.9512163901164985,
+        "rougeL": 0.3059601592566253,
+        "consistency": 0.9002086410457096,
+        "knowledge_cover": 0.5549103789646057,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 11,
+      "question": "which state is located in the centre of india",
+      "metrics": {
+        "retrieval_effectiveness": 0.03899909275850966,
+        "generation_reliability": 0.7191941546923565,
+        "retrieval_stability": 0.3612449178370005,
+        "knowledge_reliability": 0.298345127347896
+      },
+      "raw_values": {
+        "keypoint_hit": 1.0,
+        "retrieval_diversity": 0.9220018144829807,
+        "rougeL": 0.2808058453076435,
+        "consistency": 0.6387550821629995,
+        "knowledge_cover": 0.903309745304208,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 12,
+      "question": "who sang i ran all the way home",
+      "metrics": {
+        "retrieval_effectiveness": 0.46974061118763544,
+        "generation_reliability": 0.9145537489095771,
+        "retrieval_stability": 0.7130665977899426,
+        "knowledge_reliability": 0.4105617766440207
+      },
+      "raw_values": {
+        "keypoint_hit": 0.11962082808333578,
+        "retrieval_diversity": 0.9408979495413933,
+        "rougeL": 0.08544625109042289,
+        "consistency": 0.28693340221005736,
+        "knowledge_cover": 0.3788764467119585,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 13,
+      "question": "where did the last name wallace come from",
+      "metrics": {
+        "retrieval_effectiveness": 0.18846292092895633,
+        "generation_reliability": 0.14551014629542225,
+        "retrieval_stability": 0.040584993227311794,
+        "knowledge_reliability": 0.1908142401750168
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6857386563424854,
+        "retrieval_diversity": 0.9373355017996019,
+        "rougeL": 0.8544898537045778,
+        "consistency": 0.9594150067726882,
+        "knowledge_cover": 0.7183715196499664,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 14,
+      "question": "who was the actor that played ben stone on law and order",
+      "metrics": {
+        "retrieval_effectiveness": 0.39897385385720385,
+        "generation_reliability": 0.6966526630519079,
+        "retrieval_stability": 0.04380866692489649,
+        "knowledge_reliability": 0.3466659520445754
+      },
+      "raw_values": {
+        "keypoint_hit": 0.39235292070794386,
+        "retrieval_diversity": 0.8096993715776484,
+        "rougeL": 0.3033473369480921,
+        "consistency": 0.9561913330751035,
+        "knowledge_cover": 0.4066680959108491,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 15,
+      "question": "who does the voice of nala in the lion king",
+      "metrics": {
+        "retrieval_effectiveness": 0.5625285599573497,
+        "generation_reliability": 0.646594305490011,
+        "retrieval_stability": 0.11211851866960576,
+        "knowledge_reliability": 0.48928713617770214
+      },
+      "raw_values": {
+        "keypoint_hit": 0.08270316574852755,
+        "retrieval_diversity": 0.7922397143367729,
+        "rougeL": 0.3534056945099891,
+        "consistency": 0.8878814813303942,
+        "knowledge_cover": 0.27142572764459577,
+        "reliability": 0.75
+      }
+    },
+    {
+      "id": 16,
+      "question": "who plays gram on the young and the restless",
+      "metrics": {
+        "retrieval_effectiveness": 0.6304172294038128,
+        "generation_reliability": 0.7067484662576686,
+        "retrieval_stability": 0.6109099673857564,
+        "knowledge_reliability": 0.9076576392885476
+      },
+      "raw_values": {
+        "keypoint_hit": 0.0756477184487356,
+        "retrieval_diversity": 0.6635178227436388,
+        "rougeL": 0.29325153374233137,
+        "consistency": 0.3890900326142436,
+        "knowledge_cover": 0.08468472142290491,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 17,
+      "question": "what is the oath that new citizens take",
+      "metrics": {
+        "retrieval_effectiveness": 0.21531387691676662,
+        "generation_reliability": 0.514255151801164,
+        "retrieval_stability": 0.14928010131688896,
+        "knowledge_reliability": 0.14039955703644846
+      },
+      "raw_values": {
+        "keypoint_hit": 0.7211863040993934,
+        "retrieval_diversity": 0.8481859420670732,
+        "rougeL": 0.485744848198836,
+        "consistency": 0.850719898683111,
+        "knowledge_cover": 0.8192008859271032,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 18,
+      "question": "who is under the mask of darth vader",
+      "metrics": {
+        "retrieval_effectiveness": 0.39260910036366214,
+        "generation_reliability": 0.5698458934761029,
+        "retrieval_stability": 0.7067231467040735,
+        "knowledge_reliability": 0.22581087705109604
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6549810267530108,
+        "retrieval_diversity": 0.5598007725196649,
+        "rougeL": 0.4301541065238971,
+        "consistency": 0.2932768532959265,
+        "knowledge_cover": 0.5483782458978079,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 19,
+      "question": "who had a baby at 100 in the bible",
+      "metrics": {
+        "retrieval_effectiveness": 0.2945420488089666,
+        "generation_reliability": 0.655748199519872,
+        "retrieval_stability": 0.42128281055062766,
+        "knowledge_reliability": 0.21017409514169727
+      },
+      "raw_values": {
+        "keypoint_hit": 0.48708656269229644,
+        "retrieval_diversity": 0.9238293396897703,
+        "rougeL": 0.3442518004801281,
+        "consistency": 0.5787171894493723,
+        "knowledge_cover": 0.6796518097166054,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 20,
+      "question": "what age do you need to be to buy a bb gun",
+      "metrics": {
+        "retrieval_effectiveness": 0.45178170898046865,
+        "generation_reliability": 0.6947176341041372,
+        "retrieval_stability": 0.1748416471663473,
+        "knowledge_reliability": 0.4558781713516057
+      },
+      "raw_values": {
+        "keypoint_hit": 0.11638777580801125,
+        "retrieval_diversity": 0.9800488062310515,
+        "rougeL": 0.30528236589586283,
+        "consistency": 0.8251583528336527,
+        "knowledge_cover": 0.18824365729678852,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 21,
+      "question": "ethiopia flight 961 crashes in to the sea",
+      "metrics": {
+        "retrieval_effectiveness": 0.42907314276814235,
+        "generation_reliability": 0.191373629410439,
+        "retrieval_stability": 0.05551259282975485,
+        "knowledge_reliability": 0.2966026673279376
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2967132878659126,
+        "retrieval_diversity": 0.8451404265978028,
+        "rougeL": 0.808626370589561,
+        "consistency": 0.9444874071702452,
+        "knowledge_cover": 0.5067946653441248,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 22,
+      "question": "where was percy jackson and the olympians filmed",
+      "metrics": {
+        "retrieval_effectiveness": 0.4111405535939606,
+        "generation_reliability": 0.20867201510146294,
+        "retrieval_stability": 0.5040886516154689,
+        "knowledge_reliability": 0.3410892537848551
+      },
+      "raw_values": {
+        "keypoint_hit": 0.266879322091013,
+        "retrieval_diversity": 0.9108395707210658,
+        "rougeL": 0.7913279848985371,
+        "consistency": 0.4959113483845311,
+        "knowledge_cover": 0.5178214924302899,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 23,
+      "question": "how many seasons of vampire diaries r there",
+      "metrics": {
+        "retrieval_effectiveness": 0.4812434303840558,
+        "generation_reliability": 0.8130674480795753,
+        "retrieval_stability": 2.3767482570935528e-07,
+        "knowledge_reliability": 0.38248928567766505
+      },
+      "raw_values": {
+        "keypoint_hit": 0.22872578896474932,
+        "retrieval_diversity": 0.8087873502671391,
+        "rougeL": 0.18693255192042466,
+        "consistency": 0.9999997623251743,
+        "knowledge_cover": 0.2350214286446699,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 24,
+      "question": "how many episodes are there in dragon ball z",
+      "metrics": {
+        "retrieval_effectiveness": 0.3783544220994788,
+        "generation_reliability": 0.834460376810542,
+        "retrieval_stability": 0.05785855860171352,
+        "knowledge_reliability": 0.36754586889697904
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3188565871597269,
+        "retrieval_diversity": 0.9244345686413155,
+        "rougeL": 0.16553962318945806,
+        "consistency": 0.9421414413982865,
+        "knowledge_cover": 0.31490826220604196,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 25,
+      "question": "who plays auggie in the movie the wonder",
+      "metrics": {
+        "retrieval_effectiveness": 0.6953220707602423,
+        "generation_reliability": 0.9558825126228351,
+        "retrieval_stability": 0.07322067820252409,
+        "knowledge_reliability": 0.44322169356949725
+      },
+      "raw_values": {
+        "keypoint_hit": 0.13596950361883553,
+        "retrieval_diversity": 0.47338635486067987,
+        "rougeL": 0.0441174873771649,
+        "consistency": 0.9267793217974759,
+        "knowledge_cover": 0.11355661286100545,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 26,
+      "question": "when was the first australian prime minister elected",
+      "metrics": {
+        "retrieval_effectiveness": 0.1855610980903326,
+        "generation_reliability": 0.48141962095119395,
+        "retrieval_stability": 0.102328541326283,
+        "knowledge_reliability": 0.093349438652365
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6901150482023032,
+        "retrieval_diversity": 0.9387627556170315,
+        "rougeL": 0.518580379048806,
+        "consistency": 0.897671458673717,
+        "knowledge_cover": 0.86330112269527,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 27,
+      "question": "who plays matthew on anne with an e",
+      "metrics": {
+        "retrieval_effectiveness": 0.6096143424647036,
+        "generation_reliability": 0.9805536118208003,
+        "retrieval_stability": 0.7648302411514328,
+        "knowledge_reliability": 0.3737586289438919
+      },
+      "raw_values": {
+        "keypoint_hit": 0.16128285521727664,
+        "retrieval_diversity": 0.6194884598533161,
+        "rougeL": 0.019446388179199716,
+        "consistency": 0.23516975884856714,
+        "knowledge_cover": 0.2524827421122163,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 28,
+      "question": "who is the girl in green day 21 guns",
+      "metrics": {
+        "retrieval_effectiveness": 0.4251131601750616,
+        "generation_reliability": 0.6297511404750669,
+        "retrieval_stability": 0.6863176321093736,
+        "knowledge_reliability": 0.7833049684542865
+      },
+      "raw_values": {
+        "keypoint_hit": 0.19374276599173676,
+        "retrieval_diversity": 0.95603091365814,
+        "rougeL": 0.3702488595249332,
+        "consistency": 0.3136823678906264,
+        "knowledge_cover": 0.3333900630914269,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 29,
+      "question": "who plays joker in batman the dark knight",
+      "metrics": {
+        "retrieval_effectiveness": 0.48928497676777716,
+        "generation_reliability": 0.7729180431020921,
+        "retrieval_stability": 0.18364776236389346,
+        "knowledge_reliability": 0.4287758800547482
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2293277683359217,
+        "retrieval_diversity": 0.7921022781285241,
+        "rougeL": 0.22708195689790786,
+        "consistency": 0.8163522376361065,
+        "knowledge_cover": 0.19244823989050372,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 30,
+      "question": "when was the south asian association for regional co-operation (saarc) formed",
+      "metrics": {
+        "retrieval_effectiveness": 0.3640846359729918,
+        "generation_reliability": 0.7095903951128335,
+        "retrieval_stability": 0.015837886984943483,
+        "knowledge_reliability": 0.3065048780323951
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3514945094792979,
+        "retrieval_diversity": 0.9203362185747185,
+        "rougeL": 0.2904096048871665,
+        "consistency": 0.9841621130150565,
+        "knowledge_cover": 0.48699024393520973,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 31,
+      "question": "when was the first hunger games book published",
+      "metrics": {
+        "retrieval_effectiveness": 0.43486932099091735,
+        "generation_reliability": 0.7095903951128336,
+        "retrieval_stability": 0.02762280598856659,
+        "knowledge_reliability": 0.30882924040307513
+      },
+      "raw_values": {
+        "keypoint_hit": 0.1462744399595628,
+        "retrieval_diversity": 0.9839869180586026,
+        "rougeL": 0.2904096048871664,
+        "consistency": 0.9723771940114334,
+        "knowledge_cover": 0.38234151919384973,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 32,
+      "question": "who did bette midler portray in the rose",
+      "metrics": {
+        "retrieval_effectiveness": 0.4791876539814913,
+        "generation_reliability": 0.4561699876458971,
+        "retrieval_stability": 0.0621942407889281,
+        "knowledge_reliability": 0.8028687205432008
+      },
+      "raw_values": {
+        "keypoint_hit": 0.12558142196794328,
+        "retrieval_diversity": 0.916043270069074,
+        "rougeL": 0.5438300123541029,
+        "consistency": 0.9378057592110719,
+        "knowledge_cover": 0.2942625589135984,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 33,
+      "question": "who is the lead singer of depeche mode",
+      "metrics": {
+        "retrieval_effectiveness": 0.3850270501437295,
+        "generation_reliability": 0.804920056630486,
+        "retrieval_stability": 0.2603653142745781,
+        "knowledge_reliability": 0.30576365306327147
+      },
+      "raw_values": {
+        "keypoint_hit": 0.27735737099657165,
+        "retrieval_diversity": 0.9525885287159693,
+        "rougeL": 0.19507994336951393,
+        "consistency": 0.7396346857254219,
+        "knowledge_cover": 0.3884726938734572,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 34,
+      "question": "where did the butchers in the slaughterhouse cases live",
+      "metrics": {
+        "retrieval_effectiveness": 0.5074843417050237,
+        "generation_reliability": 0.6607244774824138,
+        "retrieval_stability": 0.6739575400260793,
+        "knowledge_reliability": 0.5163349586566173
+      },
+      "raw_values": {
+        "keypoint_hit": 0.1514435967122806,
+        "retrieval_diversity": 0.8335877198776722,
+        "rougeL": 0.3392755225175862,
+        "consistency": 0.32604245997392073,
+        "knowledge_cover": 0.46733008268676535,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 35,
+      "question": "who developed the concept of total quality management",
+      "metrics": {
+        "retrieval_effectiveness": 0.44108931556607656,
+        "generation_reliability": 0.6994936930997602,
+        "retrieval_stability": 0.5233142331360869,
+        "knowledge_reliability": 0.39479781243138357
+      },
+      "raw_values": {
+        "keypoint_hit": 0.16722417367480294,
+        "retrieval_diversity": 0.9505971951930439,
+        "rougeL": 0.3005063069002398,
+        "consistency": 0.476685766863913,
+        "knowledge_cover": 0.3104043751372328,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 36,
+      "question": "who wrote cant get you out of my head lyrics",
+      "metrics": {
+        "retrieval_effectiveness": 0.4564367188407117,
+        "generation_reliability": 0.8556615635426396,
+        "retrieval_stability": 0.30246221829132036,
+        "knowledge_reliability": 0.38884604364742015
+      },
+      "raw_values": {
+        "keypoint_hit": 0.1779007915287016,
+        "retrieval_diversity": 0.909225770789875,
+        "rougeL": 0.14433843645736047,
+        "consistency": 0.6975377817086796,
+        "knowledge_cover": 0.2223079127051597,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 37,
+      "question": "where does no game no life anime end",
+      "metrics": {
+        "retrieval_effectiveness": 0.4343192715569706,
+        "generation_reliability": 0.8037133821219528,
+        "retrieval_stability": 0.20835582151320553,
+        "knowledge_reliability": 0.6967555842766325
+      },
+      "raw_values": {
+        "keypoint_hit": 0.1929182264043133,
+        "retrieval_diversity": 0.9384432304817456,
+        "rougeL": 0.19628661787804727,
+        "consistency": 0.7916441784867945,
+        "knowledge_cover": 0.4064888314467349,
+        "reliability": 0.2
+      }
+    },
+    {
+      "id": 38,
+      "question": "when did taylor swift's first album release",
+      "metrics": {
+        "retrieval_effectiveness": 0.4783122978299017,
+        "generation_reliability": 0.8171139513024621,
+        "retrieval_stability": 0.14259686885887424,
+        "knowledge_reliability": 0.579482899219074
+      },
+      "raw_values": {
+        "keypoint_hit": 0.1531602085592053,
+        "retrieval_diversity": 0.8902151957809914,
+        "rougeL": 0.18288604869753786,
+        "consistency": 0.8574031311411258,
+        "knowledge_cover": 0.34103420156185194,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 39,
+      "question": "what are the three fifty shades of grey books",
+      "metrics": {
+        "retrieval_effectiveness": 0.02645060046733283,
+        "generation_reliability": 0.6687563647202006,
+        "retrieval_stability": 0.10870203667087819,
+        "knowledge_reliability": 0.14509684582937865
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999996337211006,
+        "retrieval_diversity": 0.9470991653442337,
+        "rougeL": 0.33124363527979933,
+        "consistency": 0.8912979633291218,
+        "knowledge_cover": 0.7098063083412427,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 40,
+      "question": "who has the power (judicial) to make decisions in courts of law",
+      "metrics": {
+        "retrieval_effectiveness": 0.2295481468987508,
+        "generation_reliability": 0.6405356130385922,
+        "retrieval_stability": 0.4924552251056815,
+        "knowledge_reliability": 0.10985346397049456
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6702494542444399,
+        "retrieval_diversity": 0.8706542519580586,
+        "rougeL": 0.35946438696140776,
+        "consistency": 0.5075447748943185,
+        "knowledge_cover": 0.7802930720590109,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 41,
+      "question": "what are the ranks in the us navy",
+      "metrics": {
+        "retrieval_effectiveness": 0.19599605775907425,
+        "generation_reliability": 0.4542495198255253,
+        "retrieval_stability": 0.350179303689535,
+        "knowledge_reliability": 0.19999999999999996
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6243147837489378,
+        "retrieval_diversity": 0.9836931007329138,
+        "rougeL": 0.5457504801744747,
+        "consistency": 0.649820696310465,
+        "knowledge_cover": 1.0,
+        "reliability": 0.6
+      }
+    },
+    {
+      "id": 42,
+      "question": "i was a great islamic scholar and mathematician who died in 1131 ce",
+      "metrics": {
+        "retrieval_effectiveness": 0.08578858315426552,
+        "generation_reliability": 0.7007926087559204,
+        "retrieval_stability": 0.34423088256952805,
+        "knowledge_reliability": 0.2229671722097415
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999996337211006,
+        "retrieval_diversity": 0.8284231999703683,
+        "rougeL": 0.29920739124407963,
+        "consistency": 0.655769117430472,
+        "knowledge_cover": 0.7540656555805169,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 43,
+      "question": "who is the coach for the ottawa senators",
+      "metrics": {
+        "retrieval_effectiveness": 0.4188911213166212,
+        "generation_reliability": 0.6961330261221997,
+        "retrieval_stability": 0.25336198064026194,
+        "knowledge_reliability": 0.3356214519101566
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2069335679960149,
+        "retrieval_diversity": 0.9552841893707428,
+        "rougeL": 0.30386697387780026,
+        "consistency": 0.7466380193597381,
+        "knowledge_cover": 0.5287570961796869,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 44,
+      "question": "last episode of what happens to my family",
+      "metrics": {
+        "retrieval_effectiveness": 0.6245965726906704,
+        "generation_reliability": 0.7394306480920654,
+        "retrieval_stability": 0.8138230245730638,
+        "knowledge_reliability": 0.8173409670215852
+      },
+      "raw_values": {
+        "keypoint_hit": 0.08420069702874557,
+        "retrieval_diversity": 0.6666061575899136,
+        "rougeL": 0.2605693519079347,
+        "consistency": 0.1861769754269363,
+        "knowledge_cover": 0.26531806595682966,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 45,
+      "question": "when is the last time the vikings were in the nfc championship",
+      "metrics": {
+        "retrieval_effectiveness": 0.4228120889629875,
+        "generation_reliability": 0.8068760370838344,
+        "retrieval_stability": 0.13230279761348263,
+        "knowledge_reliability": 0.33953715471112544
+      },
+      "raw_values": {
+        "keypoint_hit": 0.1913607169543177,
+        "retrieval_diversity": 0.9630151051197073,
+        "rougeL": 0.19312396291616557,
+        "consistency": 0.8676972023865174,
+        "knowledge_cover": 0.420925690577749,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 46,
+      "question": "what are the colors of the netherlands flag",
+      "metrics": {
+        "retrieval_effectiveness": 0.35008719691281465,
+        "generation_reliability": 0.8028010778060253,
+        "retrieval_stability": 0.15304359576429694,
+        "knowledge_reliability": 0.26066738474597306
+      },
+      "raw_values": {
+        "keypoint_hit": 0.34239788144284583,
+        "retrieval_diversity": 0.9574277247315249,
+        "rougeL": 0.19719892219397467,
+        "consistency": 0.8469564042357031,
+        "knowledge_cover": 0.4786652305080539,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 47,
+      "question": "where is lord's prayer found in bible",
+      "metrics": {
+        "retrieval_effectiveness": 0.29466281578689957,
+        "generation_reliability": 0.6750455977449843,
+        "retrieval_stability": 0.03733781492985777,
+        "knowledge_reliability": 0.3198382235445546
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5412633325519384,
+        "retrieval_diversity": 0.8694110358742625,
+        "rougeL": 0.32495440225501576,
+        "consistency": 0.9626621850701422,
+        "knowledge_cover": 0.5603235529108908,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 48,
+      "question": "when was the last time oklahoma won a national championship in football",
+      "metrics": {
+        "retrieval_effectiveness": 0.37750128377393066,
+        "generation_reliability": 0.6606302763357979,
+        "retrieval_stability": 0.2000655543182297,
+        "knowledge_reliability": 0.6742293248612704
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2519424685732704,
+        "retrieval_diversity": 0.9930549638788683,
+        "rougeL": 0.3393697236642022,
+        "consistency": 0.7999344456817703,
+        "knowledge_cover": 0.15154135027745919,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 49,
+      "question": "location of the ten commandments in the bible",
+      "metrics": {
+        "retrieval_effectiveness": 0.20945989847142577,
+        "generation_reliability": 0.7854608255600293,
+        "retrieval_stability": 0.23207736448118121,
+        "knowledge_reliability": 0.23154068672786488
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6048318596712281,
+        "retrieval_diversity": 0.9762483433859203,
+        "rougeL": 0.2145391744399707,
+        "consistency": 0.7679226355188188,
+        "knowledge_cover": 0.6369186265442702,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 50,
+      "question": "where did the allies go after north africa",
+      "metrics": {
+        "retrieval_effectiveness": 0.12642420204422056,
+        "generation_reliability": 0.8037133821219528,
+        "retrieval_stability": 0.1732654597409341,
+        "knowledge_reliability": 0.1769670326639654
+      },
+      "raw_values": {
+        "keypoint_hit": 0.7759155141090632,
+        "retrieval_diversity": 0.9712360818024957,
+        "rougeL": 0.19628661787804727,
+        "consistency": 0.8267345402590659,
+        "knowledge_cover": 0.7460659346720692,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 51,
+      "question": "what is the meaning of veronica in english",
+      "metrics": {
+        "retrieval_effectiveness": 0.34153216588312707,
+        "generation_reliability": 0.7105277852587781,
+        "retrieval_stability": 0.46760777687300503,
+        "knowledge_reliability": 0.33765824272974165
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4469029287660796,
+        "retrieval_diversity": 0.8700327394676662,
+        "rougeL": 0.2894722147412219,
+        "consistency": 0.532392223126995,
+        "knowledge_cover": 0.5246835145405166,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 52,
+      "question": "what is the name of the main artery which takes blood from the heart to the body",
+      "metrics": {
+        "retrieval_effectiveness": 0.07747075619626576,
+        "generation_reliability": 0.7231541464670299,
+        "retrieval_stability": 0.2876189860499492,
+        "knowledge_reliability": 0.07900807821540745
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999996337211006,
+        "retrieval_diversity": 0.8450588538863678,
+        "rougeL": 0.27684585353297014,
+        "consistency": 0.7123810139500508,
+        "knowledge_cover": 0.941983843569185,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 53,
+      "question": "who played solomon in little house on the prairie",
+      "metrics": {
+        "retrieval_effectiveness": 0.9629017392753538,
+        "generation_reliability": 0.9152137475386893,
+        "retrieval_stability": 0.2727403474617264,
+        "knowledge_reliability": 0.8314777555900518
+      },
+      "raw_values": {
+        "keypoint_hit": 0.07419652144929235,
+        "retrieval_diversity": 0.0,
+        "rougeL": 0.08478625246131069,
+        "consistency": 0.7272596525382736,
+        "knowledge_cover": 0.23704448881989648,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 54,
+      "question": "who does eric end up with in that 70s show",
+      "metrics": {
+        "retrieval_effectiveness": 0.500927600067077,
+        "generation_reliability": 0.7657676428598988,
+        "retrieval_stability": 0.31880309002914253,
+        "knowledge_reliability": 0.37870585082202957
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2831297433117473,
+        "retrieval_diversity": 0.7150150565540986,
+        "rougeL": 0.23423235714010113,
+        "consistency": 0.6811969099708575,
+        "knowledge_cover": 0.34258829835594096,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 55,
+      "question": "an object that moves around an external axis is said to be",
+      "metrics": {
+        "retrieval_effectiveness": 0.04396097893244999,
+        "generation_reliability": 0.7094419361427877,
+        "retrieval_stability": 0.6276706520917837,
+        "knowledge_reliability": 0.19465028166678477
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999996337211006,
+        "retrieval_diversity": 0.9120784084139993,
+        "rougeL": 0.29055806385721233,
+        "consistency": 0.37232934790821626,
+        "knowledge_cover": 0.8106994366664305,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 56,
+      "question": "architectural elements forming rib vaults eg wells cathedral",
+      "metrics": {
+        "retrieval_effectiveness": 0.2833418815134613,
+        "generation_reliability": 0.7005788087430371,
+        "retrieval_stability": 0.36150872609080353,
+        "knowledge_reliability": 0.4646211797723212
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4547774672546664,
+        "retrieval_diversity": 0.978538769718411,
+        "rougeL": 0.29942119125696287,
+        "consistency": 0.6384912739091965,
+        "knowledge_cover": 0.7707576404553577,
+        "reliability": 0.3
+      }
+    },
+    {
+      "id": 57,
+      "question": "who sang the song good morning good morning",
+      "metrics": {
+        "retrieval_effectiveness": 0.50775930467804,
+        "generation_reliability": 0.8773225933659583,
+        "retrieval_stability": 0.7904037625711168,
+        "knowledge_reliability": 0.6800621850864931
+      },
+      "raw_values": {
+        "keypoint_hit": 0.10463777763940575,
+        "retrieval_diversity": 0.8798436130045144,
+        "rougeL": 0.12267740663404166,
+        "consistency": 0.2095962374288832,
+        "knowledge_cover": 0.4398756298270139,
+        "reliability": 0.2
+      }
+    },
+    {
+      "id": 58,
+      "question": "who wrote papa got a brand new bag",
+      "metrics": {
+        "retrieval_effectiveness": 0.2738100842080884,
+        "generation_reliability": 1.0,
+        "retrieval_stability": 0.8217766577867751,
+        "knowledge_reliability": 0.2254527017016924
+      },
+      "raw_values": {
+        "keypoint_hit": 0.49535530884636797,
+        "retrieval_diversity": 0.9570245227374552,
+        "rougeL": 0.0,
+        "consistency": 0.1782233422132249,
+        "knowledge_cover": 0.5490945965966152,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 59,
+      "question": "where does a roadrunner live in the desert",
+      "metrics": {
+        "retrieval_effectiveness": 0.3931951987557215,
+        "generation_reliability": 0.4629321337845028,
+        "retrieval_stability": 0.20965232328619154,
+        "knowledge_reliability": 0.4116570518762601
+      },
+      "raw_values": {
+        "keypoint_hit": 0.27609059542297887,
+        "retrieval_diversity": 0.9375190070655781,
+        "rougeL": 0.5370678662154972,
+        "consistency": 0.7903476767138085,
+        "knowledge_cover": 0.4766858962474797,
+        "reliability": 0.7
+      }
+    },
+    {
+      "id": 60,
+      "question": "who wrote it's a long long way to pasadena",
+      "metrics": {
+        "retrieval_effectiveness": 0.6677117138677573,
+        "generation_reliability": 0.7143203186619893,
+        "retrieval_stability": 0.7435892653314831,
+        "knowledge_reliability": 0.4368711055502329
+      },
+      "raw_values": {
+        "keypoint_hit": 0.11942097715884784,
+        "retrieval_diversity": 0.5451555951056375,
+        "rougeL": 0.28567968133801075,
+        "consistency": 0.25641073466851694,
+        "knowledge_cover": 0.3262577888995342,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 61,
+      "question": "what's the dog's name on tom and jerry",
+      "metrics": {
+        "retrieval_effectiveness": 0.13488581504412793,
+        "generation_reliability": 0.7559655068857523,
+        "retrieval_stability": 0.14594204480857598,
+        "knowledge_reliability": 0.36554971312382056
+      },
+      "raw_values": {
+        "keypoint_hit": 0.32985951372813316,
+        "retrieval_diversity": 0.8003688561836109,
+        "rougeL": 0.2440344931142477,
+        "consistency": 0.854057955191424,
+        "knowledge_cover": 0.3689005737523588,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 62,
+      "question": "who are nominated for president of india 2017",
+      "metrics": {
+        "retrieval_effectiveness": 0.012573416493219414,
+        "generation_reliability": 0.6386494163320184,
+        "retrieval_stability": 0.1628024341042399,
+        "knowledge_reliability": 0.10268521607968073
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999998168605503,
+        "retrieval_diversity": 0.974853350153011,
+        "rougeL": 0.3613505836679816,
+        "consistency": 0.8371975658957601,
+        "knowledge_cover": 0.8446295678406387,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 63,
+      "question": "where does the path train stop in newark",
+      "metrics": {
+        "retrieval_effectiveness": 0.2169784402910887,
+        "generation_reliability": 0.5736699876878784,
+        "retrieval_stability": 0.06266748377831488,
+        "knowledge_reliability": 0.17325068349733308
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6193299110674833,
+        "retrieval_diversity": 0.9467132083503393,
+        "rougeL": 0.4263300123121216,
+        "consistency": 0.9373325162216851,
+        "knowledge_cover": 0.7534986330053339,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 64,
+      "question": "where does route 66 start on the west coast",
+      "metrics": {
+        "retrieval_effectiveness": 0.2956765596277091,
+        "generation_reliability": 0.6197169145087171,
+        "retrieval_stability": 0.02244688927334093,
+        "knowledge_reliability": 0.2966004869251855
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4305949101884139,
+        "retrieval_diversity": 0.978051970556168,
+        "rougeL": 0.3802830854912829,
+        "consistency": 0.9775531107266591,
+        "knowledge_cover": 0.5067990261496291,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 65,
+      "question": "who is the first wife on sister wives",
+      "metrics": {
+        "retrieval_effectiveness": 0.66127592543581,
+        "generation_reliability": 0.905979046720151,
+        "retrieval_stability": 0.7665054147403035,
+        "knowledge_reliability": 0.4258904146077084
+      },
+      "raw_values": {
+        "keypoint_hit": 0.09828911126087848,
+        "retrieval_diversity": 0.5791590378675013,
+        "rougeL": 0.09402095327984901,
+        "consistency": 0.2334945852596965,
+        "knowledge_cover": 0.24821917078458317,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 66,
+      "question": "when did houston go to the american league",
+      "metrics": {
+        "retrieval_effectiveness": 0.3933302409405304,
+        "generation_reliability": 0.7493773990851427,
+        "retrieval_stability": 0.06440824301527803,
+        "knowledge_reliability": 0.7594349798595608
+      },
+      "raw_values": {
+        "keypoint_hit": 0.309629930113986,
+        "retrieval_diversity": 0.9037095880049534,
+        "rougeL": 0.2506226009148574,
+        "consistency": 0.935591756984722,
+        "knowledge_cover": 0.3811300402808783,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 67,
+      "question": "when did they stop cigarette advertising on television",
+      "metrics": {
+        "retrieval_effectiveness": 0.36072739261264264,
+        "generation_reliability": 0.66111427533048,
+        "retrieval_stability": 0.19660203070956117,
+        "knowledge_reliability": 0.40411414891632214
+      },
+      "raw_values": {
+        "keypoint_hit": 0.28434780379171914,
+        "retrieval_diversity": 0.9941974109829955,
+        "rougeL": 0.33888572466952,
+        "consistency": 0.8033979692904388,
+        "knowledge_cover": 0.3917717021673557,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 68,
+      "question": "coldplay song i will try to fix you",
+      "metrics": {
+        "retrieval_effectiveness": 0.43773226771387697,
+        "generation_reliability": 0.8109727875877281,
+        "retrieval_stability": 8.642720972229512e-08,
+        "knowledge_reliability": 0.36118271409698743
+      },
+      "raw_values": {
+        "keypoint_hit": 0.20070559051484163,
+        "retrieval_diversity": 0.9238298740574045,
+        "rougeL": 0.18902721241227197,
+        "consistency": 0.9999999135727903,
+        "knowledge_cover": 0.27763457180602524,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 69,
+      "question": "points on a sphere or angles in a circle are measured in units called",
+      "metrics": {
+        "retrieval_effectiveness": 0.1571178561102382,
+        "generation_reliability": 0.593536077896018,
+        "retrieval_stability": 0.48302030874492885,
+        "knowledge_reliability": 0.1283203615084192
+      },
+      "raw_values": {
+        "keypoint_hit": 0.7233488147214815,
+        "retrieval_diversity": 0.9624154730580422,
+        "rougeL": 0.40646392210398197,
+        "consistency": 0.5169796912550711,
+        "knowledge_cover": 0.8433592769831617,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 70,
+      "question": "the oligodynamic effect is a phenomenon that describes",
+      "metrics": {
+        "retrieval_effectiveness": 0.26407426395310596,
+        "generation_reliability": 0.7435219532175199,
+        "retrieval_stability": 0.5891484134740801,
+        "knowledge_reliability": 0.07125462495835133
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9540500373604477,
+        "retrieval_diversity": 0.5178014347333405,
+        "rougeL": 0.25647804678248015,
+        "consistency": 0.41085158652591985,
+        "knowledge_cover": 0.9574907500832973,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 71,
+      "question": "where does the white witch live in narnia",
+      "metrics": {
+        "retrieval_effectiveness": 0.4711260745000978,
+        "generation_reliability": 0.8017287201013388,
+        "retrieval_stability": 0.3497830097257332,
+        "knowledge_reliability": 0.3796855588154213
+      },
+      "raw_values": {
+        "keypoint_hit": 0.19103079123567848,
+        "retrieval_diversity": 0.8667170597641259,
+        "rougeL": 0.19827127989866125,
+        "consistency": 0.6502169902742668,
+        "knowledge_cover": 0.3406288823691573,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 72,
+      "question": "how many games in a row have the uconn women's basketball team won",
+      "metrics": {
+        "retrieval_effectiveness": 0.3621676924408491,
+        "generation_reliability": 0.845343652666352,
+        "retrieval_stability": 0.18698611776630625,
+        "knowledge_reliability": 0.3871427189103738
+      },
+      "raw_values": {
+        "keypoint_hit": 0.301947688047587,
+        "retrieval_diversity": 0.9737169270707148,
+        "rougeL": 0.154656347333648,
+        "consistency": 0.8130138822336938,
+        "knowledge_cover": 0.42571456217925246,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 73,
+      "question": "is there a name for the at symbol",
+      "metrics": {
+        "retrieval_effectiveness": 0.008809544138657643,
+        "generation_reliability": 0.6033483412624516,
+        "retrieval_stability": 0.42475559267412133,
+        "knowledge_reliability": 0.2495420388132905
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999996337211006,
+        "retrieval_diversity": 0.9823812780015841,
+        "rougeL": 0.3966516587375483,
+        "consistency": 0.5752444073258787,
+        "knowledge_cover": 0.700915922373419,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 74,
+      "question": "who sings the theme song for the tv show cops",
+      "metrics": {
+        "retrieval_effectiveness": 0.2718929528032633,
+        "generation_reliability": 0.6589789856480581,
+        "retrieval_stability": 0.07642824402892567,
+        "knowledge_reliability": 0.22770877621536534
+      },
+      "raw_values": {
+        "keypoint_hit": 0.49465544143932955,
+        "retrieval_diversity": 0.9615586529541439,
+        "rougeL": 0.3410210143519418,
+        "consistency": 0.9235717559710743,
+        "knowledge_cover": 0.6445824475692693,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 75,
+      "question": "when was corporal punishment banned in south africa",
+      "metrics": {
+        "retrieval_effectiveness": 0.468780910125133,
+        "generation_reliability": 0.5540494427705376,
+        "retrieval_stability": 0.18266901022688042,
+        "knowledge_reliability": 0.3857846756815909
+      },
+      "raw_values": {
+        "keypoint_hit": 0.08702951475371407,
+        "retrieval_diversity": 0.97540866499602,
+        "rougeL": 0.4459505572294624,
+        "consistency": 0.8173309897731196,
+        "knowledge_cover": 0.3284306486368181,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 76,
+      "question": "who plays captain phasma in star wars the force awakens",
+      "metrics": {
+        "retrieval_effectiveness": 0.46013172490947163,
+        "generation_reliability": 0.8238907793315284,
+        "retrieval_stability": 8.642720927820591e-08,
+        "knowledge_reliability": 0.3560641597063693
+      },
+      "raw_values": {
+        "keypoint_hit": 0.25515336097518093,
+        "retrieval_diversity": 0.8245831892058759,
+        "rougeL": 0.1761092206684716,
+        "consistency": 0.9999999135727907,
+        "knowledge_cover": 0.2878716805872614,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 77,
+      "question": "who sings she's like the wind lyrics",
+      "metrics": {
+        "retrieval_effectiveness": 0.5023135644307564,
+        "generation_reliability": 0.5498245686029095,
+        "retrieval_stability": 0.60936485774445,
+        "knowledge_reliability": 0.43834246489934614
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2554654305974741,
+        "retrieval_diversity": 0.7399074405410132,
+        "rougeL": 0.45017543139709054,
+        "consistency": 0.39063514225554996,
+        "knowledge_cover": 0.32331507020130773,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 78,
+      "question": "when did marathon change its name to snickers",
+      "metrics": {
+        "retrieval_effectiveness": 0.4188629246084943,
+        "generation_reliability": 0.5690270981843472,
+        "retrieval_stability": 0.0,
+        "knowledge_reliability": 0.375472608189522
+      },
+      "raw_values": {
+        "keypoint_hit": 0.23261640343423096,
+        "retrieval_diversity": 0.9296577473487804,
+        "rougeL": 0.43097290181565284,
+        "consistency": 1.0,
+        "knowledge_cover": 0.34905478362095593,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 79,
+      "question": "who captained the first european ship to sail around the tip of africa",
+      "metrics": {
+        "retrieval_effectiveness": 0.26754314427080383,
+        "generation_reliability": 0.5831440263241254,
+        "retrieval_stability": 0.4104385580936657,
+        "knowledge_reliability": 0.2614320637771341
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4717817820201014,
+        "retrieval_diversity": 0.993131929438291,
+        "rougeL": 0.4168559736758746,
+        "consistency": 0.5895614419063343,
+        "knowledge_cover": 0.5771358724457318,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 80,
+      "question": "who ordered the forbidden city to be built",
+      "metrics": {
+        "retrieval_effectiveness": 0.38591777647515213,
+        "generation_reliability": 0.6848742259785203,
+        "retrieval_stability": 0.12745715167621607,
+        "knowledge_reliability": 0.3549894332968243
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2639029397544466,
+        "retrieval_diversity": 0.9642615072952492,
+        "rougeL": 0.3151257740214796,
+        "consistency": 0.8725428483237839,
+        "knowledge_cover": 0.3900211334063513,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 81,
+      "question": "who sang let me tell you about the birds and the bees",
+      "metrics": {
+        "retrieval_effectiveness": 0.5957471748543159,
+        "generation_reliability": 0.8321545980275313,
+        "retrieval_stability": 0.8796192651666231,
+        "knowledge_reliability": 0.4068517270734481
+      },
+      "raw_values": {
+        "keypoint_hit": 0.13236911939227006,
+        "retrieval_diversity": 0.6761365308990981,
+        "rougeL": 0.16784540197246867,
+        "consistency": 0.12038073483337684,
+        "knowledge_cover": 0.28629654585310377,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 82,
+      "question": "who has the power to approve or veto legislation constitution",
+      "metrics": {
+        "retrieval_effectiveness": 0.2935935005828768,
+        "generation_reliability": 0.6582447160734703,
+        "retrieval_stability": 0.35252326363000475,
+        "knowledge_reliability": 0.2449578510469057
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5387977261405925,
+        "retrieval_diversity": 0.8740152726936539,
+        "rougeL": 0.34175528392652965,
+        "consistency": 0.6474767363699953,
+        "knowledge_cover": 0.5600842979061887,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 83,
+      "question": "how many seasons of the rugrats are there",
+      "metrics": {
+        "retrieval_effectiveness": 0.40024692385885596,
+        "generation_reliability": 0.930577901672209,
+        "retrieval_stability": 0.6297154910610752,
+        "knowledge_reliability": 0.30201931813266536
+      },
+      "raw_values": {
+        "keypoint_hit": 0.29289006871392154,
+        "retrieval_diversity": 0.9066160835683666,
+        "rougeL": 0.06942209832779102,
+        "consistency": 0.37028450893892484,
+        "knowledge_cover": 0.49596136373466926,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 84,
+      "question": "who is the minister of local government in zimbabwe",
+      "metrics": {
+        "retrieval_effectiveness": 0.43720442286977346,
+        "generation_reliability": 0.7474160679034091,
+        "retrieval_stability": 0.20648106409007538,
+        "knowledge_reliability": 0.23849505184113795
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4440015420341665,
+        "retrieval_diversity": 0.6815896122262866,
+        "rougeL": 0.2525839320965909,
+        "consistency": 0.7935189359099246,
+        "knowledge_cover": 0.6230098963177241,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 85,
+      "question": "what was the initial effect of the transition from command to market economies in eastern europe",
+      "metrics": {
+        "retrieval_effectiveness": 0.5319668600101429,
+        "generation_reliability": 0.6845113831302881,
+        "retrieval_stability": 0.20894187361788064,
+        "knowledge_reliability": 0.5009292346161685
+      },
+      "raw_values": {
+        "keypoint_hit": 0.23928277097312978,
+        "retrieval_diversity": 0.6967835090065844,
+        "rougeL": 0.31548861686971186,
+        "consistency": 0.7910581263821194,
+        "knowledge_cover": 0.4981415307676632,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 86,
+      "question": "when did toyota start making cars in the us",
+      "metrics": {
+        "retrieval_effectiveness": 0.320910393865228,
+        "generation_reliability": 0.7660048037302867,
+        "retrieval_stability": 0.1505114333727281,
+        "knowledge_reliability": 0.2697872492639962
+      },
+      "raw_values": {
+        "keypoint_hit": 0.38056240293609167,
+        "retrieval_diversity": 0.9776168093334524,
+        "rougeL": 0.23399519626971327,
+        "consistency": 0.8494885666272719,
+        "knowledge_cover": 0.5604255014720075,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 87,
+      "question": "how many pieces in a terry's chocolate orange",
+      "metrics": {
+        "retrieval_effectiveness": 0.5513021976237427,
+        "generation_reliability": 0.9125390162522872,
+        "retrieval_stability": 0.12249679162391847,
+        "knowledge_reliability": 0.6095679490695632
+      },
+      "raw_values": {
+        "keypoint_hit": 0.13968082456705835,
+        "retrieval_diversity": 0.7577147801854563,
+        "rougeL": 0.08746098374771287,
+        "consistency": 0.8775032083760815,
+        "knowledge_cover": 0.28086410186087357,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 88,
+      "question": "who plays the saint of killers on preacher",
+      "metrics": {
+        "retrieval_effectiveness": 0.42330845180898224,
+        "generation_reliability": 0.9006337778228464,
+        "retrieval_stability": 0.7485985521872305,
+        "knowledge_reliability": 0.33074723816633544
+      },
+      "raw_values": {
+        "keypoint_hit": 0.280125615348551,
+        "retrieval_diversity": 0.8732574810334846,
+        "rougeL": 0.0993662221771536,
+        "consistency": 0.25140144781276946,
+        "knowledge_cover": 0.338505523667329,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 89,
+      "question": "when did the royal proclamation of 1763 end",
+      "metrics": {
+        "retrieval_effectiveness": 0.25643499173953466,
+        "generation_reliability": 0.6512215486259847,
+        "retrieval_stability": 0.1551079888897533,
+        "knowledge_reliability": 0.1771438810061109
+      },
+      "raw_values": {
+        "keypoint_hit": 0.49392288364051923,
+        "retrieval_diversity": 0.9932071328804114,
+        "rougeL": 0.34877845137401536,
+        "consistency": 0.8448920111102467,
+        "knowledge_cover": 0.7457122379877782,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 90,
+      "question": "who is playing the halftime show at super bowl 2016",
+      "metrics": {
+        "retrieval_effectiveness": 0.2517204727608928,
+        "generation_reliability": 0.49178580351442136,
+        "retrieval_stability": 0.25602183563283387,
+        "knowledge_reliability": 0.18122335562569247
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6036315637178773,
+        "retrieval_diversity": 0.892927490760337,
+        "rougeL": 0.5082141964855786,
+        "consistency": 0.7439781643671661,
+        "knowledge_cover": 0.737553288748615,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 91,
+      "question": "jonny cash one piece at a time car",
+      "metrics": {
+        "retrieval_effectiveness": 0.4591014116019615,
+        "generation_reliability": 0.537776104550765,
+        "retrieval_stability": 0.48416163046313654,
+        "knowledge_reliability": 0.4237601670117792
+      },
+      "raw_values": {
+        "keypoint_hit": 0.20851978455475137,
+        "retrieval_diversity": 0.8732773922413257,
+        "rougeL": 0.46222389544923503,
+        "consistency": 0.5158383695368635,
+        "knowledge_cover": 0.35247966597644154,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 92,
+      "question": "what is the minimum wage in france per hour",
+      "metrics": {
+        "retrieval_effectiveness": 0.19589862589774054,
+        "generation_reliability": 0.6646774581134174,
+        "retrieval_stability": 0.18459347049778074,
+        "knowledge_reliability": 0.40923104148646416
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6560830683915961,
+        "retrieval_diversity": 0.9521196798129228,
+        "rougeL": 0.33532254188658267,
+        "consistency": 0.8154065295022193,
+        "knowledge_cover": 0.6815379170270716,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 93,
+      "question": "describe the three phases of the normal blood clotting process",
+      "metrics": {
+        "retrieval_effectiveness": 0.09679524364514469,
+        "generation_reliability": 0.46543235620136736,
+        "retrieval_stability": 0.3942370682369404,
+        "knowledge_reliability": 0.4730846193093403
+      },
+      "raw_values": {
+        "keypoint_hit": 0.8080913755970346,
+        "retrieval_diversity": 0.998318137112676,
+        "rougeL": 0.5345676437986326,
+        "consistency": 0.6057629317630596,
+        "knowledge_cover": 0.7538307613813193,
+        "reliability": 0.3
+      }
+    },
+    {
+      "id": 94,
+      "question": "when did amnesia the dark descent come out",
+      "metrics": {
+        "retrieval_effectiveness": 0.4528414991808215,
+        "generation_reliability": 0.9774421897121284,
+        "retrieval_stability": 0.4201707696507939,
+        "knowledge_reliability": 0.3962661899324087
+      },
+      "raw_values": {
+        "keypoint_hit": 0.23704306707299205,
+        "retrieval_diversity": 0.8572739345653649,
+        "rougeL": 0.022557810287871648,
+        "consistency": 0.5798292303492061,
+        "knowledge_cover": 0.2074676201351826,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 95,
+      "question": "what is the oldest street in the philippines",
+      "metrics": {
+        "retrieval_effectiveness": 0.03527435287085545,
+        "generation_reliability": 0.221240265137995,
+        "retrieval_stability": 0.5755043731699896,
+        "knowledge_reliability": 0.0604481953395718
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999998168605503,
+        "retrieval_diversity": 0.9294514773977388,
+        "rougeL": 0.778759734862005,
+        "consistency": 0.42449562683001046,
+        "knowledge_cover": 0.9791036093208564,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 96,
+      "question": "where is the tibia and fibula bone located",
+      "metrics": {
+        "retrieval_effectiveness": 0.2827782680470803,
+        "generation_reliability": 0.4594480275461871,
+        "retrieval_stability": 0.3423866447547761,
+        "knowledge_reliability": 0.2941270203641366
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5433427894335863,
+        "retrieval_diversity": 0.891100674472253,
+        "rougeL": 0.5405519724538129,
+        "consistency": 0.6576133552452239,
+        "knowledge_cover": 0.41174595927172664,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 97,
+      "question": "who played bat masterson in the tv series",
+      "metrics": {
+        "retrieval_effectiveness": 0.18897647695844366,
+        "generation_reliability": 0.845343652666352,
+        "retrieval_stability": 0.30333069291005765,
+        "knowledge_reliability": 0.1255094687819952
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999995421513758,
+        "retrieval_diversity": 0.6220475039317368,
+        "rougeL": 0.154656347333648,
+        "consistency": 0.6966693070899423,
+        "knowledge_cover": 0.8489810624360096,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 98,
+      "question": "who sings sugar sugar you are my candy girl",
+      "metrics": {
+        "retrieval_effectiveness": 0.3482136607823505,
+        "generation_reliability": 0.8718226748758922,
+        "retrieval_stability": 0.6082774558016115,
+        "knowledge_reliability": 0.3675817571476844
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3174317622410408,
+        "retrieval_diversity": 0.9861409161942583,
+        "rougeL": 0.12817732512410784,
+        "consistency": 0.39172254419838853,
+        "knowledge_cover": 0.31483648570463135,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 99,
+      "question": "types of skiing in the winter olympics 2018",
+      "metrics": {
+        "retrieval_effectiveness": 0.3094956490480655,
+        "generation_reliability": 0.6595505862707371,
+        "retrieval_stability": 0.22801434933675035,
+        "knowledge_reliability": 0.16706847560736304
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4404080713218273,
+        "retrieval_diversity": 0.9406006305820417,
+        "rougeL": 0.3404494137292628,
+        "consistency": 0.7719856506632496,
+        "knowledge_cover": 0.765863048785274,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 100,
+      "question": "who plays noah newman on the young and the restless",
+      "metrics": {
+        "retrieval_effectiveness": 0.5533309142180549,
+        "generation_reliability": 0.7926829816400369,
+        "retrieval_stability": 0.06506411029961445,
+        "knowledge_reliability": 0.4300027396465933
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2153328925777244,
+        "retrieval_diversity": 0.6780052789861657,
+        "rougeL": 0.20731701835996313,
+        "consistency": 0.9349358897003855,
+        "knowledge_cover": 0.1899945207068135,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 101,
+      "question": "who has won the most games in nfl 2017",
+      "metrics": {
+        "retrieval_effectiveness": 0.41108073869704276,
+        "generation_reliability": 0.8118278863328177,
+        "retrieval_stability": 0.4224059969593611,
+        "knowledge_reliability": 0.5867825517335911
+      },
+      "raw_values": {
+        "keypoint_hit": 0.45546707885252147,
+        "retrieval_diversity": 0.722371443753393,
+        "rougeL": 0.1881721136671824,
+        "consistency": 0.5775940030406389,
+        "knowledge_cover": 0.6264348965328178,
+        "reliability": 0.2
+      }
+    },
+    {
+      "id": 102,
+      "question": "under article 1 what is the minimum age required to serve in the house of representatives",
+      "metrics": {
+        "retrieval_effectiveness": 0.30980794949003543,
+        "generation_reliability": 0.6589789856480581,
+        "retrieval_stability": 0.14373236754383723,
+        "knowledge_reliability": 0.3557709603589815
+      },
+      "raw_values": {
+        "keypoint_hit": 0.38997503809300554,
+        "retrieval_diversity": 0.9904090629269235,
+        "rougeL": 0.3410210143519418,
+        "consistency": 0.8562676324561628,
+        "knowledge_cover": 0.38845807928203696,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 103,
+      "question": "who has the most catches in nfl history",
+      "metrics": {
+        "retrieval_effectiveness": 0.003885306409758593,
+        "generation_reliability": 0.8886319129882243,
+        "retrieval_stability": 0.39267115124493046,
+        "knowledge_reliability": 0.10552309865638865
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999998168605503,
+        "retrieval_diversity": 0.9922295703199326,
+        "rougeL": 0.11136808701177574,
+        "consistency": 0.6073288487550695,
+        "knowledge_cover": 0.8389538026872226,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 104,
+      "question": "when does the dlc for rainbow six siege come out",
+      "metrics": {
+        "retrieval_effectiveness": 0.4924399123170423,
+        "generation_reliability": 0.8334307386028021,
+        "retrieval_stability": 0.471018226972732,
+        "knowledge_reliability": 0.40854673092215354
+      },
+      "raw_values": {
+        "keypoint_hit": 0.19317700244674305,
+        "retrieval_diversity": 0.8219431729191723,
+        "rougeL": 0.1665692613971979,
+        "consistency": 0.528981773027268,
+        "knowledge_cover": 0.38290653815569275,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 105,
+      "question": "who was the great wall of china built to defend against",
+      "metrics": {
+        "retrieval_effectiveness": 0.3745641087545275,
+        "generation_reliability": 0.5494221996345641,
+        "retrieval_stability": 0.31511441273615004,
+        "knowledge_reliability": 0.31600377315749784
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4262293235561286,
+        "retrieval_diversity": 0.8246424589348164,
+        "rougeL": 0.450577800365436,
+        "consistency": 0.68488558726385,
+        "knowledge_cover": 0.4679924536850044,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 106,
+      "question": "where does the last name galvez come from",
+      "metrics": {
+        "retrieval_effectiveness": 0.2078275865523116,
+        "generation_reliability": 0.8335123562656108,
+        "retrieval_stability": 0.30382962278635484,
+        "knowledge_reliability": 0.28837777563797107
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6184599071116711,
+        "retrieval_diversity": 0.9658849197837058,
+        "rougeL": 0.16648764373438923,
+        "consistency": 0.6961703772136452,
+        "knowledge_cover": 0.5232444487240577,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 107,
+      "question": "who opens the church of the holy sepulchre",
+      "metrics": {
+        "retrieval_effectiveness": 0.4433692727062939,
+        "generation_reliability": 0.7574046016409594,
+        "retrieval_stability": 0.603962840246729,
+        "knowledge_reliability": 0.63480068349144
+      },
+      "raw_values": {
+        "keypoint_hit": 0.35666142277375684,
+        "retrieval_diversity": 0.7566000318136553,
+        "rougeL": 0.24259539835904062,
+        "consistency": 0.3960371597532711,
+        "knowledge_cover": 0.63039863301712,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 108,
+      "question": "when does season 5 of the blacklist resume",
+      "metrics": {
+        "retrieval_effectiveness": 0.3456465945954257,
+        "generation_reliability": 0.7319879742720704,
+        "retrieval_stability": 8.642720927820591e-08,
+        "knowledge_reliability": 0.29512438078035086
+      },
+      "raw_values": {
+        "keypoint_hit": 0.37667361986110703,
+        "retrieval_diversity": 0.9320331909480416,
+        "rougeL": 0.2680120257279296,
+        "consistency": 0.9999999135727907,
+        "knowledge_cover": 0.4597512384392983,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 109,
+      "question": "the chinese dragons are protectors of how many seas diggy",
+      "metrics": {
+        "retrieval_effectiveness": 0.2563745576780859,
+        "generation_reliability": 0.2886770489224476,
+        "retrieval_stability": 0.23017325781813547,
+        "knowledge_reliability": 0.22723657758798188
+      },
+      "raw_values": {
+        "keypoint_hit": 0.71491377794708,
+        "retrieval_diversity": 0.7723371066967482,
+        "rougeL": 0.7113229510775524,
+        "consistency": 0.7698267421818645,
+        "knowledge_cover": 0.7455268448240362,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 110,
+      "question": "how much money did it cost to make gta v",
+      "metrics": {
+        "retrieval_effectiveness": 0.5360608752321856,
+        "generation_reliability": 0.5498245686029093,
+        "retrieval_stability": 0.4028739949694894,
+        "knowledge_reliability": 0.8401394939179139
+      },
+      "raw_values": {
+        "keypoint_hit": 0.0689804809974507,
+        "retrieval_diversity": 0.8588977685381781,
+        "rougeL": 0.45017543139709065,
+        "consistency": 0.5971260050305106,
+        "knowledge_cover": 0.2197210121641723,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 111,
+      "question": "what is the angle of the tower of pisa",
+      "metrics": {
+        "retrieval_effectiveness": 0.48859450882366295,
+        "generation_reliability": 0.816954562320553,
+        "retrieval_stability": 0.3401916457111295,
+        "knowledge_reliability": 0.40209079409207493
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2571037045447886,
+        "retrieval_diversity": 0.7657072778078855,
+        "rougeL": 0.18304543767944698,
+        "consistency": 0.6598083542888705,
+        "knowledge_cover": 0.39581841181585004,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 112,
+      "question": "what is the share of agriculture in indian economy",
+      "metrics": {
+        "retrieval_effectiveness": 0.43809940389446334,
+        "generation_reliability": 0.5508945042687374,
+        "retrieval_stability": 0.14865990686330166,
+        "knowledge_reliability": 0.5377610104151357
+      },
+      "raw_values": {
+        "keypoint_hit": 0.23668594514607202,
+        "retrieval_diversity": 0.8871152470650012,
+        "rougeL": 0.4491054957312626,
+        "consistency": 0.8513400931366983,
+        "knowledge_cover": 0.42447797916972857,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 113,
+      "question": "who does demetrius love in a midsummer night dream",
+      "metrics": {
+        "retrieval_effectiveness": 0.3576408625454651,
+        "generation_reliability": 0.8058625757090425,
+        "retrieval_stability": 0.05694722689043197,
+        "knowledge_reliability": 0.3976910300941545
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3795273903360975,
+        "retrieval_diversity": 0.9051908845729723,
+        "rougeL": 0.19413742429095746,
+        "consistency": 0.943052773109568,
+        "knowledge_cover": 0.304617939811691,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 114,
+      "question": "when did the movie varsity blues come out",
+      "metrics": {
+        "retrieval_effectiveness": 0.4709853165111084,
+        "generation_reliability": 0.9528336693980866,
+        "retrieval_stability": 1.0,
+        "knowledge_reliability": 0.4467934348898148
+      },
+      "raw_values": {
+        "keypoint_hit": 0.12735686736308494,
+        "retrieval_diversity": 0.9306724996146981,
+        "rougeL": 0.04716633060191344,
+        "consistency": 0.0,
+        "knowledge_cover": 0.20641313022037036,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 115,
+      "question": "when does the champions league quarter finals start",
+      "metrics": {
+        "retrieval_effectiveness": 0.15316548838688782,
+        "generation_reliability": 0.35902807352754984,
+        "retrieval_stability": 0.10174096234090602,
+        "knowledge_reliability": 0.5232769602969873
+      },
+      "raw_values": {
+        "keypoint_hit": 0.7268587738447564,
+        "retrieval_diversity": 0.9668102493814679,
+        "rougeL": 0.6409719264724502,
+        "consistency": 0.898259037659094,
+        "knowledge_cover": 0.6534460794060253,
+        "reliability": 0.3
+      }
+    },
+    {
+      "id": 116,
+      "question": "who was the famous scientist that ran the research lab moseley went to in manchester",
+      "metrics": {
+        "retrieval_effectiveness": 0.27218196211226653,
+        "generation_reliability": 0.6146503718409789,
+        "retrieval_stability": 0.014413987903921233,
+        "knowledge_reliability": 0.17432612001101755
+      },
+      "raw_values": {
+        "keypoint_hit": 0.550333130659009,
+        "retrieval_diversity": 0.9053029451164578,
+        "rougeL": 0.3853496281590211,
+        "consistency": 0.9855860120960788,
+        "knowledge_cover": 0.701347759977965,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 117,
+      "question": "where do you get a cashiers check from",
+      "metrics": {
+        "retrieval_effectiveness": 0.2983778018240101,
+        "generation_reliability": 0.5753347611960165,
+        "retrieval_stability": 0.36033491134293205,
+        "knowledge_reliability": 0.36639506705681335
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4897196501303953,
+        "retrieval_diversity": 0.9135247462215845,
+        "rougeL": 0.42466523880398355,
+        "consistency": 0.639665088657068,
+        "knowledge_cover": 0.4672098658863732,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 118,
+      "question": "who does stefan marry in the vampire diaries",
+      "metrics": {
+        "retrieval_effectiveness": 0.43599972235612683,
+        "generation_reliability": 0.88483644221455,
+        "retrieval_stability": 0.2197401792095559,
+        "knowledge_reliability": 0.3928062207715538
+      },
+      "raw_values": {
+        "keypoint_hit": 0.14920045894746095,
+        "retrieval_diversity": 0.9788000963402854,
+        "rougeL": 0.11516355778544997,
+        "consistency": 0.7802598207904441,
+        "knowledge_cover": 0.3143875584568924,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 119,
+      "question": "what is the meaning of cc and bcc",
+      "metrics": {
+        "retrieval_effectiveness": 0.05056176158446457,
+        "generation_reliability": 0.8544688104212839,
+        "retrieval_stability": 0.7448463220861355,
+        "knowledge_reliability": 0.1672933576328416
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999994505816509,
+        "retrieval_diversity": 0.89887702624942,
+        "rougeL": 0.1455311895787162,
+        "consistency": 0.25515367791386445,
+        "knowledge_cover": 0.8654132847343168,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 120,
+      "question": "hazels boyfriend in the fault in our stars",
+      "metrics": {
+        "retrieval_effectiveness": 0.5369848460496922,
+        "generation_reliability": 0.8992417807141734,
+        "retrieval_stability": 0.6238151234695875,
+        "knowledge_reliability": 0.4157813838627331
+      },
+      "raw_values": {
+        "keypoint_hit": 0.19929092983561403,
+        "retrieval_diversity": 0.7267393780650017,
+        "rougeL": 0.10075821928582666,
+        "consistency": 0.37618487653041255,
+        "knowledge_cover": 0.1684372322745337,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 121,
+      "question": "when does the day of the dead end",
+      "metrics": {
+        "retrieval_effectiveness": 0.310646865989614,
+        "generation_reliability": 0.5329697795955464,
+        "retrieval_stability": 0.5007992536261421,
+        "knowledge_reliability": 0.2759072862106262
+      },
+      "raw_values": {
+        "keypoint_hit": 0.409864531749055,
+        "retrieval_diversity": 0.9688417362717169,
+        "rougeL": 0.46703022040445363,
+        "consistency": 0.4992007463738579,
+        "knowledge_cover": 0.5481854275787476,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 122,
+      "question": "when do you celebrate birthday if born on feb 29",
+      "metrics": {
+        "retrieval_effectiveness": 0.351525288858095,
+        "generation_reliability": 0.4498455438525629,
+        "retrieval_stability": 0.06855581277973677,
+        "knowledge_reliability": 0.37740669025351714
+      },
+      "raw_values": {
+        "keypoint_hit": 0.37468426758871276,
+        "retrieval_diversity": 0.9222651546950973,
+        "rougeL": 0.5501544561474371,
+        "consistency": 0.9314441872202632,
+        "knowledge_cover": 0.4451866194929656,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 123,
+      "question": "where does new york drinking water come from",
+      "metrics": {
+        "retrieval_effectiveness": 0.3094541345545778,
+        "generation_reliability": 0.5392604107869354,
+        "retrieval_stability": 0.22121970860446882,
+        "knowledge_reliability": 0.24913559995431767
+      },
+      "raw_values": {
+        "keypoint_hit": 0.48499456075834385,
+        "retrieval_diversity": 0.8960971701325006,
+        "rougeL": 0.4607395892130645,
+        "consistency": 0.7787802913955312,
+        "knowledge_cover": 0.7017288000913647,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 124,
+      "question": "where is the citrus bowl held this year",
+      "metrics": {
+        "retrieval_effectiveness": 0.26675878966783717,
+        "generation_reliability": 0.8107437950424328,
+        "retrieval_stability": 0.2638875471664789,
+        "knowledge_reliability": 0.2491350047632961
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6188687659331321,
+        "retrieval_diversity": 0.8476136547311934,
+        "rougeL": 0.18925620495756718,
+        "consistency": 0.7361124528335211,
+        "knowledge_cover": 0.6017299904734079,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 125,
+      "question": "what year does the quiet man take place",
+      "metrics": {
+        "retrieval_effectiveness": 0.5487449450137996,
+        "generation_reliability": 0.8452165344398241,
+        "retrieval_stability": 0.8274683000660241,
+        "knowledge_reliability": 0.2546549005848311
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2561898386907727,
+        "retrieval_diversity": 0.6463202712816282,
+        "rougeL": 0.15478346556017586,
+        "consistency": 0.17253169993397588,
+        "knowledge_cover": 0.5906901988303377,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 126,
+      "question": "how many seasons of rules of engagement is there",
+      "metrics": {
+        "retrieval_effectiveness": 0.35932299804150836,
+        "generation_reliability": 0.8498738832565784,
+        "retrieval_stability": 2.3767482615344449e-07,
+        "knowledge_reliability": 0.32078144220323923
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3171452405719811,
+        "retrieval_diversity": 0.9642087633450022,
+        "rougeL": 0.15012611674342163,
+        "consistency": 0.9999997623251738,
+        "knowledge_cover": 0.35843711559352154,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 127,
+      "question": "who plays alec ramsay in the black stallion",
+      "metrics": {
+        "retrieval_effectiveness": 0.7268522206967224,
+        "generation_reliability": 0.9202957369828535,
+        "retrieval_stability": 0.41159728769233384,
+        "knowledge_reliability": 0.34045792700742317
+      },
+      "raw_values": {
+        "keypoint_hit": 0.21061316003457672,
+        "retrieval_diversity": 0.33568239857197846,
+        "rougeL": 0.07970426301714648,
+        "consistency": 0.5884027123076662,
+        "knowledge_cover": 0.3190841459851537,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 128,
+      "question": "who plays dusty in the movie pure country",
+      "metrics": {
+        "retrieval_effectiveness": 0.5674464807609991,
+        "generation_reliability": 0.7347271456844862,
+        "retrieval_stability": 0.6207270360581449,
+        "knowledge_reliability": 0.45244385433448153
+      },
+      "raw_values": {
+        "keypoint_hit": 0.18833525324523104,
+        "retrieval_diversity": 0.6767717852327707,
+        "rougeL": 0.26527285431551384,
+        "consistency": 0.379272963941855,
+        "knowledge_cover": 0.09511229133103688,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 129,
+      "question": "how many episodes of greys anatomy season 14",
+      "metrics": {
+        "retrieval_effectiveness": 0.42875820184988855,
+        "generation_reliability": 0.8129028676123587,
+        "retrieval_stability": 1.728544184453895e-07,
+        "knowledge_reliability": 0.3553517396254964
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3962746688838749,
+        "retrieval_diversity": 0.746208927416348,
+        "rougeL": 0.18709713238764128,
+        "consistency": 0.9999998271455816,
+        "knowledge_cover": 0.48929652074900726,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 130,
+      "question": "who is currently serving as president of the senate",
+      "metrics": {
+        "retrieval_effectiveness": 0.4378320985748885,
+        "generation_reliability": 0.6607244774824138,
+        "retrieval_stability": 0.06173844169133891,
+        "knowledge_reliability": 0.5506099470444994
+      },
+      "raw_values": {
+        "keypoint_hit": 0.16763843511003018,
+        "retrieval_diversity": 0.9566973677401928,
+        "rougeL": 0.3392755225175862,
+        "consistency": 0.9382615583086611,
+        "knowledge_cover": 0.39878010591100116,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 131,
+      "question": "what percentage of sunlight is captured by plants to convert it into food energy",
+      "metrics": {
+        "retrieval_effectiveness": 0.4323872759582501,
+        "generation_reliability": 0.716774159718945,
+        "retrieval_stability": 0.2400304647271,
+        "knowledge_reliability": 0.8232185372891889
+      },
+      "raw_values": {
+        "keypoint_hit": 0.17893800180209218,
+        "retrieval_diversity": 0.9562874462814075,
+        "rougeL": 0.2832258402810551,
+        "consistency": 0.7599695352729,
+        "knowledge_cover": 0.2535629254216221,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 132,
+      "question": "what type of economic system was utilized in the soviet union",
+      "metrics": {
+        "retrieval_effectiveness": 0.26560980582804017,
+        "generation_reliability": 0.3989007023290676,
+        "retrieval_stability": 0.31751498970115366,
+        "knowledge_reliability": 0.22711848226053788
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5288562758226624,
+        "retrieval_diversity": 0.9399241125212573,
+        "rougeL": 0.6010992976709324,
+        "consistency": 0.6824850102988463,
+        "knowledge_cover": 0.7457630354789243,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 133,
+      "question": "how many gold medals did australia win in the 2000 olympics",
+      "metrics": {
+        "retrieval_effectiveness": 0.45598252112934967,
+        "generation_reliability": 0.8517354178515103,
+        "retrieval_stability": 0.03660894546250748,
+        "knowledge_reliability": 0.41364895291756154
+      },
+      "raw_values": {
+        "keypoint_hit": 0.16554647896094002,
+        "retrieval_diversity": 0.9224884787803606,
+        "rougeL": 0.14826458214848967,
+        "consistency": 0.9633910545374925,
+        "knowledge_cover": 0.22270209416487688,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 134,
+      "question": "who started ww2 and how did it start",
+      "metrics": {
+        "retrieval_effectiveness": 0.2363767129042469,
+        "generation_reliability": 0.7799610035620776,
+        "retrieval_stability": 0.05305833376420832,
+        "knowledge_reliability": 0.42919727235151495
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5710187315029156,
+        "retrieval_diversity": 0.9562278426885907,
+        "rougeL": 0.2200389964379223,
+        "consistency": 0.9469416662357917,
+        "knowledge_cover": 0.44160545529697026,
+        "reliability": 0.7
+      }
+    },
+    {
+      "id": 135,
+      "question": "when did the royal mint move to wales",
+      "metrics": {
+        "retrieval_effectiveness": 0.4504644186504797,
+        "generation_reliability": 0.40393853832556115,
+        "retrieval_stability": 0.41733122528726463,
+        "knowledge_reliability": 0.38638564771692385
+      },
+      "raw_values": {
+        "keypoint_hit": 0.20034004417323528,
+        "retrieval_diversity": 0.8987311185258053,
+        "rougeL": 0.5960614616744389,
+        "consistency": 0.5826687747127354,
+        "knowledge_cover": 0.4272287045661523,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 136,
+      "question": "when did bird is the word come out",
+      "metrics": {
+        "retrieval_effectiveness": 0.6594764286916637,
+        "generation_reliability": 0.8557755484175432,
+        "retrieval_stability": 0.8522937921863363,
+        "knowledge_reliability": 0.43152731555531143
+      },
+      "raw_values": {
+        "keypoint_hit": 0.08701426839452633,
+        "retrieval_diversity": 0.5940328742221463,
+        "rougeL": 0.14422445158245675,
+        "consistency": 0.14770620781366373,
+        "knowledge_cover": 0.2369453688893771,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 137,
+      "question": "how tall is the actor who plays hagrid in harry potter",
+      "metrics": {
+        "retrieval_effectiveness": 0.519673727007413,
+        "generation_reliability": 0.8719605979434891,
+        "retrieval_stability": 0.6024837609935321,
+        "knowledge_reliability": 0.4352086604183002
+      },
+      "raw_values": {
+        "keypoint_hit": 0.12156782935798635,
+        "retrieval_diversity": 0.8390847166271875,
+        "rougeL": 0.12803940205651085,
+        "consistency": 0.397516239006468,
+        "knowledge_cover": 0.2295826791633995,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 138,
+      "question": "who is opening for little mix glory days tour",
+      "metrics": {
+        "retrieval_effectiveness": 0.3648245804149459,
+        "generation_reliability": 0.8211880891815053,
+        "retrieval_stability": 0.11217535896443187,
+        "knowledge_reliability": 0.46483012128578705
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2914507757787089,
+        "retrieval_diversity": 0.9789000633913992,
+        "rougeL": 0.17881191081849473,
+        "consistency": 0.8878246410355681,
+        "knowledge_cover": 0.3703397574284259,
+        "reliability": 0.7
+      }
+    },
+    {
+      "id": 139,
+      "question": "who performed the first c section in 1794",
+      "metrics": {
+        "retrieval_effectiveness": 0.6217219110997706,
+        "generation_reliability": 0.8992417807141734,
+        "retrieval_stability": 0.7571244325594547,
+        "knowledge_reliability": 0.3287799904085851
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2657076874615407,
+        "retrieval_diversity": 0.49084849033891814,
+        "rougeL": 0.10075821928582666,
+        "consistency": 0.24287556744054528,
+        "knowledge_cover": 0.4424400191828298,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 140,
+      "question": "who voices randy in f is for family",
+      "metrics": {
+        "retrieval_effectiveness": 0.4935148860931562,
+        "generation_reliability": 0.6559516193872021,
+        "retrieval_stability": 0.40889270661881116,
+        "knowledge_reliability": 0.3636810166239799
+      },
+      "raw_values": {
+        "keypoint_hit": 0.12166411492366748,
+        "retrieval_diversity": 0.8913061128900202,
+        "rougeL": 0.3440483806127978,
+        "consistency": 0.5911072933811888,
+        "knowledge_cover": 0.32263796675204026,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 141,
+      "question": "bible verse taking the lord's name in vain",
+      "metrics": {
+        "retrieval_effectiveness": 0.49178972766966367,
+        "generation_reliability": 0.5958026600169304,
+        "retrieval_stability": 0.5134667564904656,
+        "knowledge_reliability": 0.29613317357856306
+      },
+      "raw_values": {
+        "keypoint_hit": 0.29205348770768014,
+        "retrieval_diversity": 0.7243670569529925,
+        "rougeL": 0.4041973399830696,
+        "consistency": 0.48653324350953436,
+        "knowledge_cover": 0.507733652842874,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 142,
+      "question": "who controlled the house and the senate in 2012",
+      "metrics": {
+        "retrieval_effectiveness": 0.25342702799876315,
+        "generation_reliability": 0.49409537900335443,
+        "retrieval_stability": 0.2643059881027331,
+        "knowledge_reliability": 0.5252461468452931
+      },
+      "raw_values": {
+        "keypoint_hit": 0.522764142028306,
+        "retrieval_diversity": 0.9703818019741677,
+        "rougeL": 0.5059046209966456,
+        "consistency": 0.7356940118972669,
+        "knowledge_cover": 0.4495077063094138,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 143,
+      "question": "when's the last time army won the army navy game",
+      "metrics": {
+        "retrieval_effectiveness": 0.37163535732994857,
+        "generation_reliability": 0.5892876789598755,
+        "retrieval_stability": 0.41353330400137844,
+        "knowledge_reliability": 0.38858737716524305
+      },
+      "raw_values": {
+        "keypoint_hit": 0.30409380768892663,
+        "retrieval_diversity": 0.9526354776511763,
+        "rougeL": 0.4107123210401244,
+        "consistency": 0.5864666959986216,
+        "knowledge_cover": 0.32282524566951387,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 144,
+      "question": "when does thomas rhett's new album come out",
+      "metrics": {
+        "retrieval_effectiveness": 0.7246260163878533,
+        "generation_reliability": 0.8969656773337755,
+        "retrieval_stability": 0.26455735083835763,
+        "knowledge_reliability": 0.397365560786034
+      },
+      "raw_values": {
+        "keypoint_hit": 0.1477665686260146,
+        "retrieval_diversity": 0.4029813985982787,
+        "rougeL": 0.10303432266622453,
+        "consistency": 0.7354426491616424,
+        "knowledge_cover": 0.305268878427932,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 145,
+      "question": "who won the champions league final in 2016",
+      "metrics": {
+        "retrieval_effectiveness": 0.22422074918360768,
+        "generation_reliability": 0.5044465752683485,
+        "retrieval_stability": 0.2641517479438589,
+        "knowledge_reliability": 0.20925991119749954
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6257720243502213,
+        "retrieval_diversity": 0.9257864772825632,
+        "rougeL": 0.49555342473165154,
+        "consistency": 0.7358482520561411,
+        "knowledge_cover": 0.5814801776050008,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 146,
+      "question": "who is the real killer in basic instinct 2",
+      "metrics": {
+        "retrieval_effectiveness": 0.762208921983709,
+        "generation_reliability": 0.8963870069828268,
+        "retrieval_stability": 0.8345785333551736,
+        "knowledge_reliability": 0.481004779089254
+      },
+      "raw_values": {
+        "keypoint_hit": 0.15299162869575408,
+        "retrieval_diversity": 0.3225905273368278,
+        "rougeL": 0.10361299301717314,
+        "consistency": 0.1654214666448264,
+        "knowledge_cover": 0.13799044182149195,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 147,
+      "question": "who does the voice of mickey mouse on mickey mouse clubhouse",
+      "metrics": {
+        "retrieval_effectiveness": 0.4768654907559541,
+        "generation_reliability": 0.8150259556394526,
+        "retrieval_stability": 0.2250994980646175,
+        "knowledge_reliability": 0.4504656220612443
+      },
+      "raw_values": {
+        "keypoint_hit": 0.20700041389515633,
+        "retrieval_diversity": 0.8392686045929355,
+        "rougeL": 0.1849740443605474,
+        "consistency": 0.7749005019353825,
+        "knowledge_cover": 0.29906875587751136,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 148,
+      "question": "when was the last episode of vampire diaries aired",
+      "metrics": {
+        "retrieval_effectiveness": 0.5595516139596367,
+        "generation_reliability": 0.8280939284958747,
+        "retrieval_stability": 0.25261417281061505,
+        "knowledge_reliability": 0.31181957438302554
+      },
+      "raw_values": {
+        "keypoint_hit": 0.219711207401764,
+        "retrieval_diversity": 0.6611855646789626,
+        "rougeL": 0.17190607150412526,
+        "consistency": 0.747385827189385,
+        "knowledge_cover": 0.37636085123394886,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 149,
+      "question": "where did the dewey decimal system come from",
+      "metrics": {
+        "retrieval_effectiveness": 0.3201597505974554,
+        "generation_reliability": 0.6595505862707373,
+        "retrieval_stability": 0.03430721601731235,
+        "knowledge_reliability": 0.3639172986200643
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4132575563336947,
+        "retrieval_diversity": 0.9464229424713946,
+        "rougeL": 0.34044941372926274,
+        "consistency": 0.9656927839826877,
+        "knowledge_cover": 0.3721654027598713,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 150,
+      "question": "where did the jungle book story come from",
+      "metrics": {
+        "retrieval_effectiveness": 0.25999467990461933,
+        "generation_reliability": 0.7387418149207996,
+        "retrieval_stability": 0.41870496777766764,
+        "knowledge_reliability": 0.1916387270643729
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6056726528848126,
+        "retrieval_diversity": 0.8743379873059486,
+        "rougeL": 0.2612581850792004,
+        "consistency": 0.5812950322223324,
+        "knowledge_cover": 0.7167225458712542,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 151,
+      "question": "derek and meredith get back together season 3",
+      "metrics": {
+        "retrieval_effectiveness": 0.4900304148371456,
+        "generation_reliability": 0.8357747821071374,
+        "retrieval_stability": 0.06302449297423496,
+        "knowledge_reliability": 0.8216960268701049
+      },
+      "raw_values": {
+        "keypoint_hit": 0.09725959284437542,
+        "retrieval_diversity": 0.9226795774813334,
+        "rougeL": 0.16422521789286262,
+        "consistency": 0.936975507025765,
+        "knowledge_cover": 0.25660794625979017,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 152,
+      "question": "who did america declare war on in ww1",
+      "metrics": {
+        "retrieval_effectiveness": 0.2615838311800005,
+        "generation_reliability": 0.7067484662576686,
+        "retrieval_stability": 0.3697470397294289,
+        "knowledge_reliability": 0.36781680751086276
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5211975671755501,
+        "retrieval_diversity": 0.955634770464449,
+        "rougeL": 0.2932515337423313,
+        "consistency": 0.6302529602705711,
+        "knowledge_cover": 0.46436638497827437,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 153,
+      "question": "who played zoe hart on hart of dixie",
+      "metrics": {
+        "retrieval_effectiveness": 0.46642594444434626,
+        "generation_reliability": 0.7620514850279346,
+        "retrieval_stability": 0.19233053152885127,
+        "knowledge_reliability": 0.3216445281142899
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3090545059630205,
+        "retrieval_diversity": 0.758093605148287,
+        "rougeL": 0.2379485149720654,
+        "consistency": 0.8076694684711487,
+        "knowledge_cover": 0.35671094377142026,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 154,
+      "question": "what was tom hanks character name in castaway",
+      "metrics": {
+        "retrieval_effectiveness": 0.57066241989629,
+        "generation_reliability": 0.953868261843722,
+        "retrieval_stability": 0.6665481965691525,
+        "knowledge_reliability": 0.30631835930939455
+      },
+      "raw_values": {
+        "keypoint_hit": 0.22722683835379612,
+        "retrieval_diversity": 0.631448321853624,
+        "rougeL": 0.046131738156278045,
+        "consistency": 0.33345180343084746,
+        "knowledge_cover": 0.3873632813812109,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 155,
+      "question": "what engine is in a holden v8 supercar",
+      "metrics": {
+        "retrieval_effectiveness": 0.2033378660830818,
+        "generation_reliability": 0.42681154249012987,
+        "retrieval_stability": 0.1790266795250186,
+        "knowledge_reliability": 0.20401651990984682
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6258197321768687,
+        "retrieval_diversity": 0.9675045356569678,
+        "rougeL": 0.5731884575098701,
+        "consistency": 0.8209733204749814,
+        "knowledge_cover": 0.6919669601803063,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 156,
+      "question": "when did the sat become out of 1600",
+      "metrics": {
+        "retrieval_effectiveness": 0.4157224778236649,
+        "generation_reliability": 0.8463763722731077,
+        "retrieval_stability": 0.5494646363733968,
+        "knowledge_reliability": 0.5323918570325237
+      },
+      "raw_values": {
+        "keypoint_hit": 0.21669247406745393,
+        "retrieval_diversity": 0.9518625702852163,
+        "rougeL": 0.15362362772689225,
+        "consistency": 0.45053536362660324,
+        "knowledge_cover": 0.4352162859349526,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 157,
+      "question": "when was the minimum wage established in the united states",
+      "metrics": {
+        "retrieval_effectiveness": 0.45770117036364144,
+        "generation_reliability": 0.6837483459641525,
+        "retrieval_stability": 0.1370510436867003,
+        "knowledge_reliability": 0.6720278588291756
+      },
+      "raw_values": {
+        "keypoint_hit": 0.19474930040730212,
+        "retrieval_diversity": 0.889848358865415,
+        "rougeL": 0.31625165403584754,
+        "consistency": 0.8629489563132997,
+        "knowledge_cover": 0.32594428234164885,
+        "reliability": 0.33
+      }
+    },
+    {
+      "id": 158,
+      "question": "when did the rational dress society begin to work",
+      "metrics": {
+        "retrieval_effectiveness": 0.5285171667657782,
+        "generation_reliability": 0.5304345467662581,
+        "retrieval_stability": 0.4653228503178033,
+        "knowledge_reliability": 0.37607457613854445
+      },
+      "raw_values": {
+        "keypoint_hit": 0.25095314926597706,
+        "retrieval_diversity": 0.6920125172024666,
+        "rougeL": 0.4695654532337418,
+        "consistency": 0.5346771496821967,
+        "knowledge_cover": 0.34785084772291114,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 159,
+      "question": "what is the baby elephants name in jungle book",
+      "metrics": {
+        "retrieval_effectiveness": 0.5832288682118075,
+        "generation_reliability": 0.885767248702218,
+        "retrieval_stability": 0.33332469781464424,
+        "knowledge_reliability": 0.5133018828897431
+      },
+      "raw_values": {
+        "keypoint_hit": 0.20544290444516072,
+        "retrieval_diversity": 0.6280993591312243,
+        "rougeL": 0.11423275129778201,
+        "consistency": 0.6666753021853558,
+        "knowledge_cover": 0.17339623422051367,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 160,
+      "question": "where is fe best absorbed in the body",
+      "metrics": {
+        "retrieval_effectiveness": 0.31975856685885073,
+        "generation_reliability": 0.6822789771318418,
+        "retrieval_stability": 0.10172528300463757,
+        "knowledge_reliability": 0.3277115341301978
+      },
+      "raw_values": {
+        "keypoint_hit": 0.40174403697951766,
+        "retrieval_diversity": 0.9587388293027809,
+        "rougeL": 0.3177210228681582,
+        "consistency": 0.8982747169953624,
+        "knowledge_cover": 0.4445769317396043,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 161,
+      "question": "who is the biggest selling female group of all time",
+      "metrics": {
+        "retrieval_effectiveness": 0.2490325404262499,
+        "generation_reliability": 0.6523625126869097,
+        "retrieval_stability": 0.49319924454264197,
+        "knowledge_reliability": 0.25520943004154195
+      },
+      "raw_values": {
+        "keypoint_hit": 0.52305112154599,
+        "retrieval_diversity": 0.9788837976015101,
+        "rougeL": 0.34763748731309035,
+        "consistency": 0.506800755457358,
+        "knowledge_cover": 0.5895811399169161,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 162,
+      "question": "epidemiologists attempt to explain the link between health and variables such as",
+      "metrics": {
+        "retrieval_effectiveness": 0.23507757891941106,
+        "generation_reliability": 0.7011090136857008,
+        "retrieval_stability": 0.326289656197818,
+        "knowledge_reliability": 0.20412907583570417
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5547193204793858,
+        "retrieval_diversity": 0.9751255216817921,
+        "rougeL": 0.2988909863142992,
+        "consistency": 0.673710343802182,
+        "knowledge_cover": 0.6917418483285916,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 163,
+      "question": "who won the mens single ice skating 2018",
+      "metrics": {
+        "retrieval_effectiveness": 0.4638160156607496,
+        "generation_reliability": 0.6197169145087171,
+        "retrieval_stability": 0.13608774761566644,
+        "knowledge_reliability": 0.42297103800489144
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2608587958214903,
+        "retrieval_diversity": 0.8115091728570105,
+        "rougeL": 0.3802830854912829,
+        "consistency": 0.8639122523843336,
+        "knowledge_cover": 0.3540579239902172,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 164,
+      "question": "where is the boy who played charlie in willy wonka",
+      "metrics": {
+        "retrieval_effectiveness": 0.5831993425666826,
+        "generation_reliability": 0.5595556035971431,
+        "retrieval_stability": 0.467411115358768,
+        "knowledge_reliability": 0.6413171294443827
+      },
+      "raw_values": {
+        "keypoint_hit": 0.04829455965950714,
+        "retrieval_diversity": 0.7853067552071278,
+        "rougeL": 0.44044439640285693,
+        "consistency": 0.532588884641232,
+        "knowledge_cover": 0.4173657411112346,
+        "reliability": 0.3
+      }
+    },
+    {
+      "id": 165,
+      "question": "where was the first session of the assam association held in1905",
+      "metrics": {
+        "retrieval_effectiveness": 0.3536378310570336,
+        "generation_reliability": 0.8903769570220974,
+        "retrieval_stability": 0.4115489424719825,
+        "knowledge_reliability": 0.2694970258717162
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4781890988073959,
+        "retrieval_diversity": 0.8145352390785369,
+        "rougeL": 0.10962304297790257,
+        "consistency": 0.5884510575280175,
+        "knowledge_cover": 0.6610059482565677,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 166,
+      "question": "who played ice queen in chronicles of narnia",
+      "metrics": {
+        "retrieval_effectiveness": 0.5559274176015558,
+        "generation_reliability": 0.8914077504746645,
+        "retrieval_stability": 0.5683812694288817,
+        "knowledge_reliability": 0.5426369213373152
+      },
+      "raw_values": {
+        "keypoint_hit": 0.1075943351305418,
+        "retrieval_diversity": 0.7805508296663466,
+        "rougeL": 0.10859224952533557,
+        "consistency": 0.43161873057111827,
+        "knowledge_cover": 0.4147261573253695,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 167,
+      "question": "when is season 2 of jessica jones being released",
+      "metrics": {
+        "retrieval_effectiveness": 0.4280252756911056,
+        "generation_reliability": 0.6979454183404504,
+        "retrieval_stability": 0.10235051184318222,
+        "knowledge_reliability": 0.3416407071057912
+      },
+      "raw_values": {
+        "keypoint_hit": 0.24346521815571248,
+        "retrieval_diversity": 0.9004842304620763,
+        "rougeL": 0.30205458165954957,
+        "consistency": 0.8976494881568178,
+        "knowledge_cover": 0.3167185857884177,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 168,
+      "question": "when was united nations convention on the rights of the child created",
+      "metrics": {
+        "retrieval_effectiveness": 0.2954179267652507,
+        "generation_reliability": 0.4920209556693209,
+        "retrieval_stability": 0.18177990471299277,
+        "knowledge_reliability": 0.21148262554906372
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4286438340610074,
+        "retrieval_diversity": 0.9805203124084912,
+        "rougeL": 0.5079790443306791,
+        "consistency": 0.8182200952870072,
+        "knowledge_cover": 0.5770347489018726,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 169,
+      "question": "swan lake the sleeping beauty and the nutcracker are three famous ballets by",
+      "metrics": {
+        "retrieval_effectiveness": 0.2633278688862357,
+        "generation_reliability": 0.6536357624360578,
+        "retrieval_stability": 0.37850177034975274,
+        "knowledge_reliability": 0.23344609060268806
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5089459958390717,
+        "retrieval_diversity": 0.9643982663884568,
+        "rougeL": 0.34636423756394213,
+        "consistency": 0.6214982296502473,
+        "knowledge_cover": 0.5831078187946238,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 170,
+      "question": "what type of database is library literature and information science",
+      "metrics": {
+        "retrieval_effectiveness": 0.18682136231537416,
+        "generation_reliability": 0.7772740340542329,
+        "retrieval_stability": 0.29339477602111386,
+        "knowledge_reliability": 0.13616810245205735
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999995421513758,
+        "retrieval_diversity": 0.6263577332178759,
+        "rougeL": 0.22272596594576713,
+        "consistency": 0.7066052239788861,
+        "knowledge_cover": 0.8276637950958853,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 171,
+      "question": "when did the united states start using the death penalty",
+      "metrics": {
+        "retrieval_effectiveness": 0.43385158109392563,
+        "generation_reliability": 0.6789850074418267,
+        "retrieval_stability": 0.09400616282181928,
+        "knowledge_reliability": 0.398883716292594
+      },
+      "raw_values": {
+        "keypoint_hit": 0.23821900547953234,
+        "retrieval_diversity": 0.8940778323326165,
+        "rougeL": 0.3210149925581734,
+        "consistency": 0.9059938371781807,
+        "knowledge_cover": 0.40223256741481195,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 172,
+      "question": "when was coffee first made into a drink",
+      "metrics": {
+        "retrieval_effectiveness": 0.3425347632975769,
+        "generation_reliability": 0.6154032591660403,
+        "retrieval_stability": 0.16830785455594166,
+        "knowledge_reliability": 0.31561353999465624
+      },
+      "raw_values": {
+        "keypoint_hit": 0.33238830324962637,
+        "retrieval_diversity": 0.9825421701552198,
+        "rougeL": 0.38459674083395967,
+        "consistency": 0.8316921454440583,
+        "knowledge_cover": 0.4687729200106875,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 173,
+      "question": "who is jared on the bold and the beautiful",
+      "metrics": {
+        "retrieval_effectiveness": 0.6033602456110422,
+        "generation_reliability": 0.7455055094368306,
+        "retrieval_stability": 0.5313997794795347,
+        "knowledge_reliability": 0.8115855877028113
+      },
+      "raw_values": {
+        "keypoint_hit": 0.15700041389515632,
+        "retrieval_diversity": 0.6362790948827594,
+        "rougeL": 0.25449449056316936,
+        "consistency": 0.46860022052046535,
+        "knowledge_cover": 0.2768288245943773,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 174,
+      "question": "who wrote knock knock knocking on heavens door",
+      "metrics": {
+        "retrieval_effectiveness": 0.3581363054443838,
+        "generation_reliability": 0.5774619117719566,
+        "retrieval_stability": 0.7740342780252275,
+        "knowledge_reliability": 0.2575664984535051
+      },
+      "raw_values": {
+        "keypoint_hit": 0.37086928971195826,
+        "retrieval_diversity": 0.9128580993992741,
+        "rougeL": 0.42253808822804345,
+        "consistency": 0.2259657219747725,
+        "knowledge_cover": 0.4848670030929897,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 175,
+      "question": "when did the movie napoleon dynamite come out",
+      "metrics": {
+        "retrieval_effectiveness": 0.5323386457223498,
+        "generation_reliability": 0.5170314976827481,
+        "retrieval_stability": 0.47152279982558754,
+        "knowledge_reliability": 0.4259038211381443
+      },
+      "raw_values": {
+        "keypoint_hit": 0.17488672825035895,
+        "retrieval_diversity": 0.7604359803049414,
+        "rougeL": 0.4829685023172518,
+        "consistency": 0.5284772001744125,
+        "knowledge_cover": 0.2481923577237114,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 176,
+      "question": "who starred in an officer and a gentleman",
+      "metrics": {
+        "retrieval_effectiveness": 0.43483673661963573,
+        "generation_reliability": 0.7374152933156902,
+        "retrieval_stability": 0.7098212740763612,
+        "knowledge_reliability": 0.3188046743356343
+      },
+      "raw_values": {
+        "keypoint_hit": 0.29908531001846045,
+        "retrieval_diversity": 0.8312412167422681,
+        "rougeL": 0.2625847066843098,
+        "consistency": 0.29017872592363886,
+        "knowledge_cover": 0.41239065132873154,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 177,
+      "question": "who plays chummy's mother in call the midwife",
+      "metrics": {
+        "retrieval_effectiveness": 0.5005597375621276,
+        "generation_reliability": 0.7422941067112846,
+        "retrieval_stability": 0.31837717674039523,
+        "knowledge_reliability": 0.39040347586842206
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2564042034166496,
+        "retrieval_diversity": 0.7424763214590951,
+        "rougeL": 0.2577058932887154,
+        "consistency": 0.6816228232596048,
+        "knowledge_cover": 0.319193048263156,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 178,
+      "question": "name two fibres which are made of proteins",
+      "metrics": {
+        "retrieval_effectiveness": 0.25224815686364443,
+        "generation_reliability": 0.7374152933156902,
+        "retrieval_stability": 0.4620184103928777,
+        "knowledge_reliability": 0.2513701591965086
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5607535822076362,
+        "retrieval_diversity": 0.934750104065075,
+        "rougeL": 0.2625847066843098,
+        "consistency": 0.5379815896071223,
+        "knowledge_cover": 0.6972596816069827,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 179,
+      "question": "how many super bowl games has the patriots played in",
+      "metrics": {
+        "retrieval_effectiveness": 0.4120277502505638,
+        "generation_reliability": 0.6274543452457562,
+        "retrieval_stability": 0.20879999975224217,
+        "knowledge_reliability": 0.43349419205529593
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2069546748175931,
+        "retrieval_diversity": 0.9689898246812794,
+        "rougeL": 0.3725456547542438,
+        "consistency": 0.7912000002477578,
+        "knowledge_cover": 0.3330116158894081,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 180,
+      "question": "where do they put the tomb vampires in order to burn them during founders day",
+      "metrics": {
+        "retrieval_effectiveness": 0.5970927227636478,
+        "generation_reliability": 0.7389499500886825,
+        "retrieval_stability": 0.5445074561221843,
+        "knowledge_reliability": 0.7744386847763455
+      },
+      "raw_values": {
+        "keypoint_hit": 0.13941247948838165,
+        "retrieval_diversity": 0.6664020749843227,
+        "rougeL": 0.2610500499113175,
+        "consistency": 0.4554925438778157,
+        "knowledge_cover": 0.351122630447309,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 181,
+      "question": "who is the king and queen of the netherlands",
+      "metrics": {
+        "retrieval_effectiveness": 0.15585218940278156,
+        "generation_reliability": 0.7441614199058459,
+        "retrieval_stability": 0.35021383496089076,
+        "knowledge_reliability": 0.11404544147910978
+      },
+      "raw_values": {
+        "keypoint_hit": 0.7270857751926627,
+        "retrieval_diversity": 0.9612098460017741,
+        "rougeL": 0.255838580094154,
+        "consistency": 0.6497861650391092,
+        "knowledge_cover": 0.8719091170417804,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 182,
+      "question": "where is gall bladder situated in human body",
+      "metrics": {
+        "retrieval_effectiveness": 0.296869321023992,
+        "generation_reliability": 0.5454412195064078,
+        "retrieval_stability": 0.0826462028065037,
+        "knowledge_reliability": 0.2713016862999167
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5463370278664986,
+        "retrieval_diversity": 0.8599243300855174,
+        "rougeL": 0.4545587804935922,
+        "consistency": 0.9173537971934963,
+        "knowledge_cover": 0.5573966274001667,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 183,
+      "question": "what is the current population of bora bora",
+      "metrics": {
+        "retrieval_effectiveness": 0.5053799401654027,
+        "generation_reliability": 0.9125390162522872,
+        "retrieval_stability": 0.4374300313220132,
+        "knowledge_reliability": 0.4261033397759324
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3668557886717262,
+        "retrieval_diversity": 0.6223843309974686,
+        "rougeL": 0.08746098374771286,
+        "consistency": 0.5625699686779868,
+        "knowledge_cover": 0.44779332044813525,
+        "reliability": 0.7
+      }
+    },
+    {
+      "id": 184,
+      "question": "where does tropic of cancer pass in india",
+      "metrics": {
+        "retrieval_effectiveness": 0.31179306655736316,
+        "generation_reliability": 0.7767460351509431,
+        "retrieval_stability": 0.24777790062445326,
+        "knowledge_reliability": 0.36493013105634853
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4437889171330618,
+        "retrieval_diversity": 0.9326249497522119,
+        "rougeL": 0.2232539648490569,
+        "consistency": 0.7522220993755467,
+        "knowledge_cover": 0.4701397378873029,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 185,
+      "question": "who made the song falling in love with you",
+      "metrics": {
+        "retrieval_effectiveness": 0.44822987133172265,
+        "generation_reliability": 0.47706894332661187,
+        "retrieval_stability": 0.5775317970565528,
+        "knowledge_reliability": 0.2130801653947454
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2644493363026343,
+        "retrieval_diversity": 0.8390909210339205,
+        "rougeL": 0.5229310566733881,
+        "consistency": 0.42246820294344717,
+        "knowledge_cover": 0.7738396692105092,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 186,
+      "question": "which is produced in plants of narora kakrapar tarapur",
+      "metrics": {
+        "retrieval_effectiveness": 0.46693235796500676,
+        "generation_reliability": 0.5696663883544487,
+        "retrieval_stability": 0.7059237202235131,
+        "knowledge_reliability": 0.35867820331513145
+      },
+      "raw_values": {
+        "keypoint_hit": 0.07040768672898291,
+        "retrieval_diversity": 0.9957275973410035,
+        "rougeL": 0.4303336116455513,
+        "consistency": 0.2940762797764869,
+        "knowledge_cover": 0.382643593369737,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 187,
+      "question": "what is the first book of percy jackson",
+      "metrics": {
+        "retrieval_effectiveness": 0.03216397328623177,
+        "generation_reliability": 0.5846709046997751,
+        "retrieval_stability": 0.17423083726726563,
+        "knowledge_reliability": 0.08829882737939987
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999998168605503,
+        "retrieval_diversity": 0.9356722365669862,
+        "rougeL": 0.4153290953002249,
+        "consistency": 0.8257691627327344,
+        "knowledge_cover": 0.8234023452412003,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 188,
+      "question": "who was originally cast to play indiana jones",
+      "metrics": {
+        "retrieval_effectiveness": 0.3002936056943024,
+        "generation_reliability": 0.8859126573210521,
+        "retrieval_stability": 0.32917670671754007,
+        "knowledge_reliability": 0.30991049623491584
+      },
+      "raw_values": {
+        "keypoint_hit": 0.507357718961526,
+        "retrieval_diversity": 0.892055069649869,
+        "rougeL": 0.11408734267894793,
+        "consistency": 0.6708232932824599,
+        "knowledge_cover": 0.5801790075301683,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 189,
+      "question": "what proposition made the insurance commissioner an elected position",
+      "metrics": {
+        "retrieval_effectiveness": 0.2999183316340217,
+        "generation_reliability": 0.6680051084751094,
+        "retrieval_stability": 0.7152329786238215,
+        "knowledge_reliability": 0.19609906500794194
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5411990506050928,
+        "retrieval_diversity": 0.8589642861268639,
+        "rougeL": 0.3319948915248906,
+        "consistency": 0.2847670213761785,
+        "knowledge_cover": 0.7078018699841161,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 190,
+      "question": "who played amy grant i i can only imagine",
+      "metrics": {
+        "retrieval_effectiveness": 0.42557945531887575,
+        "generation_reliability": 0.935570175844445,
+        "retrieval_stability": 0.40293215327926124,
+        "knowledge_reliability": 0.7906428487327322
+      },
+      "raw_values": {
+        "keypoint_hit": 0.22310272108594367,
+        "retrieval_diversity": 0.9257383682763047,
+        "rougeL": 0.06442982415555494,
+        "consistency": 0.5970678467207388,
+        "knowledge_cover": 0.31871430253453553,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 191,
+      "question": "who sings the song only in my dreams",
+      "metrics": {
+        "retrieval_effectiveness": 0.3487006759427743,
+        "generation_reliability": 0.6437682710915305,
+        "retrieval_stability": 0.08878647792721439,
+        "knowledge_reliability": 0.37937069392555123
+      },
+      "raw_values": {
+        "keypoint_hit": 0.37955989758841974,
+        "retrieval_diversity": 0.9230387505260317,
+        "rougeL": 0.35623172890846955,
+        "consistency": 0.9112135220727856,
+        "knowledge_cover": 0.2912586121488977,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 192,
+      "question": "who appoints the chair of the federal reserve system",
+      "metrics": {
+        "retrieval_effectiveness": 0.2508559391421552,
+        "generation_reliability": 0.46131949032562525,
+        "retrieval_stability": 0.21964465553618218,
+        "knowledge_reliability": 0.24784697603478079
+      },
+      "raw_values": {
+        "keypoint_hit": 0.552358378263545,
+        "retrieval_diversity": 0.9459297434521445,
+        "rougeL": 0.5386805096743748,
+        "consistency": 0.7803553444638178,
+        "knowledge_cover": 0.6043060479304383,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 193,
+      "question": "who wins the next iron chef super chefs",
+      "metrics": {
+        "retrieval_effectiveness": 0.4031950643158051,
+        "generation_reliability": 0.8068760370838344,
+        "retrieval_stability": 0.47492741968980245,
+        "knowledge_reliability": 0.5066661099764505
+      },
+      "raw_values": {
+        "keypoint_hit": 0.23821863920063294,
+        "retrieval_diversity": 0.9553912321677568,
+        "rougeL": 0.19312396291616557,
+        "consistency": 0.5250725803101975,
+        "knowledge_cover": 0.48666778004709904,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 194,
+      "question": "when does body temperature tend to be lowest",
+      "metrics": {
+        "retrieval_effectiveness": 0.3239187578944257,
+        "generation_reliability": 0.6844441145123574,
+        "retrieval_stability": 0.08049346306720029,
+        "knowledge_reliability": 0.3894560083708608
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3852510475576523,
+        "retrieval_diversity": 0.9669114366534963,
+        "rougeL": 0.31555588548764263,
+        "consistency": 0.9195065369327997,
+        "knowledge_cover": 0.4210879832582784,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 195,
+      "question": "who sings the whiskey ain't workin anymore",
+      "metrics": {
+        "retrieval_effectiveness": 0.12143188899028734,
+        "generation_reliability": 0.47931629677994914,
+        "retrieval_stability": 0.5970362917864123,
+        "knowledge_reliability": 0.43539729472126854
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999998168605503,
+        "retrieval_diversity": 0.757136405158875,
+        "rougeL": 0.5206837032200509,
+        "consistency": 0.4029637082135877,
+        "knowledge_cover": 0.729205410557463,
+        "reliability": 0.4
+      }
+    },
+    {
+      "id": 196,
+      "question": "what year is it for the jewish calendar",
+      "metrics": {
+        "retrieval_effectiveness": 0.5589445113268277,
+        "generation_reliability": 0.9298657171049809,
+        "retrieval_stability": 0.09394837542882173,
+        "knowledge_reliability": 0.549620633493037
+      },
+      "raw_values": {
+        "keypoint_hit": 0.20491894247956163,
+        "retrieval_diversity": 0.6771920348667829,
+        "rougeL": 0.07013428289501912,
+        "consistency": 0.9060516245711783,
+        "knowledge_cover": 0.40075873301392595,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 197,
+      "question": "chief ministers of tamil nadu mentioned on wikipedia",
+      "metrics": {
+        "retrieval_effectiveness": 0.3329413354296221,
+        "generation_reliability": 0.69772534214252,
+        "retrieval_stability": 0.03864755807157605,
+        "knowledge_reliability": 0.2533758940093258
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4843025683476426,
+        "retrieval_diversity": 0.8498147607931131,
+        "rougeL": 0.30227465785748003,
+        "consistency": 0.961352441928424,
+        "knowledge_cover": 0.6932482119813485,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 198,
+      "question": "what is the function of a political action committee (pac)",
+      "metrics": {
+        "retrieval_effectiveness": 0.29409936611786813,
+        "generation_reliability": 0.6840235610787757,
+        "retrieval_stability": 0.21511942407385076,
+        "knowledge_reliability": 0.31708271894101725
+      },
+      "raw_values": {
+        "keypoint_hit": 0.47368524189058514,
+        "retrieval_diversity": 0.9381160258736787,
+        "rougeL": 0.31597643892122423,
+        "consistency": 0.7848805759261492,
+        "knowledge_cover": 0.4658345621179654,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 199,
+      "question": "who has the most followers in the world on instagram",
+      "metrics": {
+        "retrieval_effectiveness": 0.39589856590058314,
+        "generation_reliability": 0.8220439410623459,
+        "retrieval_stability": 0.43829347515692707,
+        "knowledge_reliability": 0.2601291847379822
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5784646321094734,
+        "retrieval_diversity": 0.6297382360893602,
+        "rougeL": 0.17795605893765404,
+        "consistency": 0.5617065248430729,
+        "knowledge_cover": 0.5797416305240356,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 200,
+      "question": "what type of political system does el salvador have",
+      "metrics": {
+        "retrieval_effectiveness": 0.26820209321973043,
+        "generation_reliability": 0.352865939985497,
+        "retrieval_stability": 0.03254513446752172,
+        "knowledge_reliability": 0.2031982795797267
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5283720551176487,
+        "retrieval_diversity": 0.9352237584428904,
+        "rougeL": 0.647134060014503,
+        "consistency": 0.9674548655324783,
+        "knowledge_cover": 0.6936034408405465,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 201,
+      "question": "where is simple squamous epithelium found in the body",
+      "metrics": {
+        "retrieval_effectiveness": 0.3781824869205216,
+        "generation_reliability": 0.7592774517167501,
+        "retrieval_stability": 1.7285441900050103e-07,
+        "knowledge_reliability": 0.2866367004684094
+      },
+      "raw_values": {
+        "keypoint_hit": 0.40002417440736077,
+        "retrieval_diversity": 0.8436108517515961,
+        "rougeL": 0.24072254828324993,
+        "consistency": 0.999999827145581,
+        "knowledge_cover": 0.6267265990631811,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 202,
+      "question": "who is president of india in present time",
+      "metrics": {
+        "retrieval_effectiveness": 0.03958250203470126,
+        "generation_reliability": 0.8070054008704315,
+        "retrieval_stability": 0.0711579884133231,
+        "knowledge_reliability": 0.295854282387614
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999998168605503,
+        "retrieval_diversity": 0.9208351790700472,
+        "rougeL": 0.19299459912956848,
+        "consistency": 0.9288420115866769,
+        "knowledge_cover": 0.9082914352247718,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 203,
+      "question": "what role does the president play in foreign affairs",
+      "metrics": {
+        "retrieval_effectiveness": 0.33532441365183197,
+        "generation_reliability": 0.7647919547176892,
+        "retrieval_stability": 0.4691143003663727,
+        "knowledge_reliability": 0.30675610168031264
+      },
+      "raw_values": {
+        "keypoint_hit": 0.40695462903273066,
+        "retrieval_diversity": 0.9223965436636055,
+        "rougeL": 0.2352080452823108,
+        "consistency": 0.5308856996336273,
+        "knowledge_cover": 0.5864877966393747,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 204,
+      "question": "when did ole miss beat alabama in football",
+      "metrics": {
+        "retrieval_effectiveness": 0.4420248600476655,
+        "generation_reliability": 0.8150259556394526,
+        "retrieval_stability": 0.23262438029620103,
+        "knowledge_reliability": 0.37590568331995433
+      },
+      "raw_values": {
+        "keypoint_hit": 0.1475605367450992,
+        "retrieval_diversity": 0.9683897431595697,
+        "rougeL": 0.1849740443605474,
+        "consistency": 0.767375619703799,
+        "knowledge_cover": 0.34818863336009137,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 205,
+      "question": "what grade was arnold from hey arnold in",
+      "metrics": {
+        "retrieval_effectiveness": 0.5629292872488656,
+        "generation_reliability": 0.9766292956477005,
+        "retrieval_stability": 0.42418261628602805,
+        "knowledge_reliability": 0.4112501003279915
+      },
+      "raw_values": {
+        "keypoint_hit": 0.20204296634629473,
+        "retrieval_diversity": 0.6720984591559741,
+        "rougeL": 0.023370704352299456,
+        "consistency": 0.575817383713972,
+        "knowledge_cover": 0.277499799344017,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 206,
+      "question": "who translated the play neel darpan into english",
+      "metrics": {
+        "retrieval_effectiveness": 0.29037989176321666,
+        "generation_reliability": 0.3441290182498168,
+        "retrieval_stability": 0.2840580409704294,
+        "knowledge_reliability": 0.5390648441171143
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4758267830456823,
+        "retrieval_diversity": 0.9434134334278844,
+        "rougeL": 0.6558709817501832,
+        "consistency": 0.7159419590295706,
+        "knowledge_cover": 0.6218703117657715,
+        "reliability": 0.3
+      }
+    },
+    {
+      "id": 207,
+      "question": "when does the miz and maryse show start",
+      "metrics": {
+        "retrieval_effectiveness": 0.4429304779068255,
+        "generation_reliability": 0.504075216902022,
+        "retrieval_stability": 0.5846781137056964,
+        "knowledge_reliability": 0.6787572376112168
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3535421000966976,
+        "retrieval_diversity": 0.7605969440896515,
+        "rougeL": 0.4959247830979781,
+        "consistency": 0.41532188629430355,
+        "knowledge_cover": 0.3424855247775665,
+        "reliability": 0.3
+      }
+    },
+    {
+      "id": 208,
+      "question": "what channel is celebrity big brother on in the usa",
+      "metrics": {
+        "retrieval_effectiveness": 0.358039724824453,
+        "generation_reliability": 0.74332869915692,
+        "retrieval_stability": 0.0650860304006412,
+        "knowledge_reliability": 0.24775345443565222
+      },
+      "raw_values": {
+        "keypoint_hit": 0.505115176399918,
+        "retrieval_diversity": 0.778805373951176,
+        "rougeL": 0.25667130084308,
+        "consistency": 0.9349139695993588,
+        "knowledge_cover": 0.6044930911286955,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 209,
+      "question": "what is on top of us capitol building",
+      "metrics": {
+        "retrieval_effectiveness": 0.23888932359296444,
+        "generation_reliability": 0.5973190886909723,
+        "retrieval_stability": 0.25823478632813424,
+        "knowledge_reliability": 0.14913855233750373
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5981188831423799,
+        "retrieval_diversity": 0.9241024696716912,
+        "rougeL": 0.4026809113090278,
+        "consistency": 0.7417652136718658,
+        "knowledge_cover": 0.8017228953249925,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 210,
+      "question": "who made the most free throws in nba history",
+      "metrics": {
+        "retrieval_effectiveness": 0.44688163508505385,
+        "generation_reliability": 0.8733292191527208,
+        "retrieval_stability": 0.4649983449549483,
+        "knowledge_reliability": 0.7566693923665396
+      },
+      "raw_values": {
+        "keypoint_hit": 0.17299150965511179,
+        "retrieval_diversity": 0.9332452201747805,
+        "rougeL": 0.12667078084727923,
+        "consistency": 0.5350016550450517,
+        "knowledge_cover": 0.18666121526692078,
+        "reliability": 0.3
+      }
+    },
+    {
+      "id": 211,
+      "question": "who is the first president to be impeached",
+      "metrics": {
+        "retrieval_effectiveness": 0.43419344953137107,
+        "generation_reliability": 0.6789850074418267,
+        "retrieval_stability": 0.31772047759416755,
+        "knowledge_reliability": 0.3805369176954534
+      },
+      "raw_values": {
+        "keypoint_hit": 0.18420275734755473,
+        "retrieval_diversity": 0.9474103435897031,
+        "rougeL": 0.3210149925581733,
+        "consistency": 0.6822795224058325,
+        "knowledge_cover": 0.33892616460909325,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 212,
+      "question": "why does kerosene oil rise up in the wick of lantern",
+      "metrics": {
+        "retrieval_effectiveness": 0.4114030578566862,
+        "generation_reliability": 0.7308101305647318,
+        "retrieval_stability": 0.31126870080450697,
+        "knowledge_reliability": 0.29936712336871985
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2165690838632168,
+        "retrieval_diversity": 0.9606248004234108,
+        "rougeL": 0.26918986943526824,
+        "consistency": 0.688731299195493,
+        "knowledge_cover": 0.5012657532625602,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 213,
+      "question": "when did the sims 4 toddlers come out",
+      "metrics": {
+        "retrieval_effectiveness": 0.4501434073830889,
+        "generation_reliability": 0.8664497780302113,
+        "retrieval_stability": 0.8230118340528721,
+        "knowledge_reliability": 0.3432763097119499
+      },
+      "raw_values": {
+        "keypoint_hit": 0.25090150394116095,
+        "retrieval_diversity": 0.8488116812926613,
+        "rougeL": 0.13355022196978875,
+        "consistency": 0.17698816594712785,
+        "knowledge_cover": 0.41344738057610014,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 214,
+      "question": "how many episodes of season 5 of curse of oak island",
+      "metrics": {
+        "retrieval_effectiveness": 0.5026391128256825,
+        "generation_reliability": 0.9356934064927838,
+        "retrieval_stability": 0.3058843684745427,
+        "knowledge_reliability": 0.4499438516826404
+      },
+      "raw_values": {
+        "keypoint_hit": 0.09408532833240543,
+        "retrieval_diversity": 0.9006364460162295,
+        "rougeL": 0.06430659350721621,
+        "consistency": 0.6941156315254573,
+        "knowledge_cover": 0.20011229663471924,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 215,
+      "question": "how many episodes of touching evil are there",
+      "metrics": {
+        "retrieval_effectiveness": 0.5153412171194851,
+        "generation_reliability": 0.8799924492685228,
+        "retrieval_stability": 0.8115354691902379,
+        "knowledge_reliability": 0.4400262897642112
+      },
+      "raw_values": {
+        "keypoint_hit": 0.09549861546576024,
+        "retrieval_diversity": 0.8738189502952697,
+        "rougeL": 0.12000755073147713,
+        "consistency": 0.1884645308097621,
+        "knowledge_cover": 0.2199474204715775,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 216,
+      "question": "hyori bed and breakfast season 2 air date",
+      "metrics": {
+        "retrieval_effectiveness": 0.3461878941893758,
+        "generation_reliability": 0.8919186654902845,
+        "retrieval_stability": 0.4283960940000484,
+        "knowledge_reliability": 0.4056682692823328
+      },
+      "raw_values": {
+        "keypoint_hit": 0.343995681571776,
+        "retrieval_diversity": 0.9636285300494725,
+        "rougeL": 0.10808133450971544,
+        "consistency": 0.5716039059999516,
+        "knowledge_cover": 0.2886634614353344,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 217,
+      "question": "if a piece of music is perceived to have changed key then we say the piece has",
+      "metrics": {
+        "retrieval_effectiveness": 0.38577548374241577,
+        "generation_reliability": 0.48065651804209863,
+        "retrieval_stability": 0.3418215980631605,
+        "knowledge_reliability": 0.6318365614883594
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2808663228528731,
+        "retrieval_diversity": 0.9475827096622954,
+        "rougeL": 0.5193434819579014,
+        "consistency": 0.6581784019368395,
+        "knowledge_cover": 0.43632687702328116,
+        "reliability": 0.3
+      }
+    },
+    {
+      "id": 218,
+      "question": "who has the most gold medals in the winter olympics of all time",
+      "metrics": {
+        "retrieval_effectiveness": 0.3531982432568912,
+        "generation_reliability": 0.6887022180273714,
+        "retrieval_stability": 0.12150093050054622,
+        "knowledge_reliability": 0.3157606287857243
+      },
+      "raw_values": {
+        "keypoint_hit": 0.38978851056348346,
+        "retrieval_diversity": 0.9038150029227341,
+        "rougeL": 0.31129778197262864,
+        "consistency": 0.8784990694994538,
+        "knowledge_cover": 0.4684787424285514,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 219,
+      "question": "who sings the song let me love you",
+      "metrics": {
+        "retrieval_effectiveness": 0.3170384935974314,
+        "generation_reliability": 0.6050794621433175,
+        "retrieval_stability": 0.2788373441572467,
+        "knowledge_reliability": 0.5053237597545032
+      },
+      "raw_values": {
+        "keypoint_hit": 0.57037252395464,
+        "retrieval_diversity": 0.7955504888504972,
+        "rougeL": 0.3949205378566824,
+        "consistency": 0.7211626558427533,
+        "knowledge_cover": 0.6893524804909937,
+        "reliability": 0.3
+      }
+    },
+    {
+      "id": 220,
+      "question": "when is the fourth movie of the divergent series coming out",
+      "metrics": {
+        "retrieval_effectiveness": 0.7597762036683808,
+        "generation_reliability": 0.8289514070297607,
+        "retrieval_stability": 0.49782148334544396,
+        "knowledge_reliability": 0.48796465413921175
+      },
+      "raw_values": {
+        "keypoint_hit": 0.14058741062794855,
+        "retrieval_diversity": 0.33986018203528984,
+        "rougeL": 0.1710485929702393,
+        "consistency": 0.502178516654556,
+        "knowledge_cover": 0.12407069172157648,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 221,
+      "question": "the cast of don't tell mom the babysitter's dead",
+      "metrics": {
+        "retrieval_effectiveness": 0.4357832999186152,
+        "generation_reliability": 0.8809881043432979,
+        "retrieval_stability": 0.6606207556542676,
+        "knowledge_reliability": 0.36459870394503213
+      },
+      "raw_values": {
+        "keypoint_hit": 0.24371346367978433,
+        "retrieval_diversity": 0.8847199364829853,
+        "rougeL": 0.11901189565670209,
+        "consistency": 0.3393792443457324,
+        "knowledge_cover": 0.37080259210993566,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 222,
+      "question": "the outer layer of the skin that contains no blood or nerve supply is the",
+      "metrics": {
+        "retrieval_effectiveness": 0.20166883495120547,
+        "generation_reliability": 0.791052107625481,
+        "retrieval_stability": 0.23115674184487056,
+        "knowledge_reliability": 0.16300119356425258
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6435866396108653,
+        "retrieval_diversity": 0.9530756904867238,
+        "rougeL": 0.20894789237451908,
+        "consistency": 0.7688432581551294,
+        "knowledge_cover": 0.673997612871495,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 223,
+      "question": "who won the battle of the first battle of bull run",
+      "metrics": {
+        "retrieval_effectiveness": 0.3252007009581749,
+        "generation_reliability": 0.5726209456270805,
+        "retrieval_stability": 0.7248850433486113,
+        "knowledge_reliability": 0.25477812280523304
+      },
+      "raw_values": {
+        "keypoint_hit": 0.47211802604975533,
+        "retrieval_diversity": 0.877480572033895,
+        "rougeL": 0.42737905437291945,
+        "consistency": 0.27511495665138874,
+        "knowledge_cover": 0.5904437543895338,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 224,
+      "question": "which country has the most coastline in the world",
+      "metrics": {
+        "retrieval_effectiveness": 0.09498853915802319,
+        "generation_reliability": 0.8330722038697498,
+        "retrieval_stability": 0.5336884872251546,
+        "knowledge_reliability": 0.2481972547904332
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999995421513758,
+        "retrieval_diversity": 0.810023379532578,
+        "rougeL": 0.16692779613025016,
+        "consistency": 0.4663115127748454,
+        "knowledge_cover": 0.6036054904191335,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 225,
+      "question": "who won battle of the sexes tennis game",
+      "metrics": {
+        "retrieval_effectiveness": 0.25262795795735205,
+        "generation_reliability": 0.685975806424233,
+        "retrieval_stability": 1.0803401129244605e-07,
+        "knowledge_reliability": 0.21085956662314898
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5339060714390366,
+        "retrieval_diversity": 0.9608380126462592,
+        "rougeL": 0.3140241935757671,
+        "consistency": 0.9999998919659887,
+        "knowledge_cover": 0.678280866753702,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 226,
+      "question": "who won in the brown vs board of education case",
+      "metrics": {
+        "retrieval_effectiveness": 0.4065710748262944,
+        "generation_reliability": 0.6355132758749161,
+        "retrieval_stability": 0.2629879263420938,
+        "knowledge_reliability": 0.7549776473360016
+      },
+      "raw_values": {
+        "keypoint_hit": 0.21454690384446332,
+        "retrieval_diversity": 0.9723109465029478,
+        "rougeL": 0.36448672412508387,
+        "consistency": 0.7370120736579062,
+        "knowledge_cover": 0.3900447053279968,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 227,
+      "question": "ganglion axons forming the optic nerve run to the",
+      "metrics": {
+        "retrieval_effectiveness": 0.22956318005670318,
+        "generation_reliability": 0.582942809794001,
+        "retrieval_stability": 0.4423171371119352,
+        "knowledge_reliability": 0.2700894471924722
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5798321343804026,
+        "retrieval_diversity": 0.961041505506191,
+        "rougeL": 0.41705719020599896,
+        "consistency": 0.5576828628880648,
+        "knowledge_cover": 0.6598211056150557,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 228,
+      "question": "when did the word of wisdom become mandatory",
+      "metrics": {
+        "retrieval_effectiveness": 0.4309500687112253,
+        "generation_reliability": 0.8193447158996947,
+        "retrieval_stability": 0.5906501222516483,
+        "knowledge_reliability": 0.8322297588203479
+      },
+      "raw_values": {
+        "keypoint_hit": 0.16450556011369297,
+        "retrieval_diversity": 0.9735943024638565,
+        "rougeL": 0.18065528410030535,
+        "consistency": 0.40934987774835174,
+        "knowledge_cover": 0.23554048235930422,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 229,
+      "question": "element named after fictional planet from which superman came",
+      "metrics": {
+        "retrieval_effectiveness": 0.620807115882083,
+        "generation_reliability": 0.7171798236162221,
+        "retrieval_stability": 0.5474568062554688,
+        "knowledge_reliability": 0.6438365082158165
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5638156738066633,
+        "retrieval_diversity": 0.19457009442917064,
+        "rougeL": 0.28282017638377793,
+        "consistency": 0.45254319374453117,
+        "knowledge_cover": 0.612326983568367,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 230,
+      "question": "who wrote and performed i can only imagine",
+      "metrics": {
+        "retrieval_effectiveness": 0.2172428373336398,
+        "generation_reliability": 0.21170930715333813,
+        "retrieval_stability": 0.7368315794335595,
+        "knowledge_reliability": 0.17942175365432556
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6030702413045389,
+        "retrieval_diversity": 0.9624440840281815,
+        "rougeL": 0.7882906928466619,
+        "consistency": 0.2631684205664405,
+        "knowledge_cover": 0.7411564926913489,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 231,
+      "question": "what are the active materials of a lead acid battery",
+      "metrics": {
+        "retrieval_effectiveness": 0.24196663394010964,
+        "generation_reliability": 0.7373569438214238,
+        "retrieval_stability": 0.19812747455955626,
+        "knowledge_reliability": 0.22043837645561037
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6025638607261113,
+        "retrieval_diversity": 0.9135028713936694,
+        "rougeL": 0.26264305617857614,
+        "consistency": 0.8018725254404437,
+        "knowledge_cover": 0.7591232470887793,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 232,
+      "question": "the roman name for a liberal arts education is known as",
+      "metrics": {
+        "retrieval_effectiveness": 0.33891566406373763,
+        "generation_reliability": 0.5124042545467746,
+        "retrieval_stability": 0.22135820820780117,
+        "knowledge_reliability": 0.30409900984964533
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4359477100243209,
+        "retrieval_diversity": 0.8862209618482038,
+        "rougeL": 0.4875957454532254,
+        "consistency": 0.7786417917921988,
+        "knowledge_cover": 0.4918019803007094,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 233,
+      "question": "who sings you're welcome in moana credits",
+      "metrics": {
+        "retrieval_effectiveness": 0.516881289045598,
+        "generation_reliability": 0.8655554506842851,
+        "retrieval_stability": 0.256334795760944,
+        "knowledge_reliability": 0.4384398758655462
+      },
+      "raw_values": {
+        "keypoint_hit": 0.1666774566325783,
+        "retrieval_diversity": 0.7995599652762257,
+        "rougeL": 0.13444454931571495,
+        "consistency": 0.743665204239056,
+        "knowledge_cover": 0.32312024826890756,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 234,
+      "question": "who developed the central processing unit (cpu)",
+      "metrics": {
+        "retrieval_effectiveness": 0.35212607654432804,
+        "generation_reliability": 0.6863187512799735,
+        "retrieval_stability": 0.07055022867451244,
+        "knowledge_reliability": 0.2534986447912948
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5150817168224573,
+        "retrieval_diversity": 0.7806661300888866,
+        "rougeL": 0.3136812487200264,
+        "consistency": 0.9294497713254876,
+        "knowledge_cover": 0.6930027104174105,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 235,
+      "question": "who was kat slater's sisters in eastenders",
+      "metrics": {
+        "retrieval_effectiveness": 0.3910202215457582,
+        "generation_reliability": 0.6759719188881694,
+        "retrieval_stability": 0.08954346504674393,
+        "knowledge_reliability": 0.24086368228066823
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5087000395581212,
+        "retrieval_diversity": 0.7092595173503624,
+        "rougeL": 0.3240280811118306,
+        "consistency": 0.9104565349532561,
+        "knowledge_cover": 0.7182726354386635,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 236,
+      "question": "what is katie running from in safe haven",
+      "metrics": {
+        "retrieval_effectiveness": 0.3644451275463497,
+        "generation_reliability": 0.7099424924931195,
+        "retrieval_stability": 0.21298247890709687,
+        "knowledge_reliability": 0.31947008316527536
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4240861341459841,
+        "retrieval_diversity": 0.8470236107613164,
+        "rougeL": 0.2900575075068805,
+        "consistency": 0.7870175210929031,
+        "knowledge_cover": 0.4610598336694493,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 237,
+      "question": "when did they replace lead with graphite in pencils",
+      "metrics": {
+        "retrieval_effectiveness": 0.2636441349950821,
+        "generation_reliability": 0.4995188215078431,
+        "retrieval_stability": 0.20515532111118628,
+        "knowledge_reliability": 0.26112126799023794
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5881723049198582,
+        "retrieval_diversity": 0.8845394250899776,
+        "rougeL": 0.5004811784921569,
+        "consistency": 0.7948446788888137,
+        "knowledge_cover": 0.5777574640195241,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 238,
+      "question": "what started the war between us and japan",
+      "metrics": {
+        "retrieval_effectiveness": 0.14176360700289503,
+        "generation_reliability": 0.6752781696162782,
+        "retrieval_stability": 0.15020897415057977,
+        "knowledge_reliability": 0.14127330924204373
+      },
+      "raw_values": {
+        "keypoint_hit": 0.7252078632754124,
+        "retrieval_diversity": 0.9912649227187975,
+        "rougeL": 0.32472183038372177,
+        "consistency": 0.8497910258494202,
+        "knowledge_cover": 0.8174533815159126,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 239,
+      "question": "how old is the actress who plays phyllis on y&r",
+      "metrics": {
+        "retrieval_effectiveness": 0.3227217242996594,
+        "generation_reliability": 0.8090579050436062,
+        "retrieval_stability": 0.22738549055540358,
+        "knowledge_reliability": 0.21834424693662258
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5441562948691652,
+        "retrieval_diversity": 0.8104002565315159,
+        "rougeL": 0.19094209495639378,
+        "consistency": 0.7726145094445964,
+        "knowledge_cover": 0.7633115061267549,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 240,
+      "question": "who wrote the french declaration of the rights of man and of the citizen",
+      "metrics": {
+        "retrieval_effectiveness": 0.3107004957321253,
+        "generation_reliability": 0.39214542224285986,
+        "retrieval_stability": 0.024472555806643648,
+        "knowledge_reliability": 0.44654934174819505
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4303361341459841,
+        "retrieval_diversity": 0.9482628743897652,
+        "rougeL": 0.6078545777571401,
+        "consistency": 0.9755274441933564,
+        "knowledge_cover": 0.6069013165036099,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 241,
+      "question": "when does sam realize he is jim in ghost whisperer",
+      "metrics": {
+        "retrieval_effectiveness": 0.4637938677366821,
+        "generation_reliability": 0.6056894761680037,
+        "retrieval_stability": 0.2909400992240547,
+        "knowledge_reliability": 0.7662363632013545
+      },
+      "raw_values": {
+        "keypoint_hit": 0.14183527705335952,
+        "retrieval_diversity": 0.9305769874732763,
+        "rougeL": 0.3943105238319963,
+        "consistency": 0.7090599007759453,
+        "knowledge_cover": 0.3675272735972909,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 242,
+      "question": "what size engine does a 2005 honda civic have",
+      "metrics": {
+        "retrieval_effectiveness": 0.43372196376515415,
+        "generation_reliability": 0.7248853991524398,
+        "retrieval_stability": 0.27411209852517526,
+        "knowledge_reliability": 0.3772666082161583
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3498837980191637,
+        "retrieval_diversity": 0.7826722744505279,
+        "rougeL": 0.2751146008475602,
+        "consistency": 0.7258879014748247,
+        "knowledge_cover": 0.3454667835676834,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 243,
+      "question": "who won college basketball player of the year",
+      "metrics": {
+        "retrieval_effectiveness": 0.4083829072266978,
+        "generation_reliability": 0.6994936930997602,
+        "retrieval_stability": 0.34757031471092725,
+        "knowledge_reliability": 0.35372262519077047
+      },
+      "raw_values": {
+        "keypoint_hit": 0.30851854836346587,
+        "retrieval_diversity": 0.8747156371831385,
+        "rougeL": 0.3005063069002398,
+        "consistency": 0.6524296852890727,
+        "knowledge_cover": 0.49255474961845896,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 244,
+      "question": "a single period of precession of earth's axis is completed in about",
+      "metrics": {
+        "retrieval_effectiveness": 0.28203895304729354,
+        "generation_reliability": 0.7133507521955823,
+        "retrieval_stability": 0.06892931876928265,
+        "knowledge_reliability": 0.1676963667772151
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5636930619450875,
+        "retrieval_diversity": 0.8722290319603253,
+        "rougeL": 0.2866492478044177,
+        "consistency": 0.9310706812307173,
+        "knowledge_cover": 0.6646072664455699,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 245,
+      "question": "locations for the film an englishman who went up a hill",
+      "metrics": {
+        "retrieval_effectiveness": 0.433774805868668,
+        "generation_reliability": 0.7223279611327456,
+        "retrieval_stability": 0.46785162404253167,
+        "knowledge_reliability": 0.3228468257637803
+      },
+      "raw_values": {
+        "keypoint_hit": 0.41294182392240747,
+        "retrieval_diversity": 0.7195085643402566,
+        "rougeL": 0.2776720388672545,
+        "consistency": 0.5321483759574683,
+        "knowledge_cover": 0.5543063484724393,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 246,
+      "question": "rizal finished all the chapters of the novel noli me tangere in",
+      "metrics": {
+        "retrieval_effectiveness": 0.3457066782510787,
+        "generation_reliability": 0.740167444461923,
+        "retrieval_stability": 0.10192863902648186,
+        "knowledge_reliability": 0.39023046385652427
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3878095972397222,
+        "retrieval_diversity": 0.9207770462581204,
+        "rougeL": 0.25983255553807705,
+        "consistency": 0.8980713609735181,
+        "knowledge_cover": 0.41953907228695136,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 247,
+      "question": "who sang the superbowl national anthem in 2017",
+      "metrics": {
+        "retrieval_effectiveness": 0.41395431499989455,
+        "generation_reliability": 0.8129028676123587,
+        "retrieval_stability": 0.2579691522995293,
+        "knowledge_reliability": 0.381133372761301
+      },
+      "raw_values": {
+        "keypoint_hit": 0.20798913799923813,
+        "retrieval_diversity": 0.9641022320009728,
+        "rougeL": 0.18709713238764128,
+        "consistency": 0.7420308477004707,
+        "knowledge_cover": 0.2877332544773981,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 248,
+      "question": "who did the singing in into the woods",
+      "metrics": {
+        "retrieval_effectiveness": 0.38258141625507813,
+        "generation_reliability": 0.819407125730045,
+        "retrieval_stability": 0.5822052835934952,
+        "knowledge_reliability": 0.3467146280627734
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3318845781932194,
+        "retrieval_diversity": 0.9029525892966244,
+        "rougeL": 0.18059287426995502,
+        "consistency": 0.41779471640650484,
+        "knowledge_cover": 0.40657074387445313,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 249,
+      "question": "which country has won maximum number of gold medal in asian game 2014",
+      "metrics": {
+        "retrieval_effectiveness": 0.2762580907462766,
+        "generation_reliability": 0.7215809990496937,
+        "retrieval_stability": 0.0862818822143625,
+        "knowledge_reliability": 0.24637755547622286
+      },
+      "raw_values": {
+        "keypoint_hit": 0.563720441292818,
+        "retrieval_diversity": 0.8837633772146288,
+        "rougeL": 0.2784190009503062,
+        "consistency": 0.9137181177856375,
+        "knowledge_cover": 0.5072448890475542,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 250,
+      "question": "which country is the last member of saarc",
+      "metrics": {
+        "retrieval_effectiveness": 0.24904314656391058,
+        "generation_reliability": 0.5743381242128837,
+        "retrieval_stability": 0.21303198369251108,
+        "knowledge_reliability": 0.23737647281786178
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5263272115919946,
+        "retrieval_diversity": 0.9755864952801843,
+        "rougeL": 0.42566187578711634,
+        "consistency": 0.7869680163074889,
+        "knowledge_cover": 0.5752470543642765,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 251,
+      "question": "who plays timon in lion king on broadway",
+      "metrics": {
+        "retrieval_effectiveness": 0.490185002119385,
+        "generation_reliability": 0.5405671875901825,
+        "retrieval_stability": 0.1153934112922611,
+        "knowledge_reliability": 0.5050457525106159
+      },
+      "raw_values": {
+        "keypoint_hit": 0.0910627490696516,
+        "retrieval_diversity": 0.9285672466915784,
+        "rougeL": 0.4594328124098175,
+        "consistency": 0.8846065887077389,
+        "knowledge_cover": 0.08990849497876818,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 252,
+      "question": "what caused the breakup of the democratic republican party",
+      "metrics": {
+        "retrieval_effectiveness": 0.4239398384350237,
+        "generation_reliability": 0.34482093230559474,
+        "retrieval_stability": 0.3494114951631412,
+        "knowledge_reliability": 0.23045078589376056
+      },
+      "raw_values": {
+        "keypoint_hit": 0.34365046370908664,
+        "retrieval_diversity": 0.808469859420866,
+        "rougeL": 0.6551790676944053,
+        "consistency": 0.6505885048368588,
+        "knowledge_cover": 0.7390984282124787,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 253,
+      "question": "most passing yards in nfl history in a game",
+      "metrics": {
+        "retrieval_effectiveness": 0.2852127618807747,
+        "generation_reliability": 0.8760098289694228,
+        "retrieval_stability": 0.3572815676697356,
+        "knowledge_reliability": 0.21512027690879232
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4602726580127172,
+        "retrieval_diversity": 0.9693018182257334,
+        "rougeL": 0.12399017103057723,
+        "consistency": 0.6427184323302644,
+        "knowledge_cover": 0.6197594461824153,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 254,
+      "question": "who has won the most college football national champions",
+      "metrics": {
+        "retrieval_effectiveness": 0.3342297768626393,
+        "generation_reliability": 0.6975529257581541,
+        "retrieval_stability": 0.24328355968727577,
+        "knowledge_reliability": 0.7284565247138044
+      },
+      "raw_values": {
+        "keypoint_hit": 0.36006873223547337,
+        "retrieval_diversity": 0.9714717140392479,
+        "rougeL": 0.30244707424184586,
+        "consistency": 0.7567164403127242,
+        "knowledge_cover": 0.44308695057239106,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 255,
+      "question": "what languages are spoken in india the most",
+      "metrics": {
+        "retrieval_effectiveness": 2.5944609145844844e-05,
+        "generation_reliability": 0.6666456924125634,
+        "retrieval_stability": 0.06698156636540553,
+        "knowledge_reliability": 0.23334548858759518
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999996337211006,
+        "retrieval_diversity": 0.9999484770606077,
+        "rougeL": 0.3333543075874365,
+        "consistency": 0.9330184336345945,
+        "knowledge_cover": 0.9333090228248095,
+        "reliability": 0.6
+      }
+    },
+    {
+      "id": 256,
+      "question": "what is the name of the hyena in lion king",
+      "metrics": {
+        "retrieval_effectiveness": 0.47459627045061237,
+        "generation_reliability": 0.6607244774824138,
+        "retrieval_stability": 0.1051297984359747,
+        "knowledge_reliability": 0.4750854470373689
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2682356528555103,
+        "retrieval_diversity": 0.782571806243265,
+        "rougeL": 0.3392755225175862,
+        "consistency": 0.8948702015640253,
+        "knowledge_cover": 0.37982910592526214,
+        "reliability": 0.67
+      }
+    },
+    {
+      "id": 257,
+      "question": "what is the meaning of the dragon boat festival",
+      "metrics": {
+        "retrieval_effectiveness": 0.32304398036857496,
+        "generation_reliability": 0.5799369922069308,
+        "retrieval_stability": 0.14083287510707143,
+        "knowledge_reliability": 0.3894465265653789
+      },
+      "raw_values": {
+        "keypoint_hit": 0.38428846661001553,
+        "retrieval_diversity": 0.9696235726528345,
+        "rougeL": 0.4200630077930692,
+        "consistency": 0.8591671248929286,
+        "knowledge_cover": 0.5211069468692422,
+        "reliability": 0.7
+      }
+    },
+    {
+      "id": 258,
+      "question": "what was the real name of saudi arabia",
+      "metrics": {
+        "retrieval_effectiveness": 0.02114740281526839,
+        "generation_reliability": 0.10809888554107516,
+        "retrieval_stability": 0.10207897195525606,
+        "knowledge_reliability": 0.2515841922450499
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999995421513758,
+        "retrieval_diversity": 0.9577056522180875,
+        "rougeL": 0.8919011144589248,
+        "consistency": 0.8979210280447439,
+        "knowledge_cover": 0.6968316155099001,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 259,
+      "question": "what is the function of the pericardial sac",
+      "metrics": {
+        "retrieval_effectiveness": 0.38113718088867576,
+        "generation_reliability": 0.5339111592632719,
+        "retrieval_stability": 0.4439598230728422,
+        "knowledge_reliability": 0.38115775496775306
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4813140988073959,
+        "retrieval_diversity": 0.7564115394152526,
+        "rougeL": 0.4660888407367281,
+        "consistency": 0.5560401769271578,
+        "knowledge_cover": 0.5376844900644939,
+        "reliability": 0.7
+      }
+    },
+    {
+      "id": 260,
+      "question": "chris cornell she's going to change the world",
+      "metrics": {
+        "retrieval_effectiveness": 0.4722576459880877,
+        "generation_reliability": 0.7941890504663258,
+        "retrieval_stability": 0.890620229960766,
+        "knowledge_reliability": 0.7434626398595774
+      },
+      "raw_values": {
+        "keypoint_hit": 0.17335444625955987,
+        "retrieval_diversity": 0.8821302617642647,
+        "rougeL": 0.2058109495336742,
+        "consistency": 0.10937977003923405,
+        "knowledge_cover": 0.3130747202808453,
+        "reliability": 0.2
+      }
+    },
+    {
+      "id": 261,
+      "question": "who played the mad hatter in the batman tv show",
+      "metrics": {
+        "retrieval_effectiveness": 0.49581677360720056,
+        "generation_reliability": 0.8460528385617181,
+        "retrieval_stability": 0.12832152460363322,
+        "knowledge_reliability": 0.8220703725577574
+      },
+      "raw_values": {
+        "keypoint_hit": 0.10860187681308055,
+        "retrieval_diversity": 0.8997645759725184,
+        "rougeL": 0.1539471614382819,
+        "consistency": 0.8716784753963668,
+        "knowledge_cover": 0.1558592548844852,
+        "reliability": 0.2
+      }
+    },
+    {
+      "id": 262,
+      "question": "who played the colorado kid in rio bravo",
+      "metrics": {
+        "retrieval_effectiveness": 0.36945735909043587,
+        "generation_reliability": 0.8749762039977284,
+        "retrieval_stability": 0.3636382349164011,
+        "knowledge_reliability": 0.18603759356137672
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4957877010871158,
+        "retrieval_diversity": 0.7652975807320125,
+        "rougeL": 0.12502379600227165,
+        "consistency": 0.6363617650835989,
+        "knowledge_cover": 0.6779248128772465,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 263,
+      "question": "other than water what else has hydrogen bonds",
+      "metrics": {
+        "retrieval_effectiveness": 0.2233397951035836,
+        "generation_reliability": 0.851544322264774,
+        "retrieval_stability": 0.154650731333003,
+        "knowledge_reliability": 0.5104006802385148
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5533204097928327,
+        "retrieval_diversity": 1.0,
+        "rougeL": 0.14845567773522605,
+        "consistency": 0.845349268666997,
+        "knowledge_cover": 0.6791986395229703,
+        "reliability": 0.3
+      }
+    },
+    {
+      "id": 264,
+      "question": "where was when we first met netflix filmed",
+      "metrics": {
+        "retrieval_effectiveness": 0.3903734835667252,
+        "generation_reliability": 0.857133868176813,
+        "retrieval_stability": 0.749583750353622,
+        "knowledge_reliability": 0.6162350726386444
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2581411895273537,
+        "retrieval_diversity": 0.9611118433391959,
+        "rougeL": 0.14286613182318703,
+        "consistency": 0.250416249646378,
+        "knowledge_cover": 0.46752985472271114,
+        "reliability": 0.3
+      }
+    },
+    {
+      "id": 265,
+      "question": "who was the viceroy when the simon commission visited india",
+      "metrics": {
+        "retrieval_effectiveness": 0.2583533690962171,
+        "generation_reliability": 0.6053120382965204,
+        "retrieval_stability": 0.05013183282445388,
+        "knowledge_reliability": 0.21038052624550785
+      },
+      "raw_values": {
+        "keypoint_hit": 0.553630556450904,
+        "retrieval_diversity": 0.9296627053566618,
+        "rougeL": 0.39468796170347964,
+        "consistency": 0.9498681671755461,
+        "knowledge_cover": 0.6792389475089842,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 266,
+      "question": "what category was hurricane charley when it hit florida",
+      "metrics": {
+        "retrieval_effectiveness": 0.36626635524290296,
+        "generation_reliability": 0.0,
+        "retrieval_stability": 0.18155089421444226,
+        "knowledge_reliability": 0.2671977499186474
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3354813454156533,
+        "retrieval_diversity": 0.9319859440985409,
+        "rougeL": 1.0,
+        "consistency": 0.8184491057855577,
+        "knowledge_cover": 0.4656045001627052,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 267,
+      "question": "when did the united states host the world cup",
+      "metrics": {
+        "retrieval_effectiveness": 0.36389644609767524,
+        "generation_reliability": 0.5367475771316795,
+        "retrieval_stability": 0.23567364388487866,
+        "knowledge_reliability": 0.30106117255459874
+      },
+      "raw_values": {
+        "keypoint_hit": 0.31527410481436985,
+        "retrieval_diversity": 0.9569330029902797,
+        "rougeL": 0.46325242286832047,
+        "consistency": 0.7643263561151213,
+        "knowledge_cover": 0.39787765489080246,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 268,
+      "question": "is parallax more pronounced with nearby stars or with distant stars",
+      "metrics": {
+        "retrieval_effectiveness": 0.36152744653734237,
+        "generation_reliability": 0.5764144512610769,
+        "retrieval_stability": 0.2717070093396049,
+        "knowledge_reliability": 0.3109792412693433
+      },
+      "raw_values": {
+        "keypoint_hit": 0.34076061476250474,
+        "retrieval_diversity": 0.9361844921628106,
+        "rougeL": 0.423585548738923,
+        "consistency": 0.7282929906603951,
+        "knowledge_cover": 0.47804151746131346,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 269,
+      "question": "when did the us not go to the olympics",
+      "metrics": {
+        "retrieval_effectiveness": 0.22122152751089796,
+        "generation_reliability": 0.8070054008704315,
+        "retrieval_stability": 0.36747450467539877,
+        "knowledge_reliability": 0.2858608837042709
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6313237136285053,
+        "retrieval_diversity": 0.9262332313496987,
+        "rougeL": 0.19299459912956848,
+        "consistency": 0.6325254953246012,
+        "knowledge_cover": 0.5282782325914581,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 270,
+      "question": "number 4 in roman numerals on clock faces",
+      "metrics": {
+        "retrieval_effectiveness": 0.5701211555394579,
+        "generation_reliability": 0.665448594685844,
+        "retrieval_stability": 0.35509780776446653,
+        "knowledge_reliability": 0.4113592088603082
+      },
+      "raw_values": {
+        "keypoint_hit": 0.1605124333372403,
+        "retrieval_diversity": 0.6992452555838441,
+        "rougeL": 0.33455140531415595,
+        "consistency": 0.6449021922355335,
+        "knowledge_cover": 0.2772815822793836,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 271,
+      "question": "when was the last year the eagles went to the superbowl",
+      "metrics": {
+        "retrieval_effectiveness": 0.3944177386329084,
+        "generation_reliability": 0.865555450684285,
+        "retrieval_stability": 0.13499825701526214,
+        "knowledge_reliability": 0.3807713993860221
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2978753076742755,
+        "retrieval_diversity": 0.9132892150599077,
+        "rougeL": 0.134444549315715,
+        "consistency": 0.8650017429847379,
+        "knowledge_cover": 0.3384572012279557,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 272,
+      "question": "who is the team that beat the eagles this season",
+      "metrics": {
+        "retrieval_effectiveness": 0.3727277521873793,
+        "generation_reliability": 0.8708052683512806,
+        "retrieval_stability": 0.4777685953669124,
+        "knowledge_reliability": 0.3212068682450975
+      },
+      "raw_values": {
+        "keypoint_hit": 0.35068759706390834,
+        "retrieval_diversity": 0.9038568985613331,
+        "rougeL": 0.12919473164871942,
+        "consistency": 0.5222314046330876,
+        "knowledge_cover": 0.5575862635098049,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 273,
+      "question": "when did lionel messi play his first game for barcelona",
+      "metrics": {
+        "retrieval_effectiveness": 0.44853754782832966,
+        "generation_reliability": 0.9423936910830385,
+        "retrieval_stability": 0.20008608078050205,
+        "knowledge_reliability": 0.7709855072754147
+      },
+      "raw_values": {
+        "keypoint_hit": 0.15085155265625458,
+        "retrieval_diversity": 0.9520733516870861,
+        "rougeL": 0.057606308916961474,
+        "consistency": 0.799913919219498,
+        "knowledge_cover": 0.20802898544917062,
+        "reliability": 0.25
+      }
+    },
+    {
+      "id": 274,
+      "question": "who won the super heavyweight gold medal at the 2000 olympics",
+      "metrics": {
+        "retrieval_effectiveness": 0.4892899111467637,
+        "generation_reliability": 0.631447574361464,
+        "retrieval_stability": 0.1643862307252285,
+        "knowledge_reliability": 0.40005979901872446
+      },
+      "raw_values": {
+        "keypoint_hit": 0.10315013588947168,
+        "retrieval_diversity": 0.9182700418170009,
+        "rougeL": 0.36855242563853596,
+        "consistency": 0.8356137692747715,
+        "knowledge_cover": 0.24988040196255104,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 275,
+      "question": "who turns into a bear in the hobbit",
+      "metrics": {
+        "retrieval_effectiveness": 0.03467744788657401,
+        "generation_reliability": 0.6059826131950947,
+        "retrieval_stability": 0.0,
+        "knowledge_reliability": 0.11204801576867274
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999996337211006,
+        "retrieval_diversity": 0.9306454705057514,
+        "rougeL": 0.3940173868049052,
+        "consistency": 1.0,
+        "knowledge_cover": 0.8759039684626546,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 276,
+      "question": "batman the enemy with episode 5 release date",
+      "metrics": {
+        "retrieval_effectiveness": 0.3528334584042354,
+        "generation_reliability": 0.6036270477988269,
+        "retrieval_stability": 0.35685391503339614,
+        "knowledge_reliability": 0.7602819779340884
+      },
+      "raw_values": {
+        "keypoint_hit": 0.361456288276145,
+        "retrieval_diversity": 0.9328767949153842,
+        "rougeL": 0.3963729522011731,
+        "consistency": 0.6431460849666039,
+        "knowledge_cover": 0.37943604413182314,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 277,
+      "question": "yeh hai mohabbatein serial star cast real name",
+      "metrics": {
+        "retrieval_effectiveness": 0.42108440125101976,
+        "generation_reliability": 0.646594305490011,
+        "retrieval_stability": 0.29682971022908433,
+        "knowledge_reliability": 0.25531851500193703
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5877057571717409,
+        "retrieval_diversity": 0.5701254403262196,
+        "rougeL": 0.3534056945099891,
+        "consistency": 0.7031702897709157,
+        "knowledge_cover": 0.689362969996126,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 278,
+      "question": "where is the slide placed on the microscope",
+      "metrics": {
+        "retrieval_effectiveness": 0.5151453112556846,
+        "generation_reliability": 0.6008248353407061,
+        "retrieval_stability": 0.356015308217831,
+        "knowledge_reliability": 0.3257529431606717
+      },
+      "raw_values": {
+        "keypoint_hit": 0.4102004094998095,
+        "retrieval_diversity": 0.5595089679888212,
+        "rougeL": 0.3991751646592939,
+        "consistency": 0.643984691782169,
+        "knowledge_cover": 0.4484941136786565,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 279,
+      "question": "when did mcgee became a regular on ncis",
+      "metrics": {
+        "retrieval_effectiveness": 0.5529173800891343,
+        "generation_reliability": 0.8571338681768129,
+        "retrieval_stability": 0.5407565584405705,
+        "knowledge_reliability": 0.3426102909588362
+      },
+      "raw_values": {
+        "keypoint_hit": 0.34198865634248543,
+        "retrieval_diversity": 0.5521765834792459,
+        "rougeL": 0.14286613182318705,
+        "consistency": 0.45924344155942953,
+        "knowledge_cover": 0.5147794180823275,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 280,
+      "question": "who owns the crown plaza hotel in chicago illinois",
+      "metrics": {
+        "retrieval_effectiveness": 0.28776260300902357,
+        "generation_reliability": 0.8836256012301191,
+        "retrieval_stability": 0.5987843091084135,
+        "knowledge_reliability": 0.2219328303949557
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5830728785126147,
+        "retrieval_diversity": 0.8414019154693382,
+        "rougeL": 0.11637439876988084,
+        "consistency": 0.40121569089158643,
+        "knowledge_cover": 0.6561343392100885,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 281,
+      "question": "when was the last time the eu was audited",
+      "metrics": {
+        "retrieval_effectiveness": 0.49597992965195037,
+        "generation_reliability": 0.6965528457885741,
+        "retrieval_stability": 0.682881844432708,
+        "knowledge_reliability": 0.7473729270115482
+      },
+      "raw_values": {
+        "keypoint_hit": 0.04015996315234272,
+        "retrieval_diversity": 0.9678801775437565,
+        "rougeL": 0.3034471542114259,
+        "consistency": 0.3171181555672919,
+        "knowledge_cover": 0.30525414597690353,
+        "reliability": 0.2
+      }
+    },
+    {
+      "id": 282,
+      "question": "the legend of heroes trails in the sky the 3rd vita",
+      "metrics": {
+        "retrieval_effectiveness": 0.5094818449777427,
+        "generation_reliability": 0.44277409054853245,
+        "retrieval_stability": 0.16972274360036588,
+        "knowledge_reliability": 0.5692941305561524
+      },
+      "raw_values": {
+        "keypoint_hit": 0.0,
+        "retrieval_diversity": 0.9810363100445145,
+        "rougeL": 0.5572259094514675,
+        "consistency": 0.8302772563996341,
+        "knowledge_cover": 0.16141173888769522,
+        "reliability": 0.7
+      }
+    },
+    {
+      "id": 283,
+      "question": "when was a series of unfortunate events published",
+      "metrics": {
+        "retrieval_effectiveness": 0.49539052291193786,
+        "generation_reliability": 0.5660938844627044,
+        "retrieval_stability": 0.4336661659578305,
+        "knowledge_reliability": 0.27288436404900085
+      },
+      "raw_values": {
+        "keypoint_hit": 0.1539226638731796,
+        "retrieval_diversity": 0.8552962903029447,
+        "rougeL": 0.43390611553729563,
+        "consistency": 0.5663338340421695,
+        "knowledge_cover": 0.5542312719019983,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 284,
+      "question": "who will win 2018 election in sri lanka",
+      "metrics": {
+        "retrieval_effectiveness": 0.2918890366501016,
+        "generation_reliability": 0.7644964605946201,
+        "retrieval_stability": 0.34206621947644,
+        "knowledge_reliability": 0.26542668537177216
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5191586756820114,
+        "retrieval_diversity": 0.8970632510177855,
+        "rougeL": 0.23550353940537994,
+        "consistency": 0.65793378052356,
+        "knowledge_cover": 0.6691466292564555,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 285,
+      "question": "what is the name for the ch3coo- ion",
+      "metrics": {
+        "retrieval_effectiveness": 0.25998476542431737,
+        "generation_reliability": 0.9496138630018568,
+        "retrieval_stability": 0.03565225387073767,
+        "knowledge_reliability": 0.2978150950107552
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5826423176663639,
+        "retrieval_diversity": 0.8973881514850014,
+        "rougeL": 0.050386136998143184,
+        "consistency": 0.9643477461292623,
+        "knowledge_cover": 0.6043698099784894,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 286,
+      "question": "what type of government did the ming dynasty have",
+      "metrics": {
+        "retrieval_effectiveness": 0.33480577678216505,
+        "generation_reliability": 0.6961330261221996,
+        "retrieval_stability": 0.20128647549644918,
+        "knowledge_reliability": 0.32391062069466214
+      },
+      "raw_values": {
+        "keypoint_hit": 0.3728014109063205,
+        "retrieval_diversity": 0.9575870355293494,
+        "rougeL": 0.3038669738778004,
+        "consistency": 0.7987135245035508,
+        "knowledge_cover": 0.45217875861067564,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 287,
+      "question": "who did us fight in world war 1",
+      "metrics": {
+        "retrieval_effectiveness": 0.3288616174785606,
+        "generation_reliability": 0.6105018090294163,
+        "retrieval_stability": 0.4307363375705068,
+        "knowledge_reliability": 0.2668247566699994
+      },
+      "raw_values": {
+        "keypoint_hit": 0.5693813732528497,
+        "retrieval_diversity": 0.7728953917900293,
+        "rougeL": 0.38949819097058364,
+        "consistency": 0.5692636624294932,
+        "knowledge_cover": 0.5163504866600013,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 288,
+      "question": "when was rosencrantz and guildenstern are dead written",
+      "metrics": {
+        "retrieval_effectiveness": 0.44965366247793703,
+        "generation_reliability": 0.8682148977919077,
+        "retrieval_stability": 0.4451252003643803,
+        "knowledge_reliability": 0.35361560277351944
+      },
+      "raw_values": {
+        "keypoint_hit": 0.2088033759926158,
+        "retrieval_diversity": 0.89188929905151,
+        "rougeL": 0.1317851022080922,
+        "consistency": 0.5548747996356197,
+        "knowledge_cover": 0.3927687944529611,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 289,
+      "question": "nuclear power plant that blew up in russia",
+      "metrics": {
+        "retrieval_effectiveness": 0.21580650775968246,
+        "generation_reliability": 0.7859104473422442,
+        "retrieval_stability": 0.45739415495518565,
+        "knowledge_reliability": 0.5280228249274486
+      },
+      "raw_values": {
+        "keypoint_hit": 0.7518572171594339,
+        "retrieval_diversity": 0.8165297673212012,
+        "rougeL": 0.2140895526577557,
+        "consistency": 0.5426058450448143,
+        "knowledge_cover": 0.8439543501451029,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 290,
+      "question": "who sang picking up pebbles and throwing them into the sea",
+      "metrics": {
+        "retrieval_effectiveness": 0.569910834960865,
+        "generation_reliability": 0.9202957369828535,
+        "retrieval_stability": 0.7944932460484776,
+        "knowledge_reliability": 0.7908218185478258
+      },
+      "raw_values": {
+        "keypoint_hit": 0.16590616484015588,
+        "retrieval_diversity": 0.6942721652381142,
+        "rougeL": 0.07970426301714648,
+        "consistency": 0.20550675395152243,
+        "knowledge_cover": 0.3183563629043483,
+        "reliability": 0.1
+      }
+    },
+    {
+      "id": 291,
+      "question": "how many breeds of pigs are there in the uk",
+      "metrics": {
+        "retrieval_effectiveness": 0.44901246119251803,
+        "generation_reliability": 0.7651016042478516,
+        "retrieval_stability": 0.2605626275940198,
+        "knowledge_reliability": 1.0
+      },
+      "raw_values": {
+        "keypoint_hit": 0.12398687256424532,
+        "retrieval_diversity": 0.9779882050507187,
+        "rougeL": 0.2348983957521484,
+        "consistency": 0.7394373724059802,
+        "knowledge_cover": 0.0,
+        "reliability": 0.0
+      }
+    },
+    {
+      "id": 292,
+      "question": "where did the battle of corinth take place",
+      "metrics": {
+        "retrieval_effectiveness": 0.38287580492232054,
+        "generation_reliability": 0.5557733176643316,
+        "retrieval_stability": 0.18052926337808362,
+        "knowledge_reliability": 0.2189571699362297
+      },
+      "raw_values": {
+        "keypoint_hit": 0.33628358777507544,
+        "retrieval_diversity": 0.8979648023802834,
+        "rougeL": 0.44422668233566837,
+        "consistency": 0.8194707366219164,
+        "knowledge_cover": 0.6620856601275406,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 293,
+      "question": "who sings the song i'll never forget you",
+      "metrics": {
+        "retrieval_effectiveness": 0.5018108034387183,
+        "generation_reliability": 0.6789850074418267,
+        "retrieval_stability": 0.7444094541485756,
+        "knowledge_reliability": 0.48943963177829763
+      },
+      "raw_values": {
+        "keypoint_hit": 0.24387526738359658,
+        "retrieval_diversity": 0.7525031257389668,
+        "rougeL": 0.3210149925581734,
+        "consistency": 0.2555905458514244,
+        "knowledge_cover": 0.5211207364434048,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 294,
+      "question": "who played shmuel in the boy in the striped pyjamas",
+      "metrics": {
+        "retrieval_effectiveness": 0.4895403272236267,
+        "generation_reliability": 0.936993702299393,
+        "retrieval_stability": 0.4639314730755155,
+        "knowledge_reliability": 0.39911521318858445
+      },
+      "raw_values": {
+        "keypoint_hit": 0.24985064977876756,
+        "retrieval_diversity": 0.7710686957739791,
+        "rougeL": 0.063006297700607,
+        "consistency": 0.5360685269244845,
+        "knowledge_cover": 0.2517695736228311,
+        "reliability": 0.95
+      }
+    },
+    {
+      "id": 295,
+      "question": "who sang rip it up and start again",
+      "metrics": {
+        "retrieval_effectiveness": 0.18418169980837207,
+        "generation_reliability": 0.9215137344529425,
+        "retrieval_stability": 0.8701908866641616,
+        "knowledge_reliability": 0.12427005714187378
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999998168605503,
+        "retrieval_diversity": 0.6316367835227055,
+        "rougeL": 0.07848626554705754,
+        "consistency": 0.12980911333583842,
+        "knowledge_cover": 0.8514598857162523,
+        "reliability": 0.9
+      }
+    },
+    {
+      "id": 296,
+      "question": "what are the 4 types of nitrogenous bases",
+      "metrics": {
+        "retrieval_effectiveness": 0.15783650685503803,
+        "generation_reliability": 0.8823986156992292,
+        "retrieval_stability": 0.027074925901452218,
+        "knowledge_reliability": 0.20131919080893057
+      },
+      "raw_values": {
+        "keypoint_hit": 0.7134787887889354,
+        "retrieval_diversity": 0.9708481975009886,
+        "rougeL": 0.11760138430077079,
+        "consistency": 0.9729250740985478,
+        "knowledge_cover": 0.7973616183821388,
+        "reliability": 0.8
+      }
+    },
+    {
+      "id": 297,
+      "question": "where are alkali metals located on the periodic table",
+      "metrics": {
+        "retrieval_effectiveness": 0.04123351656840446,
+        "generation_reliability": 0.3458235016517226,
+        "retrieval_stability": 0.011239113169538073,
+        "knowledge_reliability": 0.1086745143093939
+      },
+      "raw_values": {
+        "keypoint_hit": 0.9999998168605503,
+        "retrieval_diversity": 0.9175331500026408,
+        "rougeL": 0.6541764983482774,
+        "consistency": 0.9887608868304619,
+        "knowledge_cover": 0.7826509713812121,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 298,
+      "question": "where is the capital city of alabama located",
+      "metrics": {
+        "retrieval_effectiveness": 0.26205424201281735,
+        "generation_reliability": 0.8211880891815053,
+        "retrieval_stability": 0.06902800063693981,
+        "knowledge_reliability": 0.2426891390367405
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6339522225803615,
+        "retrieval_diversity": 0.8419392933940038,
+        "rougeL": 0.17881191081849473,
+        "consistency": 0.9309719993630602,
+        "knowledge_cover": 0.514621721926519,
+        "reliability": 1.0
+      }
+    },
+    {
+      "id": 299,
+      "question": "what year did the us hockey team won the olympics",
+      "metrics": {
+        "retrieval_effectiveness": 0.3609710043079204,
+        "generation_reliability": 0.6719605178619148,
+        "retrieval_stability": 0.13242729600886405,
+        "knowledge_reliability": 0.5367208404427231
+      },
+      "raw_values": {
+        "keypoint_hit": 0.34473602279719867,
+        "retrieval_diversity": 0.9333219685869605,
+        "rougeL": 0.3280394821380852,
+        "consistency": 0.867572703991136,
+        "knowledge_cover": 0.4265583191145538,
+        "reliability": 0.5
+      }
+    },
+    {
+      "id": 300,
+      "question": "what is the order of the netflix marvel shows",
+      "metrics": {
+        "retrieval_effectiveness": 0.24631565550884593,
+        "generation_reliability": 0.4481547176702664,
+        "retrieval_stability": 0.17541108724111598,
+        "knowledge_reliability": 0.2958182703843202
+      },
+      "raw_values": {
+        "keypoint_hit": 0.6914776057080904,
+        "retrieval_diversity": 0.8158910832742179,
+        "rougeL": 0.5518452823297336,
+        "consistency": 0.824588912758884,
+        "knowledge_cover": 0.8083634592313597,
+        "reliability": 0.6
+      }
+    }
+  ],
+  "overall_average": {
+    "retrieval_effectiveness": 0.3715024570101935,
+    "generation_reliability": 0.6985076155574826,
+    "retrieval_stability": 0.32303607483851154,
+    "knowledge_reliability": 0.3752535841990809
+  },
+  "interpretation": {
+    "retrieval_effectiveness": "检索有效性值，代表检索相关性和多样性的综合评估。值越接近1表示检索质量越高。",
+    "generation_reliability": "生成可靠性值，代表生成内容与参考内容的一致性。值越接近1表示生成内容与参考更一致。",
+    "retrieval_stability": "检索稳定性值，代表检索对不同表述方式的稳定性。值越接近1表示检索结果更稳定。",
+    "knowledge_reliability": "知识可信度值，代表知识覆盖度和可信度的综合评估。值越接近1表示检索到的知识更可靠。"
+  }
+}

@@ -41,3 +41,5 @@ Thumbs.db
 
 # 不忽略src/statics目录下的json文件
 !src/statics/*.json 
+
+update.md

@@ -1,9 +1,9 @@
 <template>
   <div class="main-layout">
-    <header class="header">
+    <!-- <header class="header">
       <h1>RAGInsight</h1>
       <SystemConfig />
-    </header>
+    </header> -->
     
     <main class="content">
       <div class="main-content">

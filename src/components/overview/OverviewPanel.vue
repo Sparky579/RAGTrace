@@ -1,33 +1,36 @@
 <template>
   <div class="overview-panel">
     <div class="panel-header">
-      <h2>问题概览</h2>
+      <h2>Problem Overview</h2>
       <div class="search-filter">
-        <input type="text" placeholder="搜索问题..." class="search-input" />
+        <input type="text" placeholder="Search questions..." class="search-input" />
         <select class="filter-select">
-          <option value="all">所有问题类型</option>
-          <option value="factual">事实型</option>
-          <option value="reasoning">推理型</option>
-          <option value="generation">生成型</option>
-          <option value="complex">复杂型</option>
+          <option value="all">All question types</option>
+          <option value="factual">Factual</option>
+          <option value="reasoning">Reasoning</option>
+          <option value="generation">Generation</option>
+          <option value="complex">Complex</option>
         </select>
       </div>
     </div>
     
     <div class="visualization-area">
       <div class="visualization-tabs">
-        <button class="tab-btn active">热力图</button>
-        <button class="tab-btn">力导向图</button>
+        <button class="tab-btn" :class="{ active: activeTab === 'heatmap' }" @click="activeTab = 'heatmap'">Heatmap</button>
+        <button class="tab-btn" :class="{ active: activeTab === 'distribution' }" @click="activeTab = 'distribution'">Type Distribution</button>
+        <button class="tab-btn" :class="{ active: activeTab === 'force' }" @click="activeTab = 'force'">Force Diagram</button>
       </div>
       
       <div class="visualization-container">
-        <VisualizationPlaceholder type="heatmap" />
+        <VisualizationPlaceholder v-if="activeTab === 'heatmap'" type="heatmap" />
+        <TypeDistributionChart v-else-if="activeTab === 'distribution'" />
+        <VisualizationPlaceholder v-else-if="activeTab === 'force'" type="force" />
       </div>
     </div>
     
     <div class="problems-list">
-      <h3 class="section-title">问题列表</h3>
-      <div class="problems-grid">
+      <h3 class="section-title">Question List</h3>
+      <div class="problems-grid"> 
         <ProblemCard v-for="i in 6" :key="i" />
       </div>
     </div>
@@ -35,8 +38,12 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import VisualizationPlaceholder from './VisualizationPlaceholder.vue';
 import ProblemCard from './ProblemCard.vue';
+import TypeDistributionChart from './TypeDistributionChart.vue';
+
+const activeTab = ref('distribution'); // 默认显示类型分布图
 </script>
 
 <style scoped>
@@ -97,7 +104,10 @@ import ProblemCard from './ProblemCard.vue';
 
 .visualization-container {
   padding: 24px;
-  height: 400px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .problems-grid {

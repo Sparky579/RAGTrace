@@ -4,28 +4,28 @@
     
     <div class="metrics-grid">
       <div class="metric-item">
-        <div class="metric-name">准确率</div>
+        <div class="metric-name">Accuracy</div>
         <div class="metric-value" :class="getValueClass('accuracy')">
           {{ getMetricValue('accuracy') }}
         </div>
       </div>
       
       <div class="metric-item">
-        <div class="metric-name">检索准确率</div>
+        <div class="metric-name">Retrieval Accuracy</div>
         <div class="metric-value" :class="getValueClass('retrieval')">
           {{ getMetricValue('retrieval') }}
         </div>
       </div>
       
       <div class="metric-item">
-        <div class="metric-name">回答完整性</div>
+        <div class="metric-name">Completeness</div>
         <div class="metric-value" :class="getValueClass('completeness')">
           {{ getMetricValue('completeness') }}
         </div>
       </div>
       
       <div class="metric-item">
-        <div class="metric-name">延迟时间</div>
+        <div class="metric-name">Latency</div>
         <div class="metric-value" :class="getValueClass('latency', true)">
           {{ getMetricValue('latency') }}ms
         </div>

@@ -3,23 +3,25 @@
     <div class="answer-heading">
       <div v-if="answerData" class="model-info">
         <span class="model-name">{{ answerData.model }}</span>
-        <span class="confidence-score">置信度: {{ formatConfidence(answerData.confidence) }}</span>
+        <span class="confidence-score">Confidence: {{ formatConfidence(answerData.confidence) }}</span>
+      </div>
+      <div v-else-if="loading" class="model-info">
+        <span class="model-name">Loading model...</span>
       </div>
       <div v-else class="model-info">
-        <span class="model-name">模型加载中...</span>
+        <span class="model-name">No model data</span>
       </div>
       <div class="answer-actions">
-        <button class="action-icon" title="查找内容">🔍</button>
-        <button class="action-icon" title="复制到剪贴板" @click="copyAnswer">📋</button>
-      </div>
+        <!-- <button class="action-icon" title="复制到剪贴板" @click="copyAnswer">📋</button> -->
+      </div> 
     </div>
     
     <div class="answer-content" ref="answerContentRef">
       <div v-if="loading" class="loading-indicator">
-        <span>正在生成答案...</span>
+        <span>Generating answer...</span>
       </div>
       <div v-else-if="!answerData" class="empty-state">
-        <p>答案将在这里显示</p>
+        <p>Answer will be displayed here</p>
       </div>
       <template v-else>
         <p v-for="(paragraph, index) in answerParagraphs" 
@@ -30,9 +32,9 @@
     
     <div class="answer-footer">
       <div class="entity-legend">
-        <span class="legend-item"><span class="legend-color entity"></span>命名实体</span>
-        <span class="legend-item"><span class="legend-color evidence"></span>证据支持</span>
-        <span class="legend-item"><span class="legend-color uncertain"></span>不确定内容</span>
+        <span class="legend-item"><span class="legend-color entity"></span>Entity</span>
+        <span class="legend-item"><span class="legend-color evidence"></span>Support</span>
+        <span class="legend-item"><span class="legend-color uncertain"></span>Uncertain</span>
       </div>
     </div>
   </div>
@@ -54,7 +56,7 @@ const answerContentRef = ref(null);
 
 // 格式化置信度分数
 const formatConfidence = (confidence) => {
-  if (typeof confidence !== 'number') return '未知';
+  if (typeof confidence !== 'number') return 'Unknown';
   return confidence.toFixed(2);
 };
 
@@ -71,11 +73,11 @@ const copyAnswer = () => {
   // 提取纯文本内容
   navigator.clipboard.writeText(answerData.value.text)
     .then(() => {
-      alert('答案已复制到剪贴板');
+      alert('Answer copied to clipboard');
     })
     .catch(err => {
       console.error('复制失败:', err);
-      alert('复制失败，请手动选择内容复制');
+      alert('Copy failed, please select content manually');
     });
 };
 
@@ -87,7 +89,7 @@ const updateAnswer = (newAnswerData) => {
   loading.value = false;
   
   if (!newAnswerData) {
-    console.warn('接收到的答案数据为空');
+    console.warn('Received answer data is empty');
     return;
   }
   
@@ -116,8 +118,8 @@ defineExpose({
 
 <style scoped>
 .answer-panel {
-  flex: 2;
-  border: 1px solid var(--border-color);
+  flex: 1.5;
+  border: 0px solid var(--border-color);
   border-radius: 6px;
   overflow: hidden;
   display: flex;
@@ -128,24 +130,25 @@ defineExpose({
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f5f7fb;
-  padding: 6px 12px;
   border-bottom: 1px solid var(--border-color);
+  padding: 10px 14px;
+  background-color: #f9f9f9;
 }
 
 .model-info {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  flex-direction: column;
+  gap: 2px;
 }
 
 .model-name {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .confidence-score {
-  font-size: 13px;
-  color: #4caf50;
+  font-size: 14px;
+  color: #666;
 }
 
 .answer-actions {
@@ -162,16 +165,26 @@ defineExpose({
 }
 
 .answer-content {
-  padding: 12px;
-  line-height: 1.5;
+  padding: 14px;
+  line-height: 1.6;
   flex: 1;
   overflow-y: auto;
+  font-size: 16px;
+  min-height: 200px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* 隐藏 Chrome, Safari 和 Opera 的滚动条 */
+.answer-content::-webkit-scrollbar {
+  display: none;
 }
 
 /* 注意：这些CSS不能使用scoped，因为它们需要应用到v-html内的内容 */
 :deep(.highlight) {
   padding: 2px 4px;
   border-radius: 3px;
+  font-size: 16px;
 }
 
 :deep(.highlight.entity) {
@@ -193,23 +206,25 @@ defineExpose({
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 60px;
   color: #666;
   font-style: italic;
+  font-size: 16px;
 }
 
 .empty-state {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 60px;
   color: #888;
   font-style: italic;
+  font-size: 16px;
 }
 
 .answer-footer {
   border-top: 1px solid var(--border-color);
-  padding: 6px 12px;
+  padding: 8px 14px;
   background-color: #f9f9f9;
 }
 
@@ -222,7 +237,7 @@ defineExpose({
   display: flex;
   align-items: center;
   gap: 4px;
-  font-size: 12px;
+  font-size: 14px;
   color: #666;
 }
 

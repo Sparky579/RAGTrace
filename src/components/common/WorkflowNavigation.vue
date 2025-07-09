@@ -1,6 +1,6 @@
 <template>
   <nav class="workflow-nav">
-    <h2 class="nav-title">工作流程</h2>
+    <h2 class="nav-title">Workflow</h2>
     
     <div class="nav-steps">
       <button 
@@ -9,7 +9,7 @@
         @click="changeStep('overview')"
       >
         <span class="step-number">1</span>
-        <span class="step-name">问题概览</span>
+        <span class="step-name">Problem Overview</span>
       </button>
       
       <button 
@@ -18,7 +18,7 @@
         @click="changeStep('diagnostic')"
       >
         <span class="step-number">2</span>
-        <span class="step-name">诊断分析</span>
+        <span class="step-name">Diagnostic Analysis</span>
       </button>
       
       <button 
@@ -27,12 +27,12 @@
         @click="changeStep('validation')"
       >
         <span class="step-number">3</span>
-        <span class="step-name">改进验证</span>
+        <span class="step-name">Validation</span>
       </button>
     </div>
     
     <div class="workflow-info">
-      <div class="placeholder">工作流程说明</div>
+      <div class="placeholder">Workflow Description</div>
     </div>
   </nav>
 </template>

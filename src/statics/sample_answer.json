@@ -1,73 +1,146 @@
 {
-  "text": "RAG系统的检索效果可以通过多种方法进行改进。首先，向量数据库的选择对检索质量有重要影响，不同场景下可能需要选择不同的向量数据库。其次，检索策略的优化也很关键，可以结合混合检索和重排序技术。此外，文档分块策略对检索效果有显著影响，需要根据具体场景选择合适的分块方法。最后，提示词工程可以引导模型更准确地利用检索结果。",
+  "text": "A Tom and Jerry fan!\n\nAccording to your information, the dog\\'s name in Tom and Jerry is actually \"Spike\", not \"Killer\". \"Killer\" is not a confirmed name for the dog in the Tom and Jerry cartoons. However, \"Spike\" is a well-known character in the series, and you've provided some interesting details about his appearances and voice actor, Daws Butler. ",
   "marks": [
     {
       "type": "entity",
-      "startIndex": 0,
-      "endIndex": 7,
-      "text": "RAG系统"
-    },
-    {
-      "type": "evidence",
-      "startIndex": 24,
-      "endIndex": 30,
-      "text": "向量数据库",
-      "sourceId": "chunk-a"
+      "startIndex": 45,
+      "endIndex": 57,
+      "text": "Tom and Jerry"
     },
     {
       "type": "entity",
-      "startIndex": 62,
-      "endIndex": 66,
-      "text": "检索策略"
+      "startIndex": 26,
+      "endIndex": 29,
+      "text": "dog"
+    },
+    {
+      "type": "evidence",
+      "startIndex": 65,
+      "endIndex": 70,
+      "text": "Spike",
+      "sourceId": "chunk-a"
     },
     {
       "type": "evidence",
       "startIndex": 76,
-      "endIndex": 80,
-      "text": "混合检索",
-      "sourceId": "chunk-c"
+      "endIndex": 82,
+      "text": "Killer",
+      "sourceId": "chunk-a"
     },
     {
       "type": "evidence",
-      "startIndex": 81,
-      "endIndex": 85,
-      "text": "重排序",
-      "sourceId": "chunk-c"
-    },
-    {
-      "type": "entity",
-      "startIndex": 90,
-      "endIndex": 96,
-      "text": "文档分块策略"
+      "startIndex": 208,
+      "endIndex": 219,
+      "text": "Daws Butler",
+      "sourceId": "chunk-b"
     },
     {
       "type": "uncertain",
-      "startIndex": 129,
-      "endIndex": 133,
-      "text": "提示词工程"
+      "startIndex": 142,
+      "endIndex": 151,
+      "text": "well-known"
+    },
+    {
+      "type": "uncertain",
+      "startIndex": 102,
+      "endIndex": 111,
+      "text": "confirmed"
     }
   ],
-  "model": "GPT-4",
-  "confidence": 0.87,
+  "model": "llama-3.1-70b-versatile",
+  "confidence": 0.76,
   "evidences": [
     {
-      "id": "chunk-a",
-      "source": "Chunk A",
-      "text": "选择合适的向量数据库对RAG系统的检索效果有重要影响。不同的向量数据库有不同的特性和性能，需要根据具体应用场景进行选择。",
-      "relevance": 0.95
+        "id": "chunk1-1",
+        "source": "Tom and Jerry Cartoons",
+        "text": "He is named \"Killer\", and in \"The Truce Hurts\" he signs his name \"Butch\" on the treaty peace paper.",
+        "relevance": 0.90,
+        "summary": "The dog is referred to as \"Killer\" and \"Butch\" in specific episodes.",
+        "sourceEntity": "Killer/Butch",
+        "answerEntity": "Spike",
+        "relatedChunkType": "I",
+        "relatedChunkIndex": 3,
+        "isReferenced": true,
+        "impactMetric": 0.85
     },
     {
-      "id": "chunk-c",
-      "source": "Chunk C",
-      "text": "混合检索和重排序是提高RAG系统检索效果的有效策略。混合检索结合了多种检索方法的优势，而重排序则可以进一步优化检索结果的排序。",
-      "relevance": 0.76
+        "id": "chunk1-2",
+        "source": "Tom and Jerry Cartoons",
+        "text": "He is also a Devil Dog in \"Heavenly Puss\".",
+        "relevance": 0.85,
+        "summary": "Spike is depicted as a \"Devil Dog\" in the episode \"Heavenly Puss\".",
+        "sourceEntity": "Devil Dog",
+        "answerEntity": "Spike",
+        "relatedChunkType": "I",
+        "relatedChunkIndex": 1,
+        "isReferenced": true,
+        "impactMetric": 0.80
     },
     {
-      "id": "chunk-b",
-      "source": "Chunk B",
-      "text": "合理的文档分块策略对检索质量至关重要。分块过大会导致检索不精确，分块过小则可能导致上下文信息丢失。",
-      "relevance": 0.82
+        "id": "chunk1-3",
+        "source": "Tom and Jerry Cartoons",
+        "text": "In 1949's \"Love That Pup\", Spike was given a puppy son, Tyke, who became another popular supporting character.",
+        "relevance": 0.95,
+        "summary": "Spike's son, Tyke, is introduced in the 1949 episode \"Love That Pup\".",
+        "sourceEntity": "Tyke",
+        "answerEntity": "Spike",
+        "relatedChunkType": "O",
+        "relatedChunkIndex": 0,
+        "isReferenced": true,
+        "impactMetric": 0.90
+    },
+    {
+        "id": "chunk1-4",
+        "source": "Tom and Jerry Cartoons",
+        "text": "His voice was taken over by Daws Butler, who styled Spike's voice after Jimmy Durante.",
+        "relevance": 0.88,
+        "summary": "Daws Butler provided Spike's voice, inspired by Jimmy Durante.",
+        "sourceEntity": "Daws Butler",
+        "answerEntity": "Spike",
+        "relatedChunkType": "O",
+        "relatedChunkIndex": 1,
+        "isReferenced": true,
+        "impactMetric": 0.82
+    },
+    {
+        "id": "chunk2-1",
+        "source": "Tom and Jerry Cartoons",
+        "text": "When Spike sees the truth, he lets out a roar like a buffalo roar and leaps into the air for the sake of revenge.",
+        "relevance": 0.92,
+        "summary": "Spike reacts aggressively with a roar and leaps for revenge.",
+        "sourceEntity": "Spike's Behavior",
+        "answerEntity": "Spike",
+        "relatedChunkType": "I",
+        "relatedChunkIndex": 2,
+        "isReferenced": true,
+        "impactMetric": 0.88
+    },
+    {
+        "id": "chunk2-2",
+        "source": "Tom and Jerry Cartoons",
+        "text": "Tom panics and tunnels into the ground in an attempt to escape, but Spike digs him up with his large jaws.",
+        "relevance": 0.91,
+        "summary": "Spike uses his strength to dig up Tom during the chase.",
+        "sourceEntity": "Spike's Strength",
+        "answerEntity": "Spike",
+        "relatedChunkType": "S",
+        "relatedChunkIndex": 0,
+        "isReferenced": true,
+        "impactMetric": 0.87
+    },
+    {
+        "id": "chunk2-3",
+        "source": "Tom and Jerry Cartoons",
+        "text": "The chase wakes up all the other dogs, who join the chase.",
+        "relevance": 0.89,
+        "summary": "Spike's chase with Tom incites other dogs to join in.",
+        "sourceEntity": "Spike's Influence",
+        "answerEntity": "Spike",
+        "relatedChunkType": "S",
+        "relatedChunkIndex": 1,
+        "isReferenced": true,
+        "impactMetric": 0.84
     }
-  ],
+],
   "timestamp": "2024-03-21T10:22:18.123Z"
 } 

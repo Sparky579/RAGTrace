@@ -10,30 +10,30 @@
       <p class="description">{{ selectedNode.description }}</p>
       <div class="forces-grid">
         <div class="force-item">
-          <span class="force-label" style="color: #E74C3C">检索失效:</span>
+          <span class="force-label" style="color: #e09192">检索失效:</span>
           <div class="force-bar">
-            <div class="force-fill" :style="{ width: `${selectedNode.forces.retrievalFailure * 100}%`, backgroundColor: '#E74C3C' }"></div>
+            <div class="force-fill" :style="{ width: `${selectedNode.forces.retrievalFailure * 100}%`, backgroundColor: '#e09192' }"></div>
           </div>
           <span class="force-value">{{ Math.round(selectedNode.forces.retrievalFailure * 100) }}%</span>
         </div>
         <div class="force-item">
-          <span class="force-label" style="color: #F1C40F">Prompt脆弱性:</span>
+          <span class="force-label" style="color: #dbc076">Prompt脆弱性:</span>
           <div class="force-bar">
-            <div class="force-fill" :style="{ width: `${selectedNode.forces.promptFragility * 100}%`, backgroundColor: '#F1C40F' }"></div>
+            <div class="force-fill" :style="{ width: `${selectedNode.forces.promptFragility * 100}%`, backgroundColor: '#dbc076' }"></div>
           </div>
           <span class="force-value">{{ Math.round(selectedNode.forces.promptFragility * 100) }}%</span>
         </div>
         <div class="force-item">
-          <span class="force-label" style="color: #3498DB">生成异常:</span>
+          <span class="force-label" style="color: #7eb0d5">生成异常:</span>
           <div class="force-bar">
-            <div class="force-fill" :style="{ width: `${selectedNode.forces.generationAnomaly * 100}%`, backgroundColor: '#3498DB' }"></div>
+            <div class="force-fill" :style="{ width: `${selectedNode.forces.generationAnomaly * 100}%`, backgroundColor: '#7eb0d5' }"></div>
           </div>
           <span class="force-value">{{ Math.round(selectedNode.forces.generationAnomaly * 100) }}%</span>
         </div>
         <div class="force-item">
-          <span class="force-label" style="color: #2ECC71">标准异常:</span>
+          <span class="force-label" style="color: #9ed2a6">标准异常:</span>
           <div class="force-bar">
-            <div class="force-fill" :style="{ width: `${selectedNode.forces.standardDeviation * 100}%`, backgroundColor: '#2ECC71' }"></div>
+            <div class="force-fill" :style="{ width: `${selectedNode.forces.standardDeviation * 100}%`, backgroundColor: '#9ed2a6' }"></div>
           </div>
           <span class="force-value">{{ Math.round(selectedNode.forces.standardDeviation * 100) }}%</span>
         </div>
@@ -62,10 +62,10 @@ const forceNodes = ref([]);
 
 // 颜色定义
 const colors = {
-  retrievalFailure: '#E74C3C', // 红色
-  promptFragility: '#F1C40F',  // 黄色
-  generationAnomaly: '#3498DB', // 蓝色
-  standardDeviation: '#2ECC71'  // 绿色
+  retrievalFailure: '#e09192', // 淡红色，对比度较低
+  promptFragility: '#dbc076',  // 稍深的黄色
+  generationAnomaly: '#7eb0d5', // 淡蓝色，对比度较低
+  standardDeviation: '#9ed2a6'  // 淡绿色，对比度较低
 };
 
 // 四个顶点坐标常量

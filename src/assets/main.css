@@ -1,6 +1,49 @@
+/* 导入Lato字体 */
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Regular-2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Bold-4.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Italic-10.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-BoldItalic-5.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-Light-11.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./fonts/Lato-LightItalic-12.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
 :root {
-  --primary-color: #4a6ee0;
-  --secondary-color: #6c8cfa;
+  --primary-color: #4d7fa0;
+  --secondary-color: #a8c6db;
   --background-color: #f5f7fa;
   --card-bg-color: #ffffff;
   --border-color: #e0e0e0;
@@ -11,10 +54,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 body {
-  font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: 'Lato', 'PingFang SC', 'Microsoft YaHei', sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -63,7 +107,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   border-bottom: 2px solid transparent;
 }
 

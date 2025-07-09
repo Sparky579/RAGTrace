@@ -1,73 +1,73 @@
 <template>
   <div class="validation-panel">
     <div class="panel-header">
-      <h2>改进验证</h2>
+      <h2>Improvement Validation</h2>
       <div class="validation-controls">
-        <button class="control-btn primary">运行验证</button>
+        <button class="control-btn primary">Run Validation</button>
         <select class="validation-select">
-          <option value="all">全部问题</option>
-          <option value="sample">抽样验证</option>
-          <option value="specific">特定问题</option>
+          <option value="all">All Questions</option>
+          <option value="sample">Sample Validation</option>
+          <option value="specific">Specific Questions</option>
         </select>
       </div>
     </div>
     
     <div class="metrics-overview">
-      <h3 class="section-title">指标概览</h3>
+      <h3 class="section-title">Metrics Overview</h3>
       <div class="metrics-comparison">
-        <ImprovementMetrics title="改进前" type="before" />
+        <ImprovementMetrics title="Before Improvement" type="before" />
         <div class="comparison-arrow">→</div>
-        <ImprovementMetrics title="改进后" type="after" />
+        <ImprovementMetrics title="After Improvement" type="after" />
       </div>
     </div>
     
     <div class="validation-grid">
       <div class="validation-card">
-        <h3 class="section-title">PCA分析</h3>
+        <h3 class="section-title">PCA Analysis</h3>
         <div class="validation-visualization">
           <VisualizationPlaceholder type="pca" />
         </div>
       </div>
       
       <div class="validation-card">
-        <h3 class="section-title">指标分布</h3>
+        <h3 class="section-title">Metrics Distribution</h3>
         <div class="validation-visualization">
           <VisualizationPlaceholder type="distribution" />
         </div>
       </div>
       
       <div class="validation-card wide-card">
-        <h3 class="section-title">案例分析</h3>
+        <h3 class="section-title">Case Analysis</h3>
         <div class="case-comparison">
           <div class="case-section">
-            <h4>改进前</h4>
-            <div class="placeholder">示例问题改进前的回答...</div>
+            <h4>Before</h4>
+            <div class="placeholder">Answer before improvement...</div>
           </div>
           
           <div class="case-section">
-            <h4>改进后</h4>
-            <div class="placeholder">示例问题改进后的回答...</div>
+            <h4>After</h4>
+            <div class="placeholder">Answer after improvement...</div>
           </div>
         </div>
       </div>
       
       <div class="validation-card">
-        <h3 class="section-title">自定义指标</h3>
+        <h3 class="section-title">Custom Metrics</h3>
         <div class="custom-metrics-form">
           <div class="form-group">
-            <label>指标名称</label>
-            <input type="text" placeholder="输入指标名称" />
+            <label>Metric Name</label>
+            <input type="text" placeholder="Enter metric name" />
           </div>
           <div class="form-group">
-            <label>计算公式</label>
-            <input type="text" placeholder="输入计算公式" />
+            <label>Calculation Formula</label>
+            <input type="text" placeholder="Enter calculation formula" />
           </div>
-          <button class="control-btn">添加</button>
+          <button class="control-btn">Add</button>
         </div>
       </div>
       
       <div class="validation-card">
-        <h3 class="section-title">雷达图</h3>
+        <h3 class="section-title">Radar Chart</h3>
         <div class="validation-visualization">
           <VisualizationPlaceholder type="radar" />
         </div>

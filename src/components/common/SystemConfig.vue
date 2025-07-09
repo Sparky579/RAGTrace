@@ -1,23 +1,23 @@
 <template>
   <div class="system-config">
     <button class="config-btn" @click="showConfig = !showConfig">
-      <span>系统配置</span>
+      <span>System Configuration</span>
     </button>
     
     <div v-if="showConfig" class="config-panel">
       <div class="config-section">
-        <h3>模型选择</h3>
-        <div class="placeholder">模型选择界面</div>
+        <h3>Model Selection</h3>
+        <div class="placeholder">Model selection interface</div>
       </div>
       
       <div class="config-section">
-        <h3>温度设置</h3>
-        <div class="placeholder">温度设置界面</div>
+        <h3>Temperature Settings</h3>
+        <div class="placeholder">Temperature settings interface</div>
       </div>
       
       <div class="config-section">
-        <h3>其他参数</h3>
-        <div class="placeholder">其他参数设置界面</div>
+        <h3>Other Parameters</h3>
+        <div class="placeholder">Other parameters interface</div>
       </div>
     </div>
   </div>
